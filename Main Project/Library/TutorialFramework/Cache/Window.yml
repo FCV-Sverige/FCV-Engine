@@ -17,15 +17,15 @@ MonoBehaviour:
   DomainReloadOccured: 0
   IsOpen: 0
   AreTestsRunning: 0
-  CurrentTutorial: {fileID: 11400000, guid: 601b59307d0aee54996c17cc86244ee3, type: 2}
+  CurrentTutorial: {fileID: 11400000, guid: f821f454786dba94fa1fda7e4e3083e8, type: 2}
   PlayModeChanging: 0
   ActiveScenesBeforeTutorialStarted:
   - Active: 1
-    AssetPath: Assets/Scenes/main scene.unity
+    AssetPath: Assets/Scenes/SampleScene.unity
     WasLoaded: 1
   SceneViewStateBeforeTutorialStarted:
     In2DMode: 1
     Orthographic: 1
     Size: 10.443961
-    Point: {x: 2.4898314, y: -0.73405737, z: -0.0044396776}
+    Point: {x: -1.1243101, y: -1.2514817, z: -0.0044396776}
     Direction: {x: 0, y: 0, z: 0, w: 1}
