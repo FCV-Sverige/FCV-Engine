@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour, IPlayerController
 {
     [SerializeField] private ScriptableStats _stats;
+    [SerializeField] private Transform _groundCheck;  // Transform indicating where to check for ground
+
     private Rigidbody2D _rb;
     private CapsuleCollider2D _col;
     private FrameInput _frameInput;
@@ -78,11 +80,14 @@ public class PlayerController : MonoBehaviour, IPlayerController
         Physics2D.queriesStartInColliders = false;
 
         // Ground and Ceiling
-        bool groundHit = Physics2D.CapsuleCast(_col.bounds.center, _col.size, _col.direction, 0, Vector2.down, _stats.GrounderDistance, ~_stats.PlayerLayer);
-        bool ceilingHit = Physics2D.CapsuleCast(_col.bounds.center, _col.size, _col.direction, 0, Vector2.up, _stats.GrounderDistance, ~_stats.PlayerLayer);
+
+        bool groundHit = Physics2D.OverlapCircle(_groundCheck.position, _stats.GroundCheckRadius, ~_stats.PlayerLayer);
+
+        //bool groundHit = Physics2D.CapsuleCast(_col.bounds.center, _col.size, _col.direction, 0, Vector2.down, _stats.GrounderDistance, ~_stats.PlayerLayer);
+        //bool ceilingHit = Physics2D.CapsuleCast(_col.bounds.center, _col.size, _col.direction, 0, Vector2.up, _stats.GrounderDistance, ~_stats.PlayerLayer);
 
         // Hit a Ceiling
-        if (ceilingHit) _frameVelocity.y = Mathf.Min(0, _frameVelocity.y);
+        //if (ceilingHit) _frameVelocity.y = Mathf.Min(0, _frameVelocity.y);
 
         // Landed on the Ground
         if (!_grounded && groundHit)

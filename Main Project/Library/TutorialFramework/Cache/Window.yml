@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentView: 
   PreviousView: TableOfContent
-  DomainReloadOccured: 0
+  DomainReloadOccured: 1
   IsOpen: 0
   AreTestsRunning: 0
   CurrentTutorial: {fileID: 11400000, guid: f821f454786dba94fa1fda7e4e3083e8, type: 2}
-  PlayModeChanging: 0
+  PlayModeChanging: 1
   ActiveScenesBeforeTutorialStarted:
   - Active: 1
     AssetPath: Assets/Scenes/SampleScene.unity

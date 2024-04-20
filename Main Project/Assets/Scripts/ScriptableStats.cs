@@ -19,6 +19,9 @@ public class ScriptableStats : ScriptableObject
     public float HorizontalDeadZoneThreshold = 0.1f;
 
     [Header("MOVEMENT")]
+    [Tooltip("Radius for checking ground from ground-check object")]
+    public float GroundCheckRadius;
+
     [Tooltip("The top horizontal movement speed")]
     public float MaxSpeed = 14;
 
