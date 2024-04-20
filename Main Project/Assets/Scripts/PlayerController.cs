@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
         _time += Time.deltaTime;
         GatherInput();
     }
-
+                                                                                                                                                                                                    
     private void GatherInput()
     {
         _frameInput = new FrameInput
@@ -145,6 +145,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
     private void HandleDirection()
     {
+
         if (_frameInput.Move.x == 0)
         {
             var deceleration = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
