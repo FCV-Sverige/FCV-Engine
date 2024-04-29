@@ -373,7 +373,9 @@
 "Assets/Scripts/BasicObjectSpawner.cs"
 "Assets/Scripts/Camera movement.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/PlayerController1.cs"
 "Assets/Scripts/ScriptableStats.cs"
+"Assets/Scripts/TutorialManager.cs"
 -langversion:9.0
 
 /deterministic
