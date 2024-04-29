@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb6d6c9f11d07c145b5cfbc58f7169f8, type: 3}
-  m_Name: New Scriptable Stats
+  m_Name: Main playerStats
   m_EditorClassIdentifier: 
   PlayerLayer:
     serializedVersion: 2
@@ -19,15 +19,15 @@ MonoBehaviour:
   VerticalDeadZoneThreshold: 0.3
   HorizontalDeadZoneThreshold: 0.1
   GroundCheckRadius: 0.5
-  MaxSpeed: 14
-  Acceleration: 120
+  MaxSpeed: 6
+  Acceleration: 50
   GroundDeceleration: 60
   AirDeceleration: 30
-  GroundingForce: -1.5
-  GrounderDistance: 0.05
-  JumpPower: 30
+  GroundingForce: -2
+  GrounderDistance: 0.025
+  JumpPower: 20
   MaxFallSpeed: 40
-  FallAcceleration: 60
+  FallAcceleration: 70
   JumpEndEarlyGravityModifier: 3
   CoyoteTime: 0.15
   JumpBuffer: 0.2

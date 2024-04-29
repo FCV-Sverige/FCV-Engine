@@ -14,18 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentView: 
   PreviousView: TableOfContent
-  DomainReloadOccured: 1
+  DomainReloadOccured: 0
   IsOpen: 0
   AreTestsRunning: 0
-  CurrentTutorial: {fileID: 11400000, guid: f821f454786dba94fa1fda7e4e3083e8, type: 2}
+  CurrentTutorial: {fileID: 0}
   PlayModeChanging: 1
-  ActiveScenesBeforeTutorialStarted:
-  - Active: 1
-    AssetPath: Assets/Scenes/SampleScene.unity
-    WasLoaded: 1
+  ActiveScenesBeforeTutorialStarted: []
   SceneViewStateBeforeTutorialStarted:
     In2DMode: 1
     Orthographic: 1
-    Size: 10.443961
-    Point: {x: -1.1243101, y: -1.2514817, z: -0.0044396776}
+    Size: 7.3568363
+    Point: {x: -2.7028313, y: -0.58375734, z: 0.026432611}
     Direction: {x: 0, y: 0, z: 0, w: 1}
