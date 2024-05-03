@@ -372,6 +372,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/BasicObjectSpawner.cs"
 "Assets/Scripts/Camera movement.cs"
+"Assets/Scripts/ControllerWithScriptableObject.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ScriptableStats.cs"
 "Assets/Scripts/TutorialManager.cs"
