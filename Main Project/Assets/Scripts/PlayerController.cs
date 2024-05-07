@@ -67,7 +67,6 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
     private Rigidbody2D _rb;
     private CapsuleCollider2D _col;
-    private FrameInput _frameInput;
     private Vector2 _frameVelocity;
     private bool _cachedQueryStartInColliders;
 
@@ -78,6 +77,8 @@ public class PlayerController : MonoBehaviour, IPlayerController
     private bool _endedJumpEarly;
     private bool _coyoteUsable;
     private float _timeJumpWasPressed;
+
+    private FrameInput _frameInput;
 
     public Vector2 FrameInput => _frameInput.Move;
     public event Action<bool, float> GroundedChanged;
