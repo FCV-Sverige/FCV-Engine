@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour, IPlayerController
     [Header("Character settings")]
     public int Health;
 
-
     [Header("Layer Settings")]
     [Tooltip("Set this to the layer of your player")]
     public LayerMask playerLayer;
@@ -79,6 +78,8 @@ public class PlayerController : MonoBehaviour, IPlayerController
     private float _timeJumpWasPressed;
 
     private FrameInput _frameInput;
+    private Animator _animator;
+    private bool _facingRight = true; // Track the direction the character is facing
 
     public Vector2 FrameInput => _frameInput.Move;
     public event Action<bool, float> GroundedChanged;
@@ -88,6 +89,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
     {
         _rb = GetComponent<Rigidbody2D>();
         _col = GetComponent<CapsuleCollider2D>();
+        _animator = GetComponent<Animator>(); // Initialize the animator
         _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
     }
 
@@ -140,11 +142,14 @@ public class PlayerController : MonoBehaviour, IPlayerController
             _bufferedJumpUsable = true;
             _endedJumpEarly = false;
             GroundedChanged?.Invoke(true, Mathf.Abs(_frameVelocity.y));
+            _animator.SetBool("IsJumping", false); // Reset isJumping when landing
+
         }
         else if (_grounded && !groundHit)
         {
             _grounded = false;
             GroundedChanged?.Invoke(false, 0);
+
         }
 
         Physics2D.queriesStartInColliders = _cachedQueryStartInColliders;
@@ -159,6 +164,9 @@ public class PlayerController : MonoBehaviour, IPlayerController
             ExecuteJump();
             _jumpToConsume = false;
         }
+
+        // Update jumping animation state
+        _animator.SetBool("IsJumping", !_grounded);
     }
 
     private void ExecuteJump()
@@ -168,6 +176,8 @@ public class PlayerController : MonoBehaviour, IPlayerController
         _coyoteUsable = false;
         _frameVelocity.y = jumpPower;
         Jumped?.Invoke();
+        _animator.SetBool("IsJumping", true); // Set isJumping to true when a jump is executed
+
     }
 
     private void HandleDirection()
@@ -180,7 +190,11 @@ public class PlayerController : MonoBehaviour, IPlayerController
         else
         {
             _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, _frameInput.Move.x * maxSpeed, acceleration * Time.fixedDeltaTime);
+            FlipSprite(_frameInput.Move.x);
         }
+
+        // Update the speed for the animator
+        _animator.SetFloat("speed", Mathf.Abs(_frameVelocity.x));
     }
 
     private void HandleGravity()
@@ -201,7 +215,19 @@ public class PlayerController : MonoBehaviour, IPlayerController
     {
         _rb.velocity = _frameVelocity;
     }
+    private void FlipSprite(float moveDirection)
+    {
+        if (moveDirection > 0 && !_facingRight || moveDirection < 0 && _facingRight)
+        {
+            _facingRight = !_facingRight;
+            Vector3 scale = transform.localScale;
+            scale.x *= -1; // Flip the x scale to change direction
+            transform.localScale = scale;
+        }
+    }
 }
+
+
 
 public struct FrameInput
 {
