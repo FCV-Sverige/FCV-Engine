@@ -373,6 +373,7 @@
 "Assets/Scripts/BasicObjectSpawner.cs"
 "Assets/Scripts/Camera movement.cs"
 "Assets/Scripts/ControllerWithScriptableObject.cs"
+"Assets/Scripts/EnemyAI.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/ScriptableStats.cs"
 "Assets/Scripts/TutorialManager.cs"
