@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour, IPlayerController
     [Tooltip("Set this to the layer of your player")]
     public LayerMask playerLayer;
 
+    [Tooltip("Set this to the layer your player is on")]
+    public LayerMask groundLayer;
+
     [Header("Input Settings")]
     [Tooltip("Makes all Input snap to an integer. Prevents gamepads from walking slowly. Recommended value is true to ensure gamepad/keyboard parity.")]
     public bool snapInput = true;
@@ -133,7 +136,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
     private void CheckCollisions()
     {
         Physics2D.queriesStartInColliders = false;
-        bool groundHit = Physics2D.OverlapCircle(_groundCheck.position, groundCheckRadius, ~playerLayer);
+        bool groundHit = Physics2D.OverlapCircle(_groundCheck.position, groundCheckRadius, groundLayer);
 
         if (!_grounded && groundHit)
         {
@@ -143,12 +146,15 @@ public class PlayerController : MonoBehaviour, IPlayerController
             _endedJumpEarly = false;
             GroundedChanged?.Invoke(true, Mathf.Abs(_frameVelocity.y));
             _animator.SetBool("IsJumping", false); // Reset isJumping when landing
+            Debug.Log("Player grounded");
+
 
         }
         else if (_grounded && !groundHit)
         {
             _grounded = false;
             GroundedChanged?.Invoke(false, 0);
+            Debug.Log("Player not grounded");
 
         }
 
@@ -224,6 +230,26 @@ public class PlayerController : MonoBehaviour, IPlayerController
             scale.x *= -1; // Flip the x scale to change direction
             transform.localScale = scale;
         }
+    }
+    public void TakeDamage(int damage)
+    {
+        Health -= damage;
+        if (Health <= 0)
+        {
+            Die();
+        }
+        else
+        {
+            // Optional: Trigger damage animation or effects here
+            Debug.Log("Player took damage, current health: " + Health);
+        }
+    }
+
+    private void Die()
+    {
+        // Handle player death (e.g., play death animation, respawn, etc.)
+        Debug.Log("Player died");
+        // You can add more code here to handle what happens when the player dies
     }
 }
 
