@@ -236,12 +236,8 @@ public class PlayerController : MonoBehaviour, IPlayerController
         Health -= damage;
         if (Health <= 0)
         {
-            Die();
-        }
-        else
-        {
-            // Optional: Trigger damage animation or effects here
-            Debug.Log("Player took damage, current health: " + Health);
+            // Handle player death (e.g., restart level, show game over screen)
+            Debug.Log("Player is dead!");
         }
     }
 
@@ -250,6 +246,14 @@ public class PlayerController : MonoBehaviour, IPlayerController
         // Handle player death (e.g., play death animation, respawn, etc.)
         Debug.Log("Player died");
         // You can add more code here to handle what happens when the player dies
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage(10); // Adjust damage value as needed
+        }
     }
 }
 
