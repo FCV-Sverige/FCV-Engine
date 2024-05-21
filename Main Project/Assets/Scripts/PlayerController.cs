@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour, IPlayerController
     [Tooltip("Set this to the layer your player is on")]
     public LayerMask groundLayer;
 
+    [Tooltip("Set this to the layer of the enemy")]
+    public LayerMask enemyLayer; 
+
     [Header("Input Settings")]
     [Tooltip("Makes all Input snap to an integer. Prevents gamepads from walking slowly. Recommended value is true to ensure gamepad/keyboard parity.")]
     public bool snapInput = true;
@@ -66,6 +69,8 @@ public class PlayerController : MonoBehaviour, IPlayerController
     public float jumpBuffer = 0.2f;
 
     [SerializeField] private Transform _groundCheck;  // Transform indicating where to check for ground
+    public Transform _respawnPosition;
+
 
     private Rigidbody2D _rb;
     private CapsuleCollider2D _col;
@@ -136,7 +141,9 @@ public class PlayerController : MonoBehaviour, IPlayerController
     private void CheckCollisions()
     {
         Physics2D.queriesStartInColliders = false;
-        bool groundHit = Physics2D.OverlapCircle(_groundCheck.position, groundCheckRadius, groundLayer);
+        // Combine the ground and enemy layers in the ground check
+        LayerMask combinedLayerMask = groundLayer | enemyLayer;
+        bool groundHit = Physics2D.OverlapCircle(_groundCheck.position, groundCheckRadius, combinedLayerMask);
 
         if (!_grounded && groundHit)
         {
@@ -146,16 +153,13 @@ public class PlayerController : MonoBehaviour, IPlayerController
             _endedJumpEarly = false;
             GroundedChanged?.Invoke(true, Mathf.Abs(_frameVelocity.y));
             _animator.SetBool("IsJumping", false); // Reset isJumping when landing
-            Debug.Log("Player grounded");
-
-
+            //Debug.Log("Player grounded");
         }
         else if (_grounded && !groundHit)
         {
             _grounded = false;
             GroundedChanged?.Invoke(false, 0);
-            Debug.Log("Player not grounded");
-
+            //Debug.Log("Player not grounded");
         }
 
         Physics2D.queriesStartInColliders = _cachedQueryStartInColliders;
@@ -183,7 +187,6 @@ public class PlayerController : MonoBehaviour, IPlayerController
         _frameVelocity.y = jumpPower;
         Jumped?.Invoke();
         _animator.SetBool("IsJumping", true); // Set isJumping to true when a jump is executed
-
     }
 
     private void HandleDirection()
@@ -221,6 +224,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
     {
         _rb.velocity = _frameVelocity;
     }
+
     private void FlipSprite(float moveDirection)
     {
         if (moveDirection > 0 && !_facingRight || moveDirection < 0 && _facingRight)
@@ -231,13 +235,16 @@ public class PlayerController : MonoBehaviour, IPlayerController
             transform.localScale = scale;
         }
     }
+
     public void TakeDamage(int damage)
     {
+        Debug.Log("Player took damage: " + damage);
+
         Health -= damage;
         if (Health <= 0)
         {
             // Handle player death (e.g., restart level, show game over screen)
-            Debug.Log("Player is dead!");
+            Die();
         }
     }
 
@@ -245,7 +252,9 @@ public class PlayerController : MonoBehaviour, IPlayerController
     {
         // Handle player death (e.g., play death animation, respawn, etc.)
         Debug.Log("Player died");
-        // You can add more code here to handle what happens when the player dies
+        transform.position = _respawnPosition.position;
+        Health = 100; // Reset health or other necessary states
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -254,10 +263,12 @@ public class PlayerController : MonoBehaviour, IPlayerController
         {
             TakeDamage(10); // Adjust damage value as needed
         }
+        if (collision.gameObject.CompareTag("FallDetector"))
+        {
+            Die();
+        }
     }
 }
-
-
 
 public struct FrameInput
 {

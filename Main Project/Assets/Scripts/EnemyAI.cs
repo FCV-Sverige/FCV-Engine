@@ -22,7 +22,6 @@ public class EnemyPatrol : MonoBehaviour
 
     private bool facingRight = true; // To keep track of the sprite direction
 
-
     private Rigidbody2D rb;
 
     void Start()
@@ -34,8 +33,8 @@ public class EnemyPatrol : MonoBehaviour
 
     void Update()
     {
-        Patrol();
         CheckGroundStatus();
+        Patrol();
     }
 
     void Patrol()
@@ -52,6 +51,7 @@ public class EnemyPatrol : MonoBehaviour
         // Apply movement
         rb.velocity = new Vector2(direction.x * patrolSpeed, rb.velocity.y);
 
+        // Flip sprite based on movement direction
         if (direction.x > 0 && !facingRight)
         {
             Flip();
@@ -61,7 +61,7 @@ public class EnemyPatrol : MonoBehaviour
             Flip();
         }
 
-        if (Vector2.Distance(transform.position, patrolPoint.position) < 0.1f)
+        if (Vector2.Distance(transform.position, patrolPoint.position) < 0.2f) // Adjusted distance tolerance
         {
             waitTimer -= Time.deltaTime;
             if (waitTimer <= 0f)
@@ -99,7 +99,7 @@ public class EnemyPatrol : MonoBehaviour
 
     bool IsObstacleInFront()
     {
-        Vector2 direction = transform.localScale.x > 0 ? Vector2.right : Vector2.left;
+        Vector2 direction = facingRight ? Vector2.right : Vector2.left;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, obstacleCheckDistance, groundLayer);
         Debug.DrawRay(transform.position, direction * obstacleCheckDistance, Color.red); // Visualize raycast
         return hit.collider != null;
@@ -110,17 +110,17 @@ public class EnemyPatrol : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-            if (player != null)
-            {
-                player.TakeDamage(damage);
-            }
-        }
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Player"))
+    //    {
+    //        PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+    //        if (player != null)
+    //        {
+    //            player.TakeDamage(damage);
+    //        }
+    //    }
+    //}
 
     void OnDrawGizmosSelected()
     {
