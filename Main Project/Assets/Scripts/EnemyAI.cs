@@ -23,18 +23,30 @@ public class EnemyPatrol : MonoBehaviour
     private bool facingRight = true; // To keep track of the sprite direction
 
     private Rigidbody2D rb;
+    private PlayerController playerController;
+
 
     void Start()
     {
         currentPatrolIndex = 0;
         waitTimer = waitTimeAtPoint;
         rb = GetComponent<Rigidbody2D>();
+        playerController = FindObjectOfType<PlayerController>(); // Find the player controller in the scene
     }
 
     void Update()
     {
         CheckGroundStatus();
         Patrol();
+
+        if (playerController != null && playerController.gameObject.activeInHierarchy)
+        {
+            bool enemyHit = Physics2D.OverlapCircle(playerController._groundCheck.position, playerController.groundCheckRadius, playerController.enemyLayer);
+            if (enemyHit)
+            {
+                Die();
+            }
+        }
     }
 
     void Patrol()
@@ -110,17 +122,11 @@ public class EnemyPatrol : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Player"))
-    //    {
-    //        PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-    //        if (player != null)
-    //        {
-    //            player.TakeDamage(damage);
-    //        }
-    //    }
-    //}
+
+    void Die()
+    {
+        Destroy(gameObject);
+    }
 
     void OnDrawGizmosSelected()
     {

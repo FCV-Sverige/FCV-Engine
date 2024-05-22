@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
     public LayerMask groundLayer;
 
     [Tooltip("Set this to the layer of the enemy")]
-    public LayerMask enemyLayer; 
+    public LayerMask enemyLayer;
 
     [Header("Input Settings")]
     [Tooltip("Makes all Input snap to an integer. Prevents gamepads from walking slowly. Recommended value is true to ensure gamepad/keyboard parity.")]
@@ -68,9 +68,8 @@ public class PlayerController : MonoBehaviour, IPlayerController
     [Tooltip("The amount of time we buffer a jump. This allows jump input before actually hitting the ground")]
     public float jumpBuffer = 0.2f;
 
-    [SerializeField] private Transform _groundCheck;  // Transform indicating where to check for ground
+    [SerializeField] public Transform _groundCheck;  // Transform indicating where to check for ground
     public Transform _respawnPosition;
-
 
     private Rigidbody2D _rb;
     private CapsuleCollider2D _col;
