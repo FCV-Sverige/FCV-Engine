@@ -235,16 +235,32 @@ public class PlayerController : MonoBehaviour, IPlayerController
         }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage/*, Vector2 hitDirection*/)
     {
         Debug.Log("Player took damage: " + damage);
 
         Health -= damage;
+        _animator.SetBool("IsHit", true); // Set isHit to true when taking damage
+
+        // Apply knockback
+        //_rb.AddForce(hitDirection * -2000f); // Adjust the force value as needed
+
         if (Health <= 0)
         {
             // Handle player death (e.g., restart level, show game over screen)
             Die();
         }
+        else
+        {
+            // Start coroutine to reset the IsHit animation
+            StartCoroutine(ResetHitAnimation());
+        }
+    }
+
+    private System.Collections.IEnumerator ResetHitAnimation()
+    {
+        yield return new WaitForSeconds(0.5f); // Wait for 0.5 seconds (adjust as needed)
+        _animator.SetBool("IsHit", false);
     }
 
     private void Die()
@@ -253,14 +269,15 @@ public class PlayerController : MonoBehaviour, IPlayerController
         Debug.Log("Player died");
         transform.position = _respawnPosition.position;
         Health = 100; // Reset health or other necessary states
-
+        _animator.SetBool("IsHit", false); // Reset IsHit on respawn
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            TakeDamage(10); // Adjust damage value as needed
+            //Vector2 hitDirection = (collision.transform.position - transform.position).normalized;
+            TakeDamage(10/*, hitDirection*/); // Adjust damage value as needed
         }
         if (collision.gameObject.CompareTag("FallDetector"))
         {
