@@ -166,6 +166,7 @@ m_ResolvedPackages:
     - 10.0.3
     - 10.1.0
     - 10.1.1
+    - 10.1.2
     compatible:
     - 9.1.0
     - 9.1.1
@@ -654,6 +655,7 @@ m_ResolvedPackages:
     - 10.0.2
     - 10.0.3
     - 10.0.4
+    - 10.0.5
     compatible:
     - 9.0.2
     - 9.0.3
@@ -4278,6 +4280,7 @@ m_ResolvedPackages:
     - 9.0.2
     - 9.0.3
     - 9.0.4
+    - 9.0.5
     compatible:
     - 8.0.2
     recommended: 8.0.2
