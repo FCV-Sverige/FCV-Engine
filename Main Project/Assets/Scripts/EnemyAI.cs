@@ -64,11 +64,7 @@ public class EnemyPatrol : MonoBehaviour
         rb.velocity = new Vector2(direction.x * patrolSpeed, rb.velocity.y);
 
         // Flip sprite based on movement direction
-        if (direction.x > 0 && !facingRight)
-        {
-            Flip();
-        }
-        else if (direction.x < 0 && facingRight)
+        if ((direction.x > 0) != facingRight)
         {
             Flip();
         }

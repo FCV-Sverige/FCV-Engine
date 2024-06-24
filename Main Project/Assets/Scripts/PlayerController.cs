@@ -207,16 +207,10 @@ public class PlayerController : MonoBehaviour, IPlayerController
 
     private void HandleGravity()
     {
-        if (_grounded && _frameVelocity.y <= 0f)
-        {
-            _frameVelocity.y = groundingForce;
-        }
-        else
-        {
-            var inAirGravity = fallAcceleration;
-            if (_endedJumpEarly && _frameVelocity.y > 0) inAirGravity *= jumpEndEarlyGravityModifier;
-            _frameVelocity.y = Mathf.MoveTowards(_frameVelocity.y, -maxFallSpeed, inAirGravity * Time.fixedDeltaTime);
-        }
+        // Optimized gravity handling code
+        _frameVelocity.y = _grounded && _frameVelocity.y <= 0f
+            ? groundingForce
+            : Mathf.MoveTowards(_frameVelocity.y, -maxFallSpeed, (_endedJumpEarly && _frameVelocity.y > 0 ? fallAcceleration * jumpEndEarlyGravityModifier : fallAcceleration) * Time.fixedDeltaTime);
     }
 
     private void ApplyMovement()
