@@ -78,17 +78,17 @@ class Custom2DCollider : MonoBehaviour
 [CustomEditor(typeof(Custom2DCollider))]
 public class Custom2DColliderEditor : Editor
 {
-    private List<SerializedProperty> events;
-    private SerializedProperty isTriggerProperty;
-    private SerializedProperty checkItemsProperty;
-    private SerializedProperty itemsProperty;
-    private SerializedProperty needAllItemsProperty;
+    private List<SerializedProperty> _events;
+    private SerializedProperty _isTriggerProperty;
+    private SerializedProperty _checkItemsProperty;
+    private SerializedProperty _itemsProperty;
+    private SerializedProperty _needAllItemsProperty;
     private void OnEnable()
     {
-        isTriggerProperty = serializedObject.FindProperty("isTrigger");
-        checkItemsProperty = serializedObject.FindProperty("checkItems");
-        itemsProperty = serializedObject.FindProperty("itemsToCheck");
-        needAllItemsProperty = serializedObject.FindProperty("needAllItems");
+        _isTriggerProperty = serializedObject.FindProperty("isTrigger");
+        _checkItemsProperty = serializedObject.FindProperty("checkItems");
+        _itemsProperty = serializedObject.FindProperty("itemsToCheck");
+        _needAllItemsProperty = serializedObject.FindProperty("needAllItems");
     }
 
     public override void OnInspectorGUI()
@@ -98,17 +98,17 @@ public class Custom2DColliderEditor : Editor
         
         AssignEvents();
 
-        EditorGUILayout.PropertyField(isTriggerProperty);
+        EditorGUILayout.PropertyField(_isTriggerProperty);
 
-        EditorGUILayout.PropertyField(checkItemsProperty);
+        EditorGUILayout.PropertyField(_checkItemsProperty);
 
-        if (checkItemsProperty.boolValue)
+        if (_checkItemsProperty.boolValue)
         {
-            EditorGUILayout.PropertyField(needAllItemsProperty);
-            EditorGUILayout.PropertyField(itemsProperty);
+            EditorGUILayout.PropertyField(_needAllItemsProperty);
+            EditorGUILayout.PropertyField(_itemsProperty);
         }
         
-        foreach (var eventProperty in events)
+        foreach (var eventProperty in _events)
         {
             EditorGUILayout.PropertyField(eventProperty);
         }
@@ -118,17 +118,17 @@ public class Custom2DColliderEditor : Editor
 
     private void AssignEvents()
     {
-        events = new();
+        _events = new();
 
-        if (isTriggerProperty.boolValue)
+        if (_isTriggerProperty.boolValue)
         {
-            events.Add(serializedObject.FindProperty("onTriggerEnter"));
-            events.Add(serializedObject.FindProperty("onTriggerExit"));
+            _events.Add(serializedObject.FindProperty("onTriggerEnter"));
+            _events.Add(serializedObject.FindProperty("onTriggerExit"));
         }
         else
         {
-            events.Add(serializedObject.FindProperty("onCollisionEnter"));
-            events.Add(serializedObject.FindProperty("onCollisionExit"));
+            _events.Add(serializedObject.FindProperty("onCollisionEnter"));
+            _events.Add(serializedObject.FindProperty("onCollisionExit"));
         }
 
     }
