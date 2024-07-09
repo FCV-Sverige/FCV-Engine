@@ -10,6 +10,9 @@ using UnityEngine.Events;
 class Custom2DCollider : MonoBehaviour
 {
     [HideInInspector, SerializeField] private bool isTrigger = false;
+    [HideInInspector, SerializeField] private bool checkItems = false;
+    [HideInInspector, SerializeField] private bool needAllItems = false;
+    [HideInInspector, SerializeField] private List<string> itemsToCheck;
     
     [HideInInspector, SerializeField] private UnityEvent onCollisionEnter;
 
@@ -18,11 +21,7 @@ class Custom2DCollider : MonoBehaviour
     [HideInInspector, SerializeField] private UnityEvent onTriggerEnter;
     
     [HideInInspector, SerializeField] private UnityEvent onTriggerExit;
-
-    public void Test()
-    {
-        Debug.Log("Test print");
-    }
+    
 
     private void Awake()
     {
@@ -34,22 +33,45 @@ class Custom2DCollider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        onTriggerEnter.Invoke();
+        FireEvent(ref onTriggerEnter, other.gameObject);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        onTriggerExit.Invoke();
+        FireEvent(ref onTriggerExit, other.gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        onCollisionEnter.Invoke();
+        FireEvent(ref onCollisionEnter, other.gameObject);
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        onCollisionExit.Invoke();
+        FireEvent(ref onCollisionExit, other.gameObject);
+    }
+
+    private void FireEvent(ref UnityEvent unityEvent, GameObject collidingObject)
+    {
+        if (!checkItems)
+            unityEvent.Invoke();
+        
+        if (collidingObject.TryGetComponent(out Inventory inventory) && CheckItems(inventory))
+            unityEvent.Invoke();
+    }
+
+    private bool CheckItems(Inventory inventory)
+    {
+        foreach (var item in itemsToCheck)
+        {
+            bool hasItem = inventory.HasItem(item);
+            
+            if (hasItem && !needAllItems) return true;
+
+            if (!hasItem && needAllItems) return false;
+        }
+
+        return true;
     }
 }
 
@@ -58,15 +80,44 @@ public class Custom2DColliderEditor : Editor
 {
     private List<SerializedProperty> events;
     private SerializedProperty isTriggerProperty;
+    private SerializedProperty checkItemsProperty;
+    private SerializedProperty itemsProperty;
+    private SerializedProperty needAllItemsProperty;
     private void OnEnable()
     {
         isTriggerProperty = serializedObject.FindProperty("isTrigger");
+        checkItemsProperty = serializedObject.FindProperty("checkItems");
+        itemsProperty = serializedObject.FindProperty("itemsToCheck");
+        needAllItemsProperty = serializedObject.FindProperty("needAllItems");
     }
 
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
         serializedObject.Update();
+        
+        AssignEvents();
+
+        EditorGUILayout.PropertyField(isTriggerProperty);
+
+        EditorGUILayout.PropertyField(checkItemsProperty);
+
+        if (checkItemsProperty.boolValue)
+        {
+            EditorGUILayout.PropertyField(needAllItemsProperty);
+            EditorGUILayout.PropertyField(itemsProperty);
+        }
+        
+        foreach (var eventProperty in events)
+        {
+            EditorGUILayout.PropertyField(eventProperty);
+        }
+
+        serializedObject.ApplyModifiedProperties();
+    }
+
+    private void AssignEvents()
+    {
         events = new();
 
         if (isTriggerProperty.boolValue)
@@ -80,13 +131,5 @@ public class Custom2DColliderEditor : Editor
             events.Add(serializedObject.FindProperty("onCollisionExit"));
         }
 
-        EditorGUILayout.PropertyField(isTriggerProperty);
-        
-        foreach (var eventProperty in events)
-        {
-            EditorGUILayout.PropertyField(eventProperty);
-        }
-
-        serializedObject.ApplyModifiedProperties();
     }
 }
