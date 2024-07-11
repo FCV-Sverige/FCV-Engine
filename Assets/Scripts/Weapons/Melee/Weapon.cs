@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] private KeyCode fireButton;
-    [SerializeField] private bool useLeftClick = false;
+    [SerializeField] protected bool useLeftClick = false;
     [SerializeField] protected float damage;
     [SerializeField] protected float cooldown;
 
