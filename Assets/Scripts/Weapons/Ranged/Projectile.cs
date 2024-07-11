@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] private float speed = 10;
 
-    private float lifetime = 5;
+    [SerializeField] private float lifetime = 5;
 
     public UnityEvent<EnemyPatrol> hitAction;
     private void Awake()
@@ -32,11 +32,10 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("Trigger");
         if (other.gameObject.TryGetComponent(out EnemyPatrol enemyPatrol))
         {
             hitAction.Invoke(enemyPatrol);
-            Destroy(gameObject);
         }
+        Destroy(gameObject);
     }
 }
