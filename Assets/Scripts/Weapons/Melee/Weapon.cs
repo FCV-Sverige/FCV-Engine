@@ -20,6 +20,11 @@ public class Weapon : MonoBehaviour
         fireAction.AddListener(Fire);
     }
 
+    protected virtual void OnDisable()
+    {
+        fireAction.RemoveListener(Fire);
+    }
+
     protected virtual void Update()
     {
         currentCooldown -= currentCooldown >= 0 ? Time.deltaTime : 0;
