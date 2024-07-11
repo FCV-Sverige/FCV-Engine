@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="made useLeftClick protected for ranged weapons">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sword.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sword.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/Weapon.cs" afterDir="false" />
+    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="Updated scene">
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/Projectile.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1720516883607</updated>
       <workItem from="1720516886074" duration="347000" />
-      <workItem from="1720592516333" duration="35172000" />
+      <workItem from="1720592516333" duration="35497000" />
     </task>
     <task id="LOCAL-00001" summary="fixed wiped rule tile :)">
       <option name="closed" value="true" />
@@ -169,7 +166,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720703757051</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="made ranged weapon, right now only aim with mouse">
+      <option name="closed" value="true" />
+      <created>1720706349529</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720706349529</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updated scene">
+      <option name="closed" value="true" />
+      <created>1720706391517</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720706391517</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +200,8 @@
     <MESSAGE value="Added Weapon base class along with a basic melee weapon" />
     <MESSAGE value="removed unused library" />
     <MESSAGE value="made useLeftClick protected for ranged weapons" />
-    <option name="LAST_COMMIT_MESSAGE" value="made useLeftClick protected for ranged weapons" />
+    <MESSAGE value="made ranged weapon, right now only aim with mouse" />
+    <MESSAGE value="Updated scene" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated scene" />
   </component>
 </project>
