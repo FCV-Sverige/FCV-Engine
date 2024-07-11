@@ -7,7 +7,6 @@ public class RangedWeapon : Weapon
     [SerializeField] private Transform firepoint;
 
     private SpriteRenderer spriteRenderer;
-
     private void Awake()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -29,15 +28,14 @@ public class RangedWeapon : Weapon
         base.Update();
         transform.rotation = GetRotationToMouse();
         
-        if (Vector2.Dot((firepoint.position - transform.parent.position).normalized, Vector2.right) > 0)
-        {
-            spriteRenderer.flipY = false;
-        }
-        else
-        {
-            spriteRenderer.flipY = true;
-        }
+        FlipGunSprite();
     }
+
+    private void FlipGunSprite()
+    {
+        spriteRenderer.flipY = !(Vector2.Dot((firepoint.position - transform.parent.position).normalized, Vector2.right) > 0);
+    }
+
     private Quaternion GetRotationToMouse()
     {
         Vector2 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
