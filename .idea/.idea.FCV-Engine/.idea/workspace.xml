@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="Updated scene">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/Projectile.cs" afterDir="false" />
+    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="made sprite flipping into one liner">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +28,11 @@
     <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Weapons/Melee/Weapon.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Weapons/Ranged/Projectile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -108,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1720516883607</updated>
       <workItem from="1720516886074" duration="347000" />
-      <workItem from="1720592516333" duration="35497000" />
+      <workItem from="1720592516333" duration="36843000" />
     </task>
     <task id="LOCAL-00001" summary="fixed wiped rule tile :)">
       <option name="closed" value="true" />
@@ -182,7 +185,31 @@
       <option name="project" value="LOCAL" />
       <updated>1720706391517</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added lifetime to Projectile.cs">
+      <option name="closed" value="true" />
+      <created>1720706984058</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720706984058</updated>
+    </task>
+    <task id="LOCAL-00011" summary="workspace commit">
+      <option name="closed" value="true" />
+      <created>1720706996696</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720706996696</updated>
+    </task>
+    <task id="LOCAL-00012" summary="made sprite flipping into one liner">
+      <option name="closed" value="true" />
+      <created>1720707877250</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720707877250</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +229,9 @@
     <MESSAGE value="made useLeftClick protected for ranged weapons" />
     <MESSAGE value="made ranged weapon, right now only aim with mouse" />
     <MESSAGE value="Updated scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated scene" />
+    <MESSAGE value="Added lifetime to Projectile.cs" />
+    <MESSAGE value="workspace commit" />
+    <MESSAGE value="made sprite flipping into one liner" />
+    <option name="LAST_COMMIT_MESSAGE" value="made sprite flipping into one liner" />
   </component>
 </project>
