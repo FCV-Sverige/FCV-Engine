@@ -33,7 +33,7 @@ public class RangedWeapon : Weapon
 
     private void FlipGunSprite()
     {
-        spriteRenderer.flipY = !(Vector2.Dot((firepoint.position - transform.parent.position).normalized, Vector2.right) > 0);
+        spriteRenderer.flipY = !(Vector2.Dot(transform.up, Vector2.up) > 0);
     }
 
     private Quaternion GetRotationToMouse()
