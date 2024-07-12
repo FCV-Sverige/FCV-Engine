@@ -15,6 +15,8 @@ public class Weapon : MonoBehaviour
 
     private float currentCooldown = 0;
 
+    public bool Equipped;
+
     protected virtual void OnEnable()
     {
         fireAction.AddListener(Fire);
@@ -27,6 +29,8 @@ public class Weapon : MonoBehaviour
 
     protected virtual void Update()
     {
+        if (!Equipped) return;
+        
         currentCooldown -= currentCooldown >= 0 ? Time.deltaTime : 0;
         bool leftClick = useLeftClick && Input.GetMouseButtonDown(0);
         if ((Input.GetKeyDown(fireButton) || leftClick) && CanFire()) fireAction.Invoke();

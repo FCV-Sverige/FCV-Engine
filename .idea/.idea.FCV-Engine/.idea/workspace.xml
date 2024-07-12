@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="made sprite flipping into one liner">
+    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="added offset to overlapBox for ground check">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/MeleeWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/MeleeWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,20 +23,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/92/4caccb05/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/95/47ee5619/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/d1/0a4cfee7/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Palettes/GroundRuleTile.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Palettes/GroundRuleTile.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Interactables/Custom2DCollider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Interactables/Custom2DCollider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Weapons/Melee/Weapon.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Weapons/Ranged/Projectile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Movement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/ProjectSettings/TagManager.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -44,26 +38,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Inspections-C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Inspections-C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Christian\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Christian\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Christian\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Christian\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Christian\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Christian\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="E:\Unity\Unity Editors\2022.3.22f1\Editor\Unity.exe" />
@@ -111,7 +105,8 @@
       <option name="presentableId" value="Default" />
       <updated>1720516883607</updated>
       <workItem from="1720516886074" duration="347000" />
-      <workItem from="1720592516333" duration="36843000" />
+      <workItem from="1720592516333" duration="37615000" />
+      <workItem from="1720764771586" duration="6090000" />
     </task>
     <task id="LOCAL-00001" summary="fixed wiped rule tile :)">
       <option name="closed" value="true" />
@@ -209,7 +204,31 @@
       <option name="project" value="LOCAL" />
       <updated>1720707877250</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="more efficent way of calculating if flip is needed">
+      <option name="closed" value="true" />
+      <created>1720708077777</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720708077777</updated>
+    </task>
+    <task id="LOCAL-00014" summary="scene update">
+      <option name="closed" value="true" />
+      <created>1720708090143</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720708090143</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added offset to overlapBox for ground check">
+      <option name="closed" value="true" />
+      <created>1720765565020</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1720765565020</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +251,9 @@
     <MESSAGE value="Added lifetime to Projectile.cs" />
     <MESSAGE value="workspace commit" />
     <MESSAGE value="made sprite flipping into one liner" />
-    <option name="LAST_COMMIT_MESSAGE" value="made sprite flipping into one liner" />
+    <MESSAGE value="more efficent way of calculating if flip is needed" />
+    <MESSAGE value="scene update" />
+    <MESSAGE value="added offset to overlapBox for ground check" />
+    <option name="LAST_COMMIT_MESSAGE" value="added offset to overlapBox for ground check" />
   </component>
 </project>

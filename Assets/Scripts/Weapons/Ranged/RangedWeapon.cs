@@ -26,6 +26,8 @@ public class RangedWeapon : Weapon
     protected override void Update()
     {
         base.Update();
+        if (!Equipped) return;
+        
         transform.rotation = GetRotationToMouse();
         
         FlipGunSprite();
