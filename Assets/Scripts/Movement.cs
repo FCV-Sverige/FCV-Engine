@@ -35,7 +35,8 @@ public class Movement : MonoBehaviour
     #endregion
     
     [FormerlySerializedAs("ground")] [SerializeField] LayerMask groundLayer;
-    [SerializeField] private Vector2 overlapBox;
+    [FormerlySerializedAs("overlapBox")] [SerializeField] private Vector2 overlapBoxSize;
+    [SerializeField] private Vector2 overlapBoxOffset;
     [SerializeField] private string horizontalAxisName;
     [SerializeField] private KeyCode jumpButton;
     private Vector2 moveInputs = new Vector2();
@@ -68,8 +69,8 @@ public class Movement : MonoBehaviour
 
         moveInputs.x = Input.GetAxis(horizontalAxisName);
 
-        isGrounded = Physics2D.OverlapBox(transform.position, overlapBox, 0, groundLayer);
-        if (isGrounded)
+        isGrounded = Physics2D.OverlapBox((Vector2)transform.position + overlapBoxOffset, overlapBoxSize, 0, groundLayer);
+        if (isGrounded) 
         {
             lastGroundedTime = jumpCoyoteTime;
             isJumping = false;
@@ -151,6 +152,6 @@ public class Movement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireCube(transform.position, overlapBox);
+        Gizmos.DrawWireCube((Vector2)transform.position + overlapBoxOffset, overlapBoxSize);
     }
 }
