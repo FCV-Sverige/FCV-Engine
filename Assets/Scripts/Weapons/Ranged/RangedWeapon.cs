@@ -26,7 +26,7 @@ public class RangedWeapon : Weapon
     protected override void Update()
     {
         base.Update();
-        if (!Equipped) return;
+        if (!IsEquipped) return;
         
         transform.rotation = GetRotationToMouse();
         
@@ -60,6 +60,5 @@ public class RangedWeapon : Weapon
         
         if (firepoint)
             Gizmos.DrawWireSphere(firepoint.position, .08f);
-        Gizmos.DrawWireSphere(Camera.main.ScreenToWorldPoint(Input.mousePosition), .8f);
     }
 }

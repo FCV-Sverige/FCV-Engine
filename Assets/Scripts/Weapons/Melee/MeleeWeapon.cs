@@ -18,17 +18,32 @@ public class MeleeWeapon : Weapon
 
     private SpriteRenderer parentSpriteRenderer;
     private SpriteRenderer spriteRenderer;
+    private Collider2D collider2D;
 
     private void Awake()
     {
-        parentSpriteRenderer = GetComponentInParent<SpriteRenderer>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        spriteRenderer.enabled = false;
+        collider2D = GetComponent<Collider2D>();
     }
 
     private void LateUpdate()
     {
         lastPosition = transform.position;
+    }
+
+    public override void Equip()
+    {
+        base.Equip();
+        parentSpriteRenderer = GetComponentInParent<SpriteRenderer>();
+        collider2D.enabled = true;
+        spriteRenderer.enabled = false;
+    }
+
+    public override void UnEquip()
+    {
+        base.UnEquip();
+        collider2D.enabled = false;
+        spriteRenderer.enabled = true;
     }
 
     protected override void Fire()
@@ -70,7 +85,7 @@ public class MeleeWeapon : Weapon
             swordTransform.localRotation = rotFromAngle;
             swordTransform.localPosition = lerpPosition;
         
-            yield return new WaitForEndOfFrame();            
+            yield return new WaitForEndOfFrame();       
         }
         
         swordTransform.localRotation = startRotation;

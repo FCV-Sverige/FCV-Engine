@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="added offset to overlapBox for ground check">
+    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="Made WeaponController so that player can pick up and switch weapons">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Palettes/RuleTilePalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Palettes/RuleTilePalette.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/MeleeWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/MeleeWeapon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/Weapon.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/d1/0a4cfee7/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Movement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Weapons/Melee/MeleeWeapon.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -106,7 +109,7 @@
       <updated>1720516883607</updated>
       <workItem from="1720516886074" duration="347000" />
       <workItem from="1720592516333" duration="37615000" />
-      <workItem from="1720764771586" duration="6090000" />
+      <workItem from="1720764771586" duration="10968000" />
     </task>
     <task id="LOCAL-00001" summary="fixed wiped rule tile :)">
       <option name="closed" value="true" />
@@ -228,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720765565020</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Made WeaponController so that player can pick up and switch weapons">
+      <option name="closed" value="true" />
+      <created>1720772191835</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720772191835</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +265,7 @@
     <MESSAGE value="more efficent way of calculating if flip is needed" />
     <MESSAGE value="scene update" />
     <MESSAGE value="added offset to overlapBox for ground check" />
-    <option name="LAST_COMMIT_MESSAGE" value="added offset to overlapBox for ground check" />
+    <MESSAGE value="Made WeaponController so that player can pick up and switch weapons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made WeaponController so that player can pick up and switch weapons" />
   </component>
 </project>

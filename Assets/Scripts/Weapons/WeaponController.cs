@@ -22,7 +22,7 @@ public class WeaponController : MonoBehaviour
     {
         for (int i = 0; i < weapons.Length; i++)
         {
-            if (weapons[i].Equipped | Vector2.Distance(transform.position, weapons[i].transform.position) > pickupDistance) continue;
+            if (weapons[i].IsEquipped | Vector2.Distance(transform.position, weapons[i].transform.position) > pickupDistance) continue;
             
             SetCurrentWeapon(weapons[i]);
         }
@@ -33,13 +33,15 @@ public class WeaponController : MonoBehaviour
     {
         if (equippedWeapon)
         {
-            equippedWeapon.Equipped = false;
+            equippedWeapon.IsEquipped = false;
+            equippedWeapon.UnEquip();
         }
         
         weaponParentTransform.DetachChildren();
         equippedWeapon = weapon;
-        weapon.Equipped = true;
+        weapon.IsEquipped = true;
         weapon.transform.SetParent(weaponParentTransform);
         weapon.transform.localPosition = Vector2.zero;
+        weapon.Equip();
     }
 }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class Weapon : MonoBehaviour
 {
@@ -15,21 +16,22 @@ public class Weapon : MonoBehaviour
 
     private float currentCooldown = 0;
 
-    public bool Equipped;
-
-    protected virtual void OnEnable()
+    public bool IsEquipped;
+    
+    public virtual void Equip()
     {
         fireAction.AddListener(Fire);
     }
 
-    protected virtual void OnDisable()
+    public virtual void UnEquip()
     {
         fireAction.RemoveListener(Fire);
+        transform.position -= (Vector3)Vector2.left * 3;
     }
 
     protected virtual void Update()
     {
-        if (!Equipped) return;
+        if (!IsEquipped) return;
         
         currentCooldown -= currentCooldown >= 0 ? Time.deltaTime : 0;
         bool leftClick = useLeftClick && Input.GetMouseButtonDown(0);
