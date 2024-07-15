@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="Need to work on dropping of weapons but works for now">
+    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="made Custom2DCollider.cs to work with Layers">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Gun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Gun.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/MeleeWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/MeleeWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Melee/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Sword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Sword.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +22,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/95/47ee5619/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/d1/0a4cfee7/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Prefabs/Weapons/Gun.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Prefabs/Weapons/Gun.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Door.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Interactables/Custom2DCollider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Weapons/Melee/MeleeWeapon.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Christian/Documents/FCV-Work/Unity/FCV-Engine/Assets/Scripts/Weapons/Melee/Weapon.cs" root0="SKIP_HIGHLIGHTING" />
@@ -111,7 +110,7 @@
       <workItem from="1720516886074" duration="347000" />
       <workItem from="1720592516333" duration="37615000" />
       <workItem from="1720764771586" duration="11301000" />
-      <workItem from="1721025278419" duration="5887000" />
+      <workItem from="1721025278419" duration="11143000" />
     </task>
     <task id="LOCAL-00001" summary="fixed wiped rule tile :)">
       <option name="closed" value="true" />
@@ -249,7 +248,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720779327581</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Made dropping weapons to be less buggy">
+      <option name="closed" value="true" />
+      <created>1721032060185</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1721032060185</updated>
+    </task>
+    <task id="LOCAL-00019" summary="made Custom2DCollider.cs to work with Layers">
+      <option name="closed" value="true" />
+      <created>1721034927917</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1721034927917</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +292,8 @@
     <MESSAGE value="added offset to overlapBox for ground check" />
     <MESSAGE value="Made WeaponController so that player can pick up and switch weapons" />
     <MESSAGE value="Need to work on dropping of weapons but works for now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Need to work on dropping of weapons but works for now" />
+    <MESSAGE value="Made dropping weapons to be less buggy" />
+    <MESSAGE value="made Custom2DCollider.cs to work with Layers" />
+    <option name="LAST_COMMIT_MESSAGE" value="made Custom2DCollider.cs to work with Layers" />
   </component>
 </project>
