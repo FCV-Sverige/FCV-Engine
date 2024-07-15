@@ -63,7 +63,7 @@ public class MeleeWeapon : Weapon
         Transform swordTransform = transform;
         float direction = SignedDirection; 
 
-        while (t < 1)
+        while (t < 1 && IsEquipped)
         {
             t = (Time.time - swingAnimation.StartTime) / swingAnimation.SwingTime;
             t = Mathf.Clamp01(t);
@@ -89,7 +89,7 @@ public class MeleeWeapon : Weapon
         
         swordTransform.localRotation = startRotation;
         swordTransform.localPosition = startPosition;
-        spriteRenderer.enabled = false;
+        spriteRenderer.enabled = !IsEquipped;
         StopCoroutine(Swing());
     }
 }
