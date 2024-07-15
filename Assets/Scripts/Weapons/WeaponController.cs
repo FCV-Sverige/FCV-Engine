@@ -22,7 +22,7 @@ public class WeaponController : MonoBehaviour
     {
         for (int i = 0; i < weapons.Length; i++)
         {
-            if (weapons[i].IsEquipped | Vector2.Distance(transform.position, weapons[i].transform.position) > pickupDistance) continue;
+            if (!weapons[i].CanBeEquipped | weapons[i].IsEquipped | Vector2.Distance(transform.position, weapons[i].transform.position) > pickupDistance) continue;
             
             SetCurrentWeapon(weapons[i]);
         }

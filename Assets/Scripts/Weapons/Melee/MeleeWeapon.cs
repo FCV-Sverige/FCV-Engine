@@ -18,12 +18,11 @@ public class MeleeWeapon : Weapon
 
     private SpriteRenderer parentSpriteRenderer;
     private SpriteRenderer spriteRenderer;
-    private Collider2D collider2D;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        collider2D = GetComponent<Collider2D>();
     }
 
     private void LateUpdate()
@@ -35,14 +34,14 @@ public class MeleeWeapon : Weapon
     {
         base.Equip();
         parentSpriteRenderer = GetComponentInParent<SpriteRenderer>();
-        collider2D.enabled = true;
+        weaponCollider2D.enabled = true;
+        weaponCollider2D.isTrigger = true;
         spriteRenderer.enabled = false;
     }
 
     public override void UnEquip()
     {
         base.UnEquip();
-        collider2D.enabled = false;
         spriteRenderer.enabled = true;
     }
 

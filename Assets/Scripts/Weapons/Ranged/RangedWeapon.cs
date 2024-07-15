@@ -7,8 +7,9 @@ public class RangedWeapon : Weapon
     [SerializeField] private Transform firepoint;
 
     private SpriteRenderer spriteRenderer;
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
