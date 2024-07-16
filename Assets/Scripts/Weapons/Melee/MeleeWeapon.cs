@@ -92,6 +92,14 @@ public class MeleeWeapon : Weapon
         spriteRenderer.enabled = !IsEquipped;
         StopCoroutine(Swing());
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.TryGetComponent(out EnemyPatrol enemyPatrol))
+        {
+            Destroy(enemyPatrol.gameObject);
+        }
+    }
 }
 
 [Serializable]
