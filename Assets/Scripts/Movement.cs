@@ -6,6 +6,8 @@ using UnityEngine.Serialization;
 
 public class Movement : MonoBehaviour
 {
+    public static Transform PlayerTransform { get; private set; } 
+    
     #region Run
     [Header("Run Settings")]
     [Space(10)]
@@ -53,6 +55,7 @@ public class Movement : MonoBehaviour
 
     private void Awake()
     {
+        PlayerTransform = transform;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
