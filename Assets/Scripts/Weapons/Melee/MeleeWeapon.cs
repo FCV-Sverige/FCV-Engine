@@ -95,9 +95,9 @@ public class MeleeWeapon : Weapon
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.TryGetComponent(out EnemyPatrol enemyPatrol))
+        if (other.TryGetComponent(out PatrolEnemy patrolEnemy))
         {
-            Destroy(enemyPatrol.gameObject);
+            Destroy(patrolEnemy.gameObject);
         }
     }
 }

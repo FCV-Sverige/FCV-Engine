@@ -12,8 +12,7 @@ public class PatrolEnemy : MonoBehaviour
     [SerializeField] private float patrolSpeed;
     [SerializeField] private float stopDistance = 0.1f; // Distance to stop at the point
 
-    [Space(15)] [Header("Chase Options"), Space(5)] 
-    [SerializeField] private float chaseSpeed = 5;
+    [Space(15)] [Header("Detection Options"), Space(5)] 
     [SerializeField] private float detectionRadius = 5;
     [SerializeField, Range(0, 360)] private float detectionAngle = 360;
 

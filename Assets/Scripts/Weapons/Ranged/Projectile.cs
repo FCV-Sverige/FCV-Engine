@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
 
     [SerializeField] private float lifetime = 5;
 
-    public UnityEvent<EnemyPatrol> hitAction;
+    public UnityEvent<PatrolEnemy> hitAction;
     private void Awake()
     {
         GetComponent<Rigidbody2D>().isKinematic = true;
@@ -32,9 +32,9 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.TryGetComponent(out EnemyPatrol enemyPatrol))
+        if (other.gameObject.TryGetComponent(out PatrolEnemy patrolEnemy))
         {
-            hitAction.Invoke(enemyPatrol);
+            hitAction.Invoke(patrolEnemy);
         }
         Destroy(gameObject);
     }
