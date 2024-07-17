@@ -25,15 +25,18 @@ public class PatrolEnemy : MonoBehaviour
 
     private Vector3 MostLeft => patrolPoints.OrderBy(v => v.x).First();
     private Vector3 MostRight => patrolPoints.OrderBy(v => v.x).Last();
-    private Vector3 CurrentTarget => movingForward ? MostLeft : MostRight;
+    private Vector3 CurrentTarget => chasing ? patrolPoints[0] : movingForward ? MostLeft : MostRight;
 
     private float Direction => Mathf.Sign((chasing ? playerTransform.position.x : CurrentTarget.x) - transform.position.x);
 
     private List<Vector3> patrolPoints;
 
     private Transform playerTransform;
+
+    private PlatformFinder platformFinder;
     private void Start()
     {
+        platformFinder = PlatformFinder.Instance;
         playerTransform = Movement.PlayerTransform;
         rb = GetComponent<Rigidbody2D>();
         UpdatePatrolPoints();
@@ -42,19 +45,29 @@ public class PatrolEnemy : MonoBehaviour
 
     private void UpdatePatrolPoints()
     {
-        patrolPoints = PlatformFinder.Instance.GetClosestPlatform(transform.position).Select(x => PlatformFinder.Instance.TileMap.GetCellCenterWorld(x)).ToList();
+        patrolPoints = platformFinder.GetClosestPlatform(transform.position).Select(x => platformFinder.TileMap.GetCellCenterWorld(x)).ToList();
     }
 
     private void Update()
     {
+        if (patrolPoints is {Count: 0}) return;
+        
         if (IsWithinFOVAndRange(transform.position, playerTransform.position, Vector3.right * Direction, detectionRadius, detectionAngle))
         {
             chasing = true;
-            rb.velocity = Vector3.right * (Direction * chaseSpeed);
-            return;
+            if (patrolPoints is {Count : >1})
+            {
+                patrolPoints.Clear();
+                patrolPoints.Add(Vector3.one);
+            }
+
+            patrolPoints[0] = platformFinder.TileMap.GetCellCenterWorld(platformFinder.GetPlatformBelow(Movement.PlayerTransform.position) + Vector3Int.up);
+        }
+        else
+        {
+            chasing = false;
         }
 
-        chasing = false;
         PatrolMovement();
     }
 
@@ -100,7 +113,6 @@ public class PatrolEnemy : MonoBehaviour
         if (patrolPoints is { Count: > 0 })
             Handles.DrawPolyLine(patrolPoints.ToArray());
         
-        if (Application.isPlaying) return;
         
         // Draw the range as a sphere
         Gizmos.color = Color.yellow;
@@ -112,7 +124,7 @@ public class PatrolEnemy : MonoBehaviour
         color.a = .1f;
         Handles.color = color;
 
-        DrawFOV(transform.position, Vector2.right, detectionRadius, detectionAngle);
+        DrawFOV(transform.position, Application.isPlaying ? Vector2.right * Direction: Vector2.right, detectionRadius, detectionAngle);
     }
     
     // Helper function to draw the FOV as a frustum
@@ -154,11 +166,6 @@ public class PatrolEnemy : MonoBehaviour
         float angle = Vector3.Angle(normalizedDirection, normalizedToTarget);
 
         // Check if the target is within the FOV angle
-        if (angle <= fovAngle / 2)
-        {
-            return true;
-        }
-
-        return false;
+        return angle <= fovAngle / 2;
     }
 }

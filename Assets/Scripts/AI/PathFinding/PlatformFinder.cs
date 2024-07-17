@@ -17,15 +17,15 @@ public class PlatformFinder : MonoBehaviour
 
     public Vector3 CellHalfSize => tileMap ? tileMap.cellSize / 2f : Vector3.zero;
     public Tilemap TileMap => tileMap;
+    private Vector3Int MaxV3Int => new Vector3Int(int.MaxValue, int.MaxValue, int.MaxValue);
     
     private void Awake()
     {
         SingletonCheck();
     }
-    
-    public List<Vector3Int> GetClosestPlatform(Vector3 position)
+
+    public Vector3Int GetPlatformBelow(Vector3 position)
     {
-        List<Vector3Int> platformPositions = new();
         int i = 0;
         while (!tileMap.HasTile(tileMap.WorldToCell(position)))
         {
@@ -34,13 +34,22 @@ public class PlatformFinder : MonoBehaviour
             if (i == 9)
             {
                 print("Null");
-                return null;
+                return MaxV3Int;
             }
 
             i++;
         }
         
-        Vector3Int tilePosition = tileMap.WorldToCell(position);
+        return tileMap.WorldToCell(position);
+    }
+    
+    public List<Vector3Int> GetClosestPlatform(Vector3 position)
+    {
+        List<Vector3Int> platformPositions = new();
+        
+        Vector3Int tilePosition = GetPlatformBelow(position);
+
+        if (tilePosition == MaxV3Int) return null;
 
         platformPositions.Add(tilePosition);
 
