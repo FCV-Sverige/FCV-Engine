@@ -133,6 +133,7 @@ public class Movement : MonoBehaviour
     private void SetAnimation()
     {
         animator.SetFloat("speed", Mathf.Abs(moveInputs.x));
+        animator.SetBool("IsJumping", isJumping);
     }
 
     private bool canJump()
