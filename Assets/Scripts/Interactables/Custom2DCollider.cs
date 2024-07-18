@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -15,9 +16,13 @@ class Custom2DCollider : MonoBehaviour
     
     [HideInInspector, SerializeField] private UnityEvent onCollisionEnter;
 
+    [HideInInspector, SerializeField] private UnityEvent onCollisionStay;
+
     [HideInInspector, SerializeField] private UnityEvent onCollisionExit;
     
     [HideInInspector, SerializeField] private UnityEvent onTriggerEnter;
+    
+    [HideInInspector, SerializeField] private UnityEvent onTriggerStay;
     
     [HideInInspector, SerializeField] private UnityEvent onTriggerExit;
     
@@ -35,6 +40,11 @@ class Custom2DCollider : MonoBehaviour
         FireEvent(ref onTriggerEnter, other.gameObject);
     }
 
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        FireEvent(ref onTriggerStay, other.gameObject);
+    }
+
     private void OnTriggerExit2D(Collider2D other)
     {
         FireEvent(ref onTriggerExit, other.gameObject);
@@ -43,6 +53,11 @@ class Custom2DCollider : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         FireEvent(ref onCollisionEnter, other.gameObject);
+    }
+
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        FireEvent(ref onCollisionStay, other.gameObject);
     }
 
     private void OnCollisionExit2D(Collision2D other)
@@ -127,11 +142,13 @@ public class Custom2DColliderEditor : Editor
         if (_isTriggerProperty.boolValue)
         {
             _events.Add(serializedObject.FindProperty("onTriggerEnter"));
+            _events.Add(serializedObject.FindProperty("onTriggerStay"));
             _events.Add(serializedObject.FindProperty("onTriggerExit"));
         }
         else
         {
             _events.Add(serializedObject.FindProperty("onCollisionEnter"));
+            _events.Add(serializedObject.FindProperty("onCollisionStay"));
             _events.Add(serializedObject.FindProperty("onCollisionExit"));
         }
 
