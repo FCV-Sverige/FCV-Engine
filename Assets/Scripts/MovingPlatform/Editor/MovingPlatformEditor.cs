@@ -20,6 +20,7 @@ public sealed class MovingPlatformEditor : Editor
 
     private void OnEnable()
     {
+        
         movingPlatform = target as MovingPlatform;
         if (movingPlatform != null) worldPoints = movingPlatform.WorldPoints;
 
@@ -142,6 +143,8 @@ public sealed class MovingPlatformEditor : Editor
             CreatePreviewObject();
 
         List<Vector3> points = worldPoints == null ? new (): new (worldPoints);
+        
+        if (points == null || points.Count == 0) return;
 
         if (LoopType == MovingPlatform.LoopType.LOOP) points.Add(points[0]);
 
