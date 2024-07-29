@@ -17,14 +17,18 @@ public class Health : MonoBehaviour
     public void RemoveHealth(int amount)
     {
         if (amount > 0) amount *= -1;
-        health -= amount;
-        health = Mathf.Clamp(health, 0, maxHealth);
+        ChangeHealth(amount);
     }
 
     public void AddHealth(int amount)
     {
         if (amount < 0) amount *= -1;
-        health += amount;
+        ChangeHealth(amount);
+    }
+
+    private void ChangeHealth(int healthChange)
+    {
+        health += healthChange;
         health = Mathf.Clamp(health, 0, maxHealth);
     }
 }
