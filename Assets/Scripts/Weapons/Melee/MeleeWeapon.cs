@@ -34,8 +34,8 @@ public class MeleeWeapon : Weapon
     {
         base.Equip();
         parentSpriteRenderer = GetComponentInParent<SpriteRenderer>();
-        weaponCollider2D.enabled = true;
-        weaponCollider2D.isTrigger = true;
+        WeaponCollider2D.enabled = true;
+        WeaponCollider2D.isTrigger = true;
         spriteRenderer.enabled = false;
     }
 

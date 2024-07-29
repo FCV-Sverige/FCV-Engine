@@ -21,41 +21,41 @@ public class Weapon : MonoBehaviour
     public bool CanBeEquipped = true;
     public bool IsEquipped;
 
-    protected Collider2D weaponCollider2D;
-    protected Rigidbody2D rigidbody2D;
+    protected Collider2D WeaponCollider2D;
+    protected Rigidbody2D WepaonRigidbody;
 
     protected virtual void Awake()
     {
-        TryGetComponent(out weaponCollider2D);
-        TryGetComponent(out rigidbody2D);
+        TryGetComponent(out WeaponCollider2D);
+        TryGetComponent(out WepaonRigidbody);
 
-        weaponCollider2D.isTrigger = false;
-        rigidbody2D.isKinematic = false;
+        WeaponCollider2D.isTrigger = false;
+        WepaonRigidbody.isKinematic = false;
     }
 
     public virtual void Equip()
     {
         fireAction.AddListener(Fire);
-        weaponCollider2D.enabled = false;
-        rigidbody2D.isKinematic = true;
+        WeaponCollider2D.enabled = false;
+        WepaonRigidbody.isKinematic = true;
     }
 
     public virtual void UnEquip()
     {
         CanBeEquipped = false;
         fireAction.RemoveListener(Fire);
-        if (weaponCollider2D && rigidbody2D)
+        if (WeaponCollider2D && WepaonRigidbody)
         {
             transform.position += Vector3.up;
-            weaponCollider2D.enabled = true;
-            weaponCollider2D.isTrigger = false;
-            rigidbody2D.isKinematic = false;
+            WeaponCollider2D.enabled = true;
+            WeaponCollider2D.isTrigger = false;
+            WepaonRigidbody.isKinematic = false;
             
             bool leftDirection = Random.value > .5;
             Vector2 direction = GetRandomDirectionInCone(90 + (leftDirection ? 22.5f : -22.5f), 12);
             
             Debug.DrawLine(transform.position, (Vector2)transform.position + direction * 5, Color.red, 5);
-            rigidbody2D.AddForce(direction * 5, ForceMode2D.Impulse);
+            WepaonRigidbody.AddForce(direction * 5, ForceMode2D.Impulse);
         }
 
         StartCoroutine(EquipBuffer());
