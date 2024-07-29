@@ -69,7 +69,6 @@ public class MovingPlatform : MonoBehaviour
         float T = timeSinceStart / finalSpeed;
 
         T = Mathf.Clamp01(T);
-        print(previousPosition);
 
         // Move the object to the current target
         transform.position = Vector3.Lerp(previousPosition, currentTarget, T);
