@@ -51,7 +51,7 @@ public class PatrolEnemy : MonoBehaviour
     {
         if (patrolPoints is {Count: 0}) return;
         
-        if (IsWithinFOVAndRange(transform.position, playerTransform.position, Vector3.right * Direction, detectionRadius, detectionAngle))
+        if (FOVUtility.IsWithinFOVAndRange(transform.position, playerTransform.position, Vector3.right * Direction, detectionRadius, detectionAngle))
         {
             chasing = true;
             if (patrolPoints is {Count : >1})
@@ -123,48 +123,6 @@ public class PatrolEnemy : MonoBehaviour
         color.a = .1f;
         Handles.color = color;
 
-        DrawFOV(transform.position, Application.isPlaying ? Vector2.right * Direction: Vector2.right, detectionRadius, detectionAngle);
-    }
-    
-    // Helper function to draw the FOV as a frustum
-    private void DrawFOV(Vector3 origin, Vector3 direction, float maxDistance, float fovAngle)
-    {
-        // Calculate the frustum vertices
-        Vector3 right = Quaternion.Euler(0, 0, fovAngle / 2) * direction;
-        Vector3 left = Quaternion.Euler(0, 0, -fovAngle / 2) * direction;
-
-        // Draw the frustum edges
-        Gizmos.DrawLine(origin, origin + direction * maxDistance); // Forward line
-        Gizmos.DrawLine(origin, origin + right * maxDistance);    // Right edge
-        Gizmos.DrawLine(origin, origin + left * maxDistance);     // Left edge
-        
-        Handles.DrawSolidArc(origin, Vector3.back, right.normalized, fovAngle, maxDistance);
-        
-    }
-    
-    // Function to check if the target is within FOV and range of the source
-    private bool IsWithinFOVAndRange(Vector3 source, Vector3 target, Vector3 direction, float maxDistance, float fovAngle)
-    {
-        // Calculate the vector from source to target
-        Vector3 toTarget = target - source;
-
-        // Calculate the distance to the target
-        float distanceToTarget = toTarget.magnitude;
-
-        // Check if the target is within the maximum distance
-        if (distanceToTarget > maxDistance)
-        {
-            return false;
-        }
-
-        // Normalize the direction and toTarget vectors
-        Vector3 normalizedDirection = direction.normalized;
-        Vector3 normalizedToTarget = toTarget.normalized;
-
-        // Calculate the angle between the direction and toTarget vectors
-        float angle = Vector3.Angle(normalizedDirection, normalizedToTarget);
-
-        // Check if the target is within the FOV angle
-        return angle <= fovAngle / 2;
+        FOVUtility.DrawFOV(transform.position, Application.isPlaying ? Vector2.right * Direction: Vector2.right, detectionRadius, detectionAngle);
     }
 }
