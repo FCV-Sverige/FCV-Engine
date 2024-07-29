@@ -1,10 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 public static class FOVUtility
 {
+#if UNITY_EDITOR
     
     // Helper function to draw the FOV as a frustum
     /// <summary>
@@ -27,6 +28,7 @@ public static class FOVUtility
         
         Handles.DrawSolidArc(origin, Vector3.back, right.normalized, fovAngle, maxDistance);
     }
+#endif
     
     // Function to check if the target is within FOV and range of the source
     public static bool IsWithinFOVAndRange(Vector3 source, Vector3 target, Vector3 direction, float maxDistance, float fovAngle)

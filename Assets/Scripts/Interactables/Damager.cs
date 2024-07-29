@@ -1,9 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Damager : MonoBehaviour
 {
@@ -85,7 +83,7 @@ public class Damager : MonoBehaviour
         
         DealDamage(health);
     }
-
+#if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         Color color;
@@ -97,4 +95,5 @@ public class Damager : MonoBehaviour
         
         FOVUtility.DrawFOV(transform.position, StartDirection, collisionDistance, fovAngle);
     }
+#endif
 }

@@ -1,13 +1,9 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
-using UnityEngine.Serialization;
-using UnityEngine.UIElements;
-using Object = UnityEngine.Object;
 
 [SelectionBase]
 public class MovingPlatform : MonoBehaviour
@@ -38,12 +34,14 @@ public class MovingPlatform : MonoBehaviour
 
     private void Awake()
     {
+#if UNITY_EDITOR
         if (worldPoints.Length == 0 || worldPoints == null)
         {
             Debug.LogError($"No points defined for movement on {name}");
             EditorApplication.ExitPlaymode();
             return;
         }
+#endif
 
         currentTarget = worldPoints[0];
     }

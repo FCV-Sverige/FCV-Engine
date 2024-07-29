@@ -1,8 +1,9 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -106,7 +107,8 @@ public class PatrolEnemy : MonoBehaviour
             }
         }
     }
-
+#if UNITY_EDITOR
+    
     private void OnDrawGizmosSelected()
     {
         if (patrolPoints is { Count: > 0 })
@@ -125,4 +127,5 @@ public class PatrolEnemy : MonoBehaviour
 
         FOVUtility.DrawFOV(transform.position, Application.isPlaying ? Vector2.right * Direction: Vector2.right, detectionRadius, detectionAngle);
     }
+#endif
 }
