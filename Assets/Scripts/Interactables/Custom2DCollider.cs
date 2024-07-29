@@ -52,7 +52,7 @@ class Custom2DCollider : MonoBehaviour
 
     private void FireEvent(ref UnityEvent unityEvent, GameObject collidingObject)
     {
-        if (!IsInLayerMask(collidingObject, collisionLayers)) return;
+        if (!LayerMaskUtility.IsInLayerMask(collidingObject, collisionLayers)) return;
         
         if (!checkItems)
             unityEvent.Invoke();
@@ -74,9 +74,6 @@ class Custom2DCollider : MonoBehaviour
 
         return true;
     }
-    
-    public static bool IsInLayerMask(GameObject obj, LayerMask mask) => (mask.value & (1 << obj.layer)) != 0;
-    public static bool IsInLayerMask(int layer, LayerMask mask) => (mask.value & (1 << layer)) != 0;
 }
 
 [CustomEditor(typeof(Custom2DCollider))]
