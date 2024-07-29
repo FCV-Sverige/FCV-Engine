@@ -1,5 +1,8 @@
 using System.Collections.Generic;
+
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -75,7 +78,7 @@ class Custom2DCollider : MonoBehaviour
         return true;
     }
 }
-
+#if UNITY_EDITOR
 [CustomEditor(typeof(Custom2DCollider))]
 public class Custom2DColliderEditor : Editor
 {
@@ -134,3 +137,4 @@ public class Custom2DColliderEditor : Editor
 
     }
 }
+#endif
