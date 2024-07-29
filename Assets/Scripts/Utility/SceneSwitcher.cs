@@ -1,11 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class SceneSwitcher : MonoBehaviour
 {
@@ -13,15 +11,15 @@ public class SceneSwitcher : MonoBehaviour
     [SerializeField] private SceneAsset _sceneAsset;
 #endif
 
-    private string sceneName;
+    [SerializeField] private string scenePath;
 
 
-    public void StartTransition(GameObject gameObject = null)
+    public void StartTransition(GameObject transitioningGameObject = null)
     {
-        if (gameObject)
-            DontDestroyOnLoad(gameObject);
+        if (transitioningGameObject)
+            DontDestroyOnLoad(transitioningGameObject);
         
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(scenePath);
     }
 #if UNITY_EDITOR
     
@@ -36,7 +34,7 @@ public class SceneSwitcher : MonoBehaviour
             sceneAdded = scene.path == sceneAssetPath;
         }
 
-        sceneName = _sceneAsset.name;
+        scenePath = sceneAssetPath;
         
         if (sceneAdded) return;
         
