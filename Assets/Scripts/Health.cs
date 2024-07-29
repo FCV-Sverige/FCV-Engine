@@ -2,9 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class Health : MonoBehaviour
 {
+    public UnityEvent<int, int> onHealthChanged;
     [SerializeField] private int maxHealth;
 
     public int CurrentHealth { get; private set; }
@@ -32,5 +35,6 @@ public class Health : MonoBehaviour
     {
         CurrentHealth += healthChange;
         CurrentHealth = Mathf.Clamp(CurrentHealth, 0, maxHealth);
+        onHealthChanged.Invoke(CurrentHealth, maxHealth);
     }
 }
