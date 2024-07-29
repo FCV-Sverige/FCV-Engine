@@ -7,28 +7,31 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private int maxHealth;
     
-    private int health;
+    private int currentHealth;
+
+    public int CurrentCurrentHealth => currentHealth;
+    public int MaxHealth => maxHealth;
 
     private void Awake()
     {
-        health = maxHealth;
+        currentHealth = maxHealth;
     }
 
     public void RemoveHealth(int amount)
     {
         if (amount > 0) amount *= -1;
-        ChangeHealth(amount);
+        ModifyHealth(amount);
     }
 
     public void AddHealth(int amount)
     {
         if (amount < 0) amount *= -1;
-        ChangeHealth(amount);
+        ModifyHealth(amount);
     }
 
-    private void ChangeHealth(int healthChange)
+    private void ModifyHealth(int healthChange)
     {
-        health += healthChange;
-        health = Mathf.Clamp(health, 0, maxHealth);
+        currentHealth += healthChange;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
     }
 }
