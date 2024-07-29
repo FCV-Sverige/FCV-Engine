@@ -39,7 +39,7 @@ public class SceneSwitcher : MonoBehaviour
     /// </summary>
     /// <param name="scene"></param>
     /// <param name="enabled"></param>
-    public static void AddSceneToBuildSettings(SceneAsset scene, bool enabled = true)
+    private static void AddSceneToBuildSettings(SceneAsset scene, bool enabled = true)
     {
         var scenes = new EditorBuildSettingsScene[EditorBuildSettings.scenes.Length + 1];
         for (int i = 0; i < EditorBuildSettings.scenes.Length; ++i)
