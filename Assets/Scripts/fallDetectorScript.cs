@@ -1,17 +1,28 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class fallDetectorScript : MonoBehaviour
 {
-    public Transform playerTransform;
+    [SerializeField] private Transform playerTransform;
+    [SerializeField] private float yPositionThreshold = -20;
 
     void Update()
     {
         if (playerTransform != null)
         {
-            // Update the position of the fallDetector to follow the player's X-axis only
-            transform.position = new Vector3(playerTransform.position.x, transform.position.y, transform.position.z);
+            if (playerTransform.transform.position.y <= yPositionThreshold)
+                SceneManager.LoadScene(SceneManager.GetActiveScene().path);
         }
     }
+
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red; 
+        Gizmos.DrawLine(new Vector2(-200, yPositionThreshold), new Vector3(200, yPositionThreshold));
+    }
+#endif
 
     
 }
