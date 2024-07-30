@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 #if UNITY_EDITOR
@@ -13,7 +14,8 @@ public class MovingPlatform : MonoBehaviour
         LOOP,
         PINGPONG
     }
-    
+
+    [SerializeField] private LayerMask collisionLayerMask;
     [SerializeField] private LoopType loopType;
     private bool pingPongReversing = false;
     
@@ -31,6 +33,7 @@ public class MovingPlatform : MonoBehaviour
     private float timeSinceStart; // Time when the movement started
 
     private List<float> totalTravelLength;
+    private List<Transform> objectsOnPlatform = new();
 
     private void Awake()
     {
@@ -125,6 +128,28 @@ public class MovingPlatform : MonoBehaviour
         
 
         return currentIndex; // Default case (should not be reached)
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        print("Enter");
+        if (!LayerMaskUtility.IsInLayerMask(other.gameObject, collisionLayerMask)) return;
+        
+        if (objectsOnPlatform.Contains(other.transform)) return;
+        
+        objectsOnPlatform.Add(other.transform);
+
+        other.transform.parent = transform;
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        print("Exit");
+        if (!objectsOnPlatform.Contains(other.transform)) return;
+
+        objectsOnPlatform.Remove(other.transform);
+
+        other.transform.parent = null;
     }
 }
 
