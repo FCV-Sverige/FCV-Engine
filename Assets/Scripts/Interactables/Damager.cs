@@ -69,9 +69,9 @@ public class Damager : MonoBehaviour
 
     private void CollisionChecks(Collider2D other)
     {
-        if (!FOVUtility.IsWithinFOVAndRange(transform.position, other.transform.position, StartDirection, float.MaxValue, fovAngle))
+        if (!FOVUtility.IsWithinFOV(transform.position, other.transform.position, StartDirection,  fovAngle))
         {
-            print("Not in within FOV");
+            print("Not within FOV");
             return;
         }
 
