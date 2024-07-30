@@ -48,10 +48,11 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  collisionDistance: 0.5
+  collisionDistance: 1
+  attackCooldown: 0.5
   flippedBySpeed: 0
-  fovAngle: 86
-  startAngle: 0
+  fovAngle: 180
+  startAngle: 270
 --- !u!1 &3603941651359332717
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patrolSpeed: 2
   stopDistance: 0.5
-  detectionRadius: 5
+  detectionRadius: 2.71
   detectionAngle: 188
 --- !u!114 &-1306140843600562443
 MonoBehaviour:
@@ -231,4 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2fc64e831432645bb54a53af51e59f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
   maxHealth: 20
