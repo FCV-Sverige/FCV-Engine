@@ -45,6 +45,14 @@ public static class FOVUtility
             return false;
         }
 
+        return IsWithinFOV(source, target, direction, fovAngle);
+    }
+
+    public static bool IsWithinFOV(Vector3 source, Vector3 target, Vector3 direction, float fovAngle)
+    {
+        // Calculate the vector from source to target
+        Vector3 toTarget = target - source;
+        
         // Normalize the direction and toTarget vectors
         Vector3 normalizedDirection = direction.normalized;
         Vector3 normalizedToTarget = toTarget.normalized;
