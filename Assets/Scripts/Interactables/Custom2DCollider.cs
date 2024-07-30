@@ -14,7 +14,7 @@ class Custom2DCollider : MonoBehaviour
     [HideInInspector, SerializeField] private bool checkItems = false;
     [HideInInspector, SerializeField] private bool needAllItems = false;
     [SerializeField] private LayerMask collisionLayers;
-    [HideInInspector, SerializeField] private List<string> itemsToCheck;
+    [HideInInspector, SerializeField, ItemName] private List<string> itemsToCheck;
     
     [HideInInspector, SerializeField] private UnityEvent onCollisionEnter;
 
