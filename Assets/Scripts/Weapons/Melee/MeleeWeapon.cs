@@ -37,6 +37,9 @@ public class MeleeWeapon : Weapon
         WeaponCollider2D.enabled = true;
         WeaponCollider2D.isTrigger = true;
         spriteRenderer.enabled = false;
+        transform.rotation = Quaternion.Euler(0,0,90);
+        startPosition = transform.localPosition;
+        startRotation = transform.localRotation;
     }
 
     public override void UnEquip()
@@ -50,8 +53,6 @@ public class MeleeWeapon : Weapon
         base.Fire();
 
         swingAnimation.StartTime = Time.time;
-        startPosition = transform.localPosition;
-        startRotation = transform.localRotation;
 
         StartCoroutine(Swing());
     }
