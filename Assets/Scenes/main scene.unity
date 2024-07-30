@@ -9696,7 +9696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1971136334}
-  yPositionThreshold: -20
+  yPositionThreshold: -9
 --- !u!1 &1434627911
 GameObject:
   m_ObjectHideFlags: 0
@@ -9784,7 +9784,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 1971136334}
+  m_LookAt: {fileID: 0}
   m_Follow: {fileID: 1971136334}
   m_Lens:
     FieldOfView: 40
