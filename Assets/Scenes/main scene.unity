@@ -9478,21 +9478,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -7817409048155841956, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 62a188fb77345e147a47a0ed61d6dda6, type: 2}
-    - target: {fileID: 105508176320561271, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: loopType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 105508176320561271, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: worldPoints.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 105508176320561271, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
       propertyPath: worldPoints.Array.data[0].x
-      value: 16.03299
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 105508176320561271, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
       propertyPath: worldPoints.Array.data[0].y
@@ -9500,35 +9488,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 105508176320561271, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
       propertyPath: worldPoints.Array.data[1].x
-      value: 20.047333
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 105508176320561271, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
       propertyPath: worldPoints.Array.data[1].y
       value: -2.4
       objectReference: {fileID: 0}
-    - target: {fileID: 1575806800002706788, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2212991374528341370, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2212991374528341370, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -142767367
-      objectReference: {fileID: 0}
     - target: {fileID: 5863598028972174177, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
       propertyPath: m_Name
       value: Platform_02
       objectReference: {fileID: 0}
-    - target: {fileID: 5863598028972174177, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 6873308558461451257, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.03
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6873308558461451257, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9566,8 +9538,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9981,49 +9952,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 105508176320561271, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: loopType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 105508176320561271, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: worldPoints.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 105508176320561271, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: worldPoints.Array.data[0].x
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 105508176320561271, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: worldPoints.Array.data[0].y
-      value: -2.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 105508176320561271, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: worldPoints.Array.data[1].x
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 105508176320561271, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: worldPoints.Array.data[1].y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1575806800002706788, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2212991374528341370, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2212991374528341370, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -142767367
-      objectReference: {fileID: 0}
     - target: {fileID: 5863598028972174177, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
       propertyPath: m_Name
       value: Platform_02 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5863598028972174177, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6873308558461451257, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
       propertyPath: m_LocalPosition.x
