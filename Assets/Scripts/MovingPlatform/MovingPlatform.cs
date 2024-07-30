@@ -132,7 +132,6 @@ public class MovingPlatform : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        print("Enter");
         if (!LayerMaskUtility.IsInLayerMask(other.gameObject, collisionLayerMask)) return;
         
         if (objectsOnPlatform.Contains(other.transform)) return;
@@ -144,7 +143,6 @@ public class MovingPlatform : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        print("Exit");
         if (!objectsOnPlatform.Contains(other.transform)) return;
 
         objectsOnPlatform.Remove(other.transform);
