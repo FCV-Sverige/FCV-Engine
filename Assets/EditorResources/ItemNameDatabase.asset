@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dcd13aaf9b91d64b9591ee2e3a11757, type: 3}
   m_Name: ItemNameDatabase
   m_EditorClassIdentifier: 
-  itemNames: []
+  itemNames:
+  - Key1
+  - Key2
+  - Cool Potion of Opening
