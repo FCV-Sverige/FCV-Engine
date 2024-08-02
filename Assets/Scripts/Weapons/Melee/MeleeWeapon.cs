@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
 public class MeleeWeapon : Weapon
 {
     [SerializeField] private SwingAnimation swingAnimation = new();
@@ -19,9 +18,8 @@ public class MeleeWeapon : Weapon
     private SpriteRenderer parentSpriteRenderer;
     private SpriteRenderer spriteRenderer;
 
-    protected override void Awake()
+    protected void Awake()
     {
-        base.Awake();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
@@ -34,9 +32,6 @@ public class MeleeWeapon : Weapon
     {
         base.Equip();
         parentSpriteRenderer = GetComponentInParent<SpriteRenderer>();
-        WeaponCollider2D.enabled = true;
-        WeaponCollider2D.isTrigger = true;
-        spriteRenderer.enabled = false;
         transform.rotation = Quaternion.Euler(0,0,90);
         startPosition = transform.localPosition;
         startRotation = transform.localRotation;
@@ -64,7 +59,7 @@ public class MeleeWeapon : Weapon
         Transform swordTransform = transform;
         float direction = SignedDirection; 
 
-        while (t < 1 && IsEquipped)
+        while (t < 1)
         {
             t = (Time.time - swingAnimation.StartTime) / swingAnimation.SwingTime;
             t = Mathf.Clamp01(t);
@@ -90,7 +85,6 @@ public class MeleeWeapon : Weapon
         
         swordTransform.localRotation = startRotation;
         swordTransform.localPosition = startPosition;
-        spriteRenderer.enabled = !IsEquipped;
         StopCoroutine(Swing());
     }
 
