@@ -6,6 +6,7 @@ using UnityEngine.Events;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
+[RequireComponent(typeof(FloatAnimation))]
 public class Weapon : MonoBehaviour
 {
     [SerializeField] private KeyCode fireButton;

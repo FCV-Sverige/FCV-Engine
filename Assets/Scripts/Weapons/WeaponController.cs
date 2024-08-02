@@ -57,6 +57,7 @@ public class WeaponController : MonoBehaviour
         
         equippedWeapons.Add(weapon);
         weapons.Remove(weapon);
+        weapon.GetComponent<FloatAnimation>()?.StopAnimation();
     }
 
     private void CheckForInput()
