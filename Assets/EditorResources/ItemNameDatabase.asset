@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ItemNameDatabase
   m_EditorClassIdentifier: 
   itemNames:
-  - Key1
-  - Key2
-  - Cool Potion of Opening
+  - Key
+  - Key 1
+  - Key 2
