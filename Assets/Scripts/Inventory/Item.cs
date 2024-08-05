@@ -19,4 +19,12 @@ public class Item : MonoBehaviour
         if (TryGetComponent(out SpriteRenderer spriteRenderer))
             spriteRenderer.sprite = sprite;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!other.TryGetComponent(out Inventory inventory)) return;
+        
+        inventory.TryAddItem(itemName, this);
+        this.enabled = false;
+    }
 }
