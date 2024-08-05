@@ -69,7 +69,7 @@ public class SceneCreatorEditor : EditorWindow
 
         if (result.Length > 0)
         {
-            string newScenePath = "Assets/Scenes" + NewSceneName + ".unity";
+            string newScenePath = "Assets/Scenes/" + NewSceneName + ".unity";
             AssetDatabase.CopyAsset(AssetDatabase.GUIDToAssetPath(result[0]), newScenePath);
             AssetDatabase.Refresh();
             Scene newScene = EditorSceneManager.OpenScene(newScenePath, OpenSceneMode.Single);

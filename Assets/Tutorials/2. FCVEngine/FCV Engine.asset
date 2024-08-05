@@ -45,3 +45,12 @@ MonoBehaviour:
     Url: 
     Image: {fileID: 0}
     Tutorial: {fileID: 11400000, guid: 23ca9ff103e2ed945aff56c6a0e081b8, type: 2}
+  - OrderInView: 0
+    Heading:
+      m_Untranslated: Enemies
+    Text:
+      m_Untranslated: This tutorial shows you how to use the enemy prefab
+    Metadata: 
+    Url: 
+    Image: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: a41b46b696f8c50459027888eda940f2, type: 2}

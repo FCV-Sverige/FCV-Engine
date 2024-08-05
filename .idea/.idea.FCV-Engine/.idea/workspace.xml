@@ -4,55 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="">
+    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="made PlatformFinder into a prefab so that it is clear what you need for the enemies to work">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform/Editor/MovingPlatformEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform/Editor/MovingPlatformEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/10-TutorialPage 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/10-TutorialPage 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/15-LastPage 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/15-LastPage 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/15-LastPage.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/15-LastPage.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/5-StartPage 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/5-StartPage 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/EMPTY TUTORIAL.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/EMPTY TUTORIAL.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/New Tutorial Page.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/New Tutorial Page.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/New Tutorial Styles.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/New Tutorial Styles.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/New Tutorial.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/New Tutorial.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/10-TutorialPage 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/10-TutorialPage 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/10-TutorialPage.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/10-TutorialPage.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/15-LastPage 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/15-LastPage 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/15-LastPage.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/15-LastPage.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/5-StartPage 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/5-StartPage 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/5-StartPage.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/5-StartPage.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/New Tutorial.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/New Tutorial.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/Tutorial 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 1/Tutorial 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 2/Tutorial 2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial 2/Tutorial 2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial Page.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial Page.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial Project Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/Tutorial Project Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial Project Settings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/Tutorial Project Settings.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial Welcome Page.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/Tutorial Welcome Page.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorial Welcome Page.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/Tutorial Welcome Page.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorials.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/Tutorials.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Palettes/GroundRuleTile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Palettes/GroundRuleTile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/1. UnityEditorInterface/KeyConcepts/3-Prefabs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/1. UnityEditorInterface/KeyConcepts/3-Prefabs.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,17 +27,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/92/4caccb05/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/95/47ee5619/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/b6/9f95634b/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/EditorResources/ItemNameDatabase.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Prefabs/Weapons/Gun.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Prefabs/Weapons/Sword.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scenes/main scene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scenes/main scene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scenes/main scene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Enemy/JumpStrikeEliminator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/PathFinding/PlatformFinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SceneCreatorEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scripts/Inventory/Item.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
@@ -87,12 +39,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/FOVUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LayerMaskUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SceneSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scripts/Weapons/Melee/Weapon.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scripts/Weapons/WeaponController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scripts/Weapons/WeaponController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -103,28 +52,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\christian.backstrom\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\christian.backstrom\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\christian.backstrom\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\christian.backstrom\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\christian.backstrom\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\christian.backstrom\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Builds/test/Main Project.exe" />
@@ -190,23 +139,7 @@
       <workItem from="1722234271413" duration="24827000" />
       <workItem from="1722315568391" duration="23407000" />
       <workItem from="1722575070852" duration="11141000" />
-      <workItem from="1722841592376" duration="2050000" />
-    </task>
-    <task id="LOCAL-00029" summary="made prefab of enemy">
-      <option name="closed" value="true" />
-      <created>1722238811562</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1722238811562</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Moved utility classes to correct folder and seperated functions from Custom2DCollider.cs to its own static class">
-      <option name="closed" value="true" />
-      <created>1722239840311</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1722239840311</updated>
+      <workItem from="1722841592376" duration="5235000" />
     </task>
     <task id="LOCAL-00031" summary="made sure the health is set to maxHealth in Awake">
       <option name="closed" value="true" />
@@ -584,7 +517,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722587313086</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="Removed old tutorials and added the Unity Editor tutorials from the 2D_GamekitSGC project">
+      <option name="closed" value="true" />
+      <created>1722846281866</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1722846281866</updated>
+    </task>
+    <task id="LOCAL-00079" summary="made PlatformFinder into a prefab so that it is clear what you need for the enemies to work">
+      <option name="closed" value="true" />
+      <created>1722847623213</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1722847623213</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,8 +560,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="removed unnecessary assets" />
-    <MESSAGE value="fixed issue with SceneSwitcher.cs not working in build" />
     <MESSAGE value="MovingPlatform.cs parents player standing on it to have player move with the platform" />
     <MESSAGE value="removed debugging prints" />
     <MESSAGE value="tweaked variables in Enemy.prefab to work better in the game" />
@@ -636,6 +583,8 @@
     <MESSAGE value="Removed test items from scene" />
     <MESSAGE value="Updated ItemNameDatabase.asset" />
     <MESSAGE value="Made float animation script and added it to weapon, used to make the world more alive" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made float animation script and added it to weapon, used to make the world more alive" />
+    <MESSAGE value="Removed old tutorials and added the Unity Editor tutorials from the 2D_GamekitSGC project" />
+    <MESSAGE value="made PlatformFinder into a prefab so that it is clear what you need for the enemies to work" />
+    <option name="LAST_COMMIT_MESSAGE" value="made PlatformFinder into a prefab so that it is clear what you need for the enemies to work" />
   </component>
 </project>
