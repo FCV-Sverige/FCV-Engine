@@ -63,6 +63,7 @@ public sealed class MovingPlatformEditor : Editor
 
     private void SelectionChanged()
     {
+        if (!movingPlatform) DestroyImmediate(this);
         if (Selection.activeTransform != movingPlatform.transform)
             DestroyPreviewObject();
     }
