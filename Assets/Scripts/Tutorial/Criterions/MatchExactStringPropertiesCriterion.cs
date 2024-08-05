@@ -54,6 +54,6 @@ public class MatchExactStringPropertiesCriterion : Criterion
 
     public override bool AutoComplete()
     {
-        throw new System.NotImplementedException();
+        return true;
     }
 }

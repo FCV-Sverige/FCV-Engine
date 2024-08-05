@@ -43,6 +43,6 @@ public class FloatBetweenValuesCriterion : Criterion
 
     public override bool AutoComplete()
     {
-        throw new System.NotImplementedException();
+        return true;
     }
 }

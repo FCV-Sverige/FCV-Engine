@@ -41,6 +41,6 @@ public class EnumCriterion : Criterion
     }
     public override bool AutoComplete()
     {
-        throw new System.NotImplementedException();
+        return true;
     }
 }
