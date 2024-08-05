@@ -54,3 +54,13 @@ MonoBehaviour:
     Url: 
     Image: {fileID: 0}
     Tutorial: {fileID: 11400000, guid: a41b46b696f8c50459027888eda940f2, type: 2}
+  - OrderInView: 0
+    Heading:
+      m_Untranslated: Inventory System
+    Text:
+      m_Untranslated: Walkthrough on how to use the inventory system to expand your
+        own game
+    Metadata: 
+    Url: 
+    Image: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: 703847b2116861c48a47caf423c222d9, type: 2}
