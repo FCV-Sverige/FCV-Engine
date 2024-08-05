@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
-  m_Name: 3-Prefabs
+  m_Name: 1-OpenKitTools
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Prefabs
+    m_Untranslated: Creating a New Scene
   m_Paragraphs:
     m_Items:
     - m_Type: 6
@@ -32,35 +32,11 @@ MonoBehaviour:
         m_UnmaskedViews:
         - m_SelectorType: 1
           m_ViewType:
-            m_TypeName: UnityEditor.DockArea, UnityEditor.CoreModule, Version=0.0.0.0,
+            m_TypeName: UnityEditor.Toolbar, UnityEditor.CoreModule, Version=0.0.0.0,
               Culture=neutral, PublicKeyToken=null
           m_EditorWindowType:
-            m_TypeName: UnityEditor.ProjectBrowser, UnityEditor.CoreModule, Version=0.0.0.0,
+            m_TypeName: SceneCreatorEditor, Assembly-CSharp-Editor, Version=0.0.0.0,
               Culture=neutral, PublicKeyToken=null
-          m_AlternateEditorWindowTypes:
-            m_Items: []
-          m_MaskType: 0
-          m_MaskSizeModifier: 0
-          m_UnmaskedControls: []
-        - m_SelectorType: 1
-          m_ViewType:
-            m_TypeName: UnityEditor.DockArea, UnityEditor.CoreModule, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
-          m_EditorWindowType:
-            m_TypeName: UnityEditor.SceneView, UnityEditor.CoreModule, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
-          m_AlternateEditorWindowTypes:
-            m_Items: []
-          m_MaskType: 0
-          m_MaskSizeModifier: 0
-          m_UnmaskedControls: []
-        - m_SelectorType: 1
-          m_ViewType:
-            m_TypeName: UnityEditor.DockArea, UnityEditor.CoreModule, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
-          m_EditorWindowType:
-            m_TypeName: UnityEditor.ProjectTemplateWindow, UnityEditor.CoreModule,
-              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
           m_AlternateEditorWindowTypes:
             m_Items: []
           m_MaskType: 0
@@ -75,14 +51,9 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Prefabs are a great way to configure and store GameObjects
-          for re-use in your game. They act as templates, storing the components
-          and properties of a specific GameObject and enabling you to create multiple
-          instances of it within a Scene.  All copies of the Prefab template in a
-          Scene are linked. This means that if you change the object values for the
-          health potion Prefab, for example, each copy of that Prefab within the
-          Scene will change to match it. However, you can also make specific instances
-          of the GameObject different to the default Prefab settings.
+        m_Untranslated: The project allows us to automatically create a new default
+          Scene. This Scene contains our Player, a small platform, Health UI, and
+          two different weapons
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -99,12 +70,18 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: Drag 'Platform_02' prefab into scene
+        m_Untranslated: Create New Scene
       Text:
-        m_Untranslated: '1. Navigate to ''Assets/Prefabs/Weapons''
+        m_Untranslated: '1. In the top menu, click ''Tools''
 
-          2.
-          Click and drag Key object into scene window'
+          2. Choose
+          Create New Scene... A new window opens
+
+          3. In the empty field
+          next to New Scene Name, enter the name you would like to call your Scene
+
+          4.
+          Click Create'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -112,9 +89,9 @@ MonoBehaviour:
       m_Criteria:
         m_Items:
         - Type:
-            m_TypeName: Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion, Unity.Tutorials.Core.Editor,
+            m_TypeName: Tutorial.Criterions.NewSceneCreatedCriterion, Assembly-CSharp,
               Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-          Criterion: {fileID: 1511492621761232660}
+          Criterion: {fileID: 5961801388483260142}
       m_MaskingSettings:
         m_MaskingEnabled: 0
         m_UnmaskedViews: []
@@ -177,7 +154,7 @@ MonoBehaviour:
       m_Calls: []
   m_NextButton: Next
   m_DoneButton: Done
---- !u!114 &1511492621761232660
+--- !u!114 &5961801388483260142
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,7 +163,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3e7c665e4144f519b7ee9de726ea5f, type: 3}
+  m_Script: {fileID: 11500000, guid: af97cb7438fc4037bd0f0ca1ccc5ca7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Completed:
@@ -196,6 +173,3 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   isTesting: 0
-  m_PrefabParent: {fileID: 4868903438995980296, guid: de06d8b330b274c47bf9213cbb8104fa, type: 3}
-  m_FuturePrefabInstances:
-    m_Items: []

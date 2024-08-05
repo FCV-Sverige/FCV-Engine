@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
-  m_Name: 3-Prefabs
+  m_Name: 2-OpenTilePalette 1
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Prefabs
+    m_Untranslated: Painting The Level
   m_Paragraphs:
     m_Items:
-    - m_Type: 6
+    - m_Type: 7
       Title:
         m_Untranslated: 
       Text:
         m_Untranslated: 
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
-      m_Video: {fileID: 0}
+      m_Video: {fileID: 32900000, guid: 5335af0c995a2e843be475ba50b68fd9, type: 3}
       m_CriteriaCompletion: 0
       m_Criteria:
         m_Items: []
@@ -32,11 +32,10 @@ MonoBehaviour:
         m_UnmaskedViews:
         - m_SelectorType: 1
           m_ViewType:
-            m_TypeName: UnityEditor.DockArea, UnityEditor.CoreModule, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
+            m_TypeName: 
           m_EditorWindowType:
-            m_TypeName: UnityEditor.ProjectBrowser, UnityEditor.CoreModule, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
+            m_TypeName: UnityEditor.Tilemaps.GridPaintPaletteWindow, Unity.2D.Tilemap.Editor,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
           m_AlternateEditorWindowTypes:
             m_Items: []
           m_MaskType: 0
@@ -44,23 +43,10 @@ MonoBehaviour:
           m_UnmaskedControls: []
         - m_SelectorType: 1
           m_ViewType:
-            m_TypeName: UnityEditor.DockArea, UnityEditor.CoreModule, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
+            m_TypeName: 
           m_EditorWindowType:
             m_TypeName: UnityEditor.SceneView, UnityEditor.CoreModule, Version=0.0.0.0,
               Culture=neutral, PublicKeyToken=null
-          m_AlternateEditorWindowTypes:
-            m_Items: []
-          m_MaskType: 0
-          m_MaskSizeModifier: 0
-          m_UnmaskedControls: []
-        - m_SelectorType: 1
-          m_ViewType:
-            m_TypeName: UnityEditor.DockArea, UnityEditor.CoreModule, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
-          m_EditorWindowType:
-            m_TypeName: UnityEditor.ProjectTemplateWindow, UnityEditor.CoreModule,
-              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
           m_AlternateEditorWindowTypes:
             m_Items: []
           m_MaskType: 0
@@ -75,14 +61,9 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Prefabs are a great way to configure and store GameObjects
-          for re-use in your game. They act as templates, storing the components
-          and properties of a specific GameObject and enabling you to create multiple
-          instances of it within a Scene.  All copies of the Prefab template in a
-          Scene are linked. This means that if you change the object values for the
-          health potion Prefab, for example, each copy of that Prefab within the
-          Scene will change to match it. However, you can also make specific instances
-          of the GameObject different to the default Prefab settings.
+        m_Untranslated: We have created two Tile Palettes that allow you to draw
+          out levels. These tiles use the Scriptable Tile system of the Unity Tilemap.
+          They automatically choose the right sprite for a platform.
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -99,22 +80,27 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: Drag 'Platform_02' prefab into scene
+        m_Untranslated: How to paint
       Text:
-        m_Untranslated: '1. Navigate to ''Assets/Prefabs/Weapons''
+        m_Untranslated: '1. Click on a tile in the Tile Palette to select it
 
           2.
-          Click and drag Key object into scene window'
+          Navigate to the Scene View
+
+          3. Hold or press ''left-click'' and
+          drag to draw your level
+
+          ________
+
+
+          TIP: If you make
+          a mistake, you can hold ''shift + left click'' to erase Tiles '
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
       m_Criteria:
-        m_Items:
-        - Type:
-            m_TypeName: Unity.Tutorials.Core.Editor.InstantiatePrefabCriterion, Unity.Tutorials.Core.Editor,
-              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-          Criterion: {fileID: 1511492621761232660}
+        m_Items: []
       m_MaskingSettings:
         m_MaskingEnabled: 0
         m_UnmaskedViews: []
@@ -177,25 +163,3 @@ MonoBehaviour:
       m_Calls: []
   m_NextButton: Next
   m_DoneButton: Done
---- !u!114 &1511492621761232660
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3e7c665e4144f519b7ee9de726ea5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Completed:
-    m_PersistentCalls:
-      m_Calls: []
-  Invalidated:
-    m_PersistentCalls:
-      m_Calls: []
-  isTesting: 0
-  m_PrefabParent: {fileID: 4868903438995980296, guid: de06d8b330b274c47bf9213cbb8104fa, type: 3}
-  m_FuturePrefabInstances:
-    m_Items: []

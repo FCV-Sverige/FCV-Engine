@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponParentTransform: {fileID: 5765281435648999057}
-  pickupDistance: 2
+  pickupDistance: 1
 --- !u!114 &5496175564381152349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,6 +243,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2fc64e831432645bb54a53af51e59f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
   maxHealth: 100
 --- !u!1 &5242378421752401159
 GameObject:
