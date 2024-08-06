@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
-  m_Name: 7-InventorySystemEnd
+  m_Name: 4-MovingPlatformEnd
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Inventory System
+    m_Untranslated: Moving Platform
   m_Paragraphs:
     m_Items:
     - m_Type: 6
@@ -28,7 +28,7 @@ MonoBehaviour:
       m_Criteria:
         m_Items: []
       m_MaskingSettings:
-        m_MaskingEnabled: 1
+        m_MaskingEnabled: 0
         m_UnmaskedViews: []
       m_Summary: 
       m_Description: 
@@ -39,8 +39,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: Now you know how to implement items with the inventory system
-          and use them in your game
+        m_Untranslated: Now you know how to implement moving platforms into your
+          level. Add them to your levels to make them more challenging and interesting
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -78,8 +78,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Moving Platform Tutorial
-      m_Tutorial: {fileID: 11400000, guid: cf4805bff4f4ae544a42a4d9fb4227da, type: 2}
+        m_Untranslated: 'Tutorial X: Make the best game!'
+      m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0

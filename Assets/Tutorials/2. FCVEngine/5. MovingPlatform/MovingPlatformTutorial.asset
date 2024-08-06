@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f107dc6d4c984c45bdafd3bb15f98f0, type: 3}
-  m_Name: InventoryTutorial
+  m_Name: MovingPlatformTutorial
   m_EditorClassIdentifier: 
   TutorialTitle:
-    m_Untranslated: Inventory System
+    m_Untranslated: Platform Tutorial
   m_ProgressTrackingEnabled: 0
   m_LessonId: 
   m_Version: 0
@@ -39,13 +39,11 @@ MonoBehaviour:
   m_WindowLayout: {fileID: 102900000, guid: 951254c389b351642917f33ec9df1585, type: 3}
   m_Pages:
     m_Items:
-    - {fileID: 11400000, guid: fd976e7a5f4f92f44b284e0e6cf62d08, type: 2}
-    - {fileID: 11400000, guid: 9f1accaa413c8854d83b40fc4a2d0b4c, type: 2}
-    - {fileID: 11400000, guid: 068dd4c30450d5d48b1e15e5a9fea08f, type: 2}
-    - {fileID: 11400000, guid: 4a845b5d5de054143a65dcbe23177115, type: 2}
-    - {fileID: 11400000, guid: 17ebe7576d9c8454aadfa500de0a086e, type: 2}
-    - {fileID: 11400000, guid: 28fd75bc5170ff84d8886f4d05f86682, type: 2}
+    - {fileID: 11400000, guid: b2a22c00f50140d478c3134ef7d9038e, type: 2}
+    - {fileID: 11400000, guid: 527756b2fa134304b937333a45842567, type: 2}
+    - {fileID: 11400000, guid: b188f62e53a1c3c4690931af40337f09, type: 2}
     - {fileID: 11400000, guid: 579e767c23d79e741bb6a6a43d0cb272, type: 2}
+    - {fileID: 11400000, guid: 1d55145991137a7479d08a76f4b6b2a1, type: 2}
   CompletionDialog: {fileID: 0}
   Modified:
     m_PersistentCalls:

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4541977406087587442
+--- !u!114 &-2263866938002657608
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 641211c85919e4aceb79a0d364004d75, type: 3}
+  m_Script: {fileID: 11500000, guid: e08570fd85d23db4985de23f0484fccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Completed:
@@ -19,7 +19,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   isTesting: 0
-  m_RequiredPlayModeState: 0
+  operation: 0
+  m_Target: {fileID: -5483670900957869223, guid: 527756b2fa134304b937333a45842567, type: 2}
+  m_serializedType:
+    m_TypeName: MovingPlatform, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  propertyPath: worldPoints
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30,10 +35,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
-  m_Name: TestPlayGame
+  m_Name: 3-AddPoints
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Test game
+    m_Untranslated: Platform World Points
   m_Paragraphs:
     m_Items:
     - m_Type: 6
@@ -54,32 +59,20 @@ MonoBehaviour:
           m_ViewType:
             m_TypeName: 
           m_EditorWindowType:
-            m_TypeName: UnityEditor.PlayModeView, UnityEditor.CoreModule, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
-          m_AlternateEditorWindowTypes:
-            m_Items: []
-          m_MaskType: 0
-          m_MaskSizeModifier: 0
-          m_UnmaskedControls: []
-        - m_SelectorType: 0
-          m_ViewType:
-            m_TypeName: UnityEditor.Toolbar, UnityEditor.CoreModule, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
-          m_EditorWindowType:
-            m_TypeName: UnityEditor.PlayModeView, UnityEditor.CoreModule, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
+            m_TypeName: UnityEditor.SceneHierarchyWindow, UnityEditor.CoreModule,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
           m_AlternateEditorWindowTypes:
             m_Items: []
           m_MaskType: 0
           m_MaskSizeModifier: 0
           m_UnmaskedControls:
-          - m_SelectorMode: 5
+          - m_SelectorMode: 4
             m_SelectorMatchType: 0
             m_GUIContent:
               m_Text: 
               m_Image: {fileID: 0}
               m_Tooltip: 
-            m_ControlName: ToolbarPlayModePlayButton
+            m_ControlName: 
             m_PropertyPath: 
             m_TargetType:
               m_TypeName: 
@@ -93,10 +86,32 @@ MonoBehaviour:
                 m_ComponentIndex: 0
                 m_AssetObject: {fileID: 0}
                 m_Prefab: {fileID: 0}
-              m_FutureObjectReference: {fileID: 0}
-            m_VisualElementClassName: unity-editor-toolbar__button-strip-element--left
-            m_VisualElementName: Play
-            m_VisualElementTypeName: UnityEditor.Toolbars.EditorToolbarToggle
+              m_FutureObjectReference: {fileID: -5483670900957869223, guid: 527756b2fa134304b937333a45842567, type: 2}
+            m_VisualElementClassName: 
+            m_VisualElementName: 
+            m_VisualElementTypeName: 
+        - m_SelectorType: 1
+          m_ViewType:
+            m_TypeName: 
+          m_EditorWindowType:
+            m_TypeName: UnityEditor.InspectorWindow, UnityEditor.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          m_AlternateEditorWindowTypes:
+            m_Items: []
+          m_MaskType: 0
+          m_MaskSizeModifier: 0
+          m_UnmaskedControls: []
+        - m_SelectorType: 1
+          m_ViewType:
+            m_TypeName: 
+          m_EditorWindowType:
+            m_TypeName: UnityEditor.SceneView, UnityEditor.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          m_AlternateEditorWindowTypes:
+            m_Items: []
+          m_MaskType: 0
+          m_MaskSizeModifier: 0
+          m_UnmaskedControls: []
       m_Summary: 
       m_Description: 
       m_InstructionBoxTitle: 
@@ -106,7 +121,7 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Now we should test to see if it works
+        m_Untranslated: 
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -123,12 +138,21 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: Test the game
+        m_Untranslated: Let's add more points
       Text:
-        m_Untranslated: '1. Click ''Play'' button in the top bar
+        m_Untranslated: '1. Click the ''Platform_02'' object and navigate to the
+          inspector
 
-          2. Test
-          the feature we just added'
+          2. Find the MovingPlatform script and add more points
+
+          3.
+          Change the ''Loop Type'' to LOOP
+
+
+          _____
+
+          tip: The
+          world points can be dragged using the handles in the scene view'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -136,9 +160,13 @@ MonoBehaviour:
       m_Criteria:
         m_Items:
         - Type:
-            m_TypeName: Unity.Tutorials.Core.Editor.PlayModeStateCriterion, Unity.Tutorials.Core.Editor,
-              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-          Criterion: {fileID: -4541977406087587442}
+            m_TypeName: ArrayChangeCriterion, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+              PublicKeyToken=null
+          Criterion: {fileID: -2263866938002657608}
+        - Type:
+            m_TypeName: EnumCriterion, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+              PublicKeyToken=null
+          Criterion: {fileID: 5217803792463315303}
       m_MaskingSettings:
         m_MaskingEnabled: 0
         m_UnmaskedViews: []
@@ -201,3 +229,25 @@ MonoBehaviour:
       m_Calls: []
   m_NextButton: Next
   m_DoneButton: Done
+--- !u!114 &5217803792463315303
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef58230449b70df4c864c3056ebb4738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Completed:
+    m_PersistentCalls:
+      m_Calls: []
+  Invalidated:
+    m_PersistentCalls:
+      m_Calls: []
+  isTesting: 0
+  futureObjectReference: {fileID: -1799402137275445351, guid: 527756b2fa134304b937333a45842567, type: 2}
+  propertyPath: loopType
+  enumIntTargetValue: 0

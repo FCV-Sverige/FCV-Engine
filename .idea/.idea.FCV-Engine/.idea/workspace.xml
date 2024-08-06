@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="">
+    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="removed print">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EditorResources/ItemNameDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EditorResources/ItemNameDatabase.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactable/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactable/Door.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactable/Item.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactable/Item.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/SceneCreatorEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/SceneCreatorEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform/Editor/MovingPlatformEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform/Editor/MovingPlatformEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform/MovingPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform/MovingPlatform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/4. Inventory/7-InventorySystemEnd.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/4. Inventory/7-InventorySystemEnd.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/4. Inventory/InventoryTutorial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/4. Inventory/InventoryTutorial.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/FCV Engine.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/FCV Engine.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/TestPlay/TestPlayGame.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/TestPlay/TestPlayGame.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,7 @@
     <option name="defaultAccountId" value="d0e91122-6112-484c-9df6-e69e3fb290ee" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/80a8ce1980c648dca8e68f0d8aa3b930954400/87/08e4e15f/Editor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c77f0cfb8c8749918602f6f7dc15c51620a00/55/ba684386/CircleCollider2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/0d/0d9f250b/ISerializationCallbackReceiver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/18/feb7d166/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -29,13 +32,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/95/47ee5619/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/b6/9f95634b/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/d4/40218b03/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Palettes/Tiles/Tilesheet - WOODS.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/EditorResources/ItemNameDatabase.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Enemy/JumpStrikeEliminator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/PathFinding/PlatformFinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SceneCreatorEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scripts/Inventory/Item.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,9 +48,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Tutorials/1. UnityEditorInterface/KeyConcepts/3-Prefabs.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Tutorials/2. FCVEngine/2. TilePalette/3-LastPageTilePalette.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Tutorials/2. FCVEngine/3. Enemies/3-EnemyTutorialEnd.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -147,23 +146,7 @@
       <workItem from="1722315568391" duration="23407000" />
       <workItem from="1722575070852" duration="11141000" />
       <workItem from="1722841592376" duration="14143000" />
-      <workItem from="1722926575529" duration="2211000" />
-    </task>
-    <task id="LOCAL-00037" summary="inverted if statement to reduce nesting">
-      <option name="closed" value="true" />
-      <created>1722241388844</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1722241388844</updated>
-    </task>
-    <task id="LOCAL-00038" summary="move FOV functions to a static class so it can be used in other classes easily">
-      <option name="closed" value="true" />
-      <created>1722242591135</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1722242591135</updated>
+      <workItem from="1722926575529" duration="5350000" />
     </task>
     <task id="LOCAL-00039" summary="Damager.cs fixed to work properly with FOV angles">
       <option name="closed" value="true" />
@@ -541,7 +524,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722869725771</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Finished InventoryTutorial.asset">
+      <option name="closed" value="true" />
+      <created>1722930443595</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1722930443595</updated>
+    </task>
+    <task id="LOCAL-00087" summary="removed print">
+      <option name="closed" value="true" />
+      <created>1722930457782</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1722930457782</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,8 +567,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Made a script to handle jumping on Enemy" />
-    <MESSAGE value="Added JumpStrikeEliminator component to Enemy.prefab" />
     <MESSAGE value="Made Gizmos on selected and made them translucent" />
     <MESSAGE value="Made JumpStrikeEliminator component more forgiving by increasing angle to be able to jump kill enemies" />
     <MESSAGE value="fixed fallDetectorScript.cs to work and reload the scene once threshold is reached. added visualization to it" />
@@ -593,6 +590,8 @@
     <MESSAGE value="fixed AutoComplete in criterions" />
     <MESSAGE value="start of inventory system tutorial" />
     <MESSAGE value="has its own onTriggerEnter system and adds itself to the inventory" />
-    <option name="LAST_COMMIT_MESSAGE" value="has its own onTriggerEnter system and adds itself to the inventory" />
+    <MESSAGE value="Finished InventoryTutorial.asset" />
+    <MESSAGE value="removed print" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed print" />
   </component>
 </project>

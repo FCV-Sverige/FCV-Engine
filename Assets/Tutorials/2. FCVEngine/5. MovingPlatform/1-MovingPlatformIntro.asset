@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
-  m_Name: 7-InventorySystemEnd
+  m_Name: 1-MovingPlatformIntro
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Inventory System
+    m_Untranslated: Platforms
   m_Paragraphs:
     m_Items:
     - m_Type: 6
@@ -39,47 +39,10 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: Now you know how to implement items with the inventory system
-          and use them in your game
+        m_Untranslated: 'The platforms are a easy to use system that lets you drag
+          hooks to where the platforms are suppose to go and if they should loop
+          or ping-pong between the point. '
       m_Tutorial: {fileID: 0}
-      m_Image: {fileID: 0}
-      m_Video: {fileID: 0}
-      m_CriteriaCompletion: 0
-      m_Criteria:
-        m_Items: []
-      m_MaskingSettings:
-        m_MaskingEnabled: 0
-        m_UnmaskedViews: []
-      m_Summary: 
-      m_Description: 
-      m_InstructionBoxTitle: 
-      m_InstructionText: 
-      m_TutorialButtonText: 
-    - m_Type: 1
-      Title:
-        m_Untranslated: 
-      Text:
-        m_Untranslated: 
-      m_Tutorial: {fileID: 0}
-      m_Image: {fileID: 0}
-      m_Video: {fileID: 0}
-      m_CriteriaCompletion: 0
-      m_Criteria:
-        m_Items: []
-      m_MaskingSettings:
-        m_MaskingEnabled: 0
-        m_UnmaskedViews: []
-      m_Summary: 
-      m_Description: 
-      m_InstructionBoxTitle: 
-      m_InstructionText: 
-      m_TutorialButtonText: 
-    - m_Type: 2
-      Title:
-        m_Untranslated: 
-      Text:
-        m_Untranslated: Moving Platform Tutorial
-      m_Tutorial: {fileID: 11400000, guid: cf4805bff4f4ae544a42a4d9fb4227da, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0

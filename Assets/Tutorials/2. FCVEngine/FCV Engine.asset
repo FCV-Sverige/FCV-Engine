@@ -64,3 +64,13 @@ MonoBehaviour:
     Url: 
     Image: {fileID: 0}
     Tutorial: {fileID: 11400000, guid: 703847b2116861c48a47caf423c222d9, type: 2}
+  - OrderInView: 0
+    Heading:
+      m_Untranslated: Moving Platform
+    Text:
+      m_Untranslated: Walkthrough on how to implement moving platforms into your
+        levels
+    Metadata: 
+    Url: 
+    Image: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: cf4805bff4f4ae544a42a4d9fb4227da, type: 2}
