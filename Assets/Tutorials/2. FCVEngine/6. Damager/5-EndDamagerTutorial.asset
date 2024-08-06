@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
-  m_Name: 4-MovingPlatformEnd
+  m_Name: 5-EndDamagerTutorial
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Moving Platform
+    m_Untranslated: Damager
   m_Paragraphs:
     m_Items:
     - m_Type: 6
@@ -37,10 +37,11 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 0
       Title:
-        m_Untranslated: Page title
+        m_Untranslated: 
       Text:
-        m_Untranslated: Now you know how to implement moving platforms into your
-          level. Add them to your levels to make them more challenging and interesting
+        m_Untranslated: Now you know of a way to add damagers to different objects.
+          Use this to make the game feel more alive with interactive enviornment
+          or dangerous enemies
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -78,8 +79,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Damager Tutorial
-      m_Tutorial: {fileID: 11400000, guid: afa1b2534f3ed3249baa21044d3eb768, type: 2}
+        m_Untranslated: 'Tutorial X: Make the best game!'
+      m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0

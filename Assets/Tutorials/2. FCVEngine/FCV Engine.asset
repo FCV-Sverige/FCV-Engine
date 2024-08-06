@@ -74,3 +74,12 @@ MonoBehaviour:
     Url: 
     Image: {fileID: 0}
     Tutorial: {fileID: 11400000, guid: cf4805bff4f4ae544a42a4d9fb4227da, type: 2}
+  - OrderInView: 0
+    Heading:
+      m_Untranslated: Damager
+    Text:
+      m_Untranslated: Walkthrough on how to implement damager on different objects
+    Metadata: 
+    Url: 
+    Image: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: afa1b2534f3ed3249baa21044d3eb768, type: 2}
