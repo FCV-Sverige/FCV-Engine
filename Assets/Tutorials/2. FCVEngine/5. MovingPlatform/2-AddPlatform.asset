@@ -139,7 +139,7 @@ MonoBehaviour:
       Text:
         m_Untranslated: '1. Navigate to ''Assets/Prefabs''
 
-          2. Find ''Platform_02''
+          2. Find ''Platform''
           and drag it into the scene'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}

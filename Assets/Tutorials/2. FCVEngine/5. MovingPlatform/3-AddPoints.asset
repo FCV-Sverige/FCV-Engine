@@ -140,19 +140,19 @@ MonoBehaviour:
       Title:
         m_Untranslated: Let's add more points
       Text:
-        m_Untranslated: '1. Click the ''Platform_02'' object and navigate to the
-          inspector
+        m_Untranslated: '1. Click the ''Platform'' object and navigate to the inspector
 
-          2. Find the MovingPlatform script and add more points
+          2.
+          Find the MovingPlatform script and add more points
 
-          3.
-          Change the ''Loop Type'' to LOOP
+          3. Change
+          the ''Loop Type'' to LOOP
 
 
           _____
 
-          tip: The
-          world points can be dragged using the handles in the scene view'
+          tip: The world points
+          can be dragged using the handles in the scene view'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
