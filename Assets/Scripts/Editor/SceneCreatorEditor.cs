@@ -12,14 +12,14 @@ public class SceneCreatorEditor : EditorWindow
     protected readonly GUIContent NameContent = new GUIContent("New Scene Name");
 
     [MenuItem("Tools/Create New Scene...", priority = 100)]
-    static void Init()
+    private static void Init()
     {
         SceneCreatorEditor window = GetWindow<SceneCreatorEditor>();
         window.Show();
         window.NewSceneName = "NewScene";
     }
-
-    void OnGUI()
+    
+    private void OnGUI()
     {
         NewSceneName = EditorGUILayout.TextField(NameContent, NewSceneName);
 
@@ -80,7 +80,7 @@ public class SceneCreatorEditor : EditorWindow
         {
             //Debug.LogError("The template scene <b>_TemplateScene</b> couldn't be found ");
             EditorUtility.DisplayDialog("Error",
-                "The scene _TemplateScene was not found in Gamekit2D/Scenes folder. This scene is required by the New Scene Creator.",
+                "The scene DemoScene was not found in Assets/Scenes folder. This scene is required by the Scene Creator.",
                 "OK");
         }
     }
