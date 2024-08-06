@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class Damager : MonoBehaviour
 {
-    [SerializeField] private int damage;
+    [SerializeField] private int damage = 10;
     [SerializeField] private LayerMask layerMask;
-    [SerializeField] private float collisionDistance;
-    [SerializeField] private float attackCooldown;
+    [SerializeField] private float collisionDistance = 1;
+    [SerializeField] private float attackCooldown = .5f;
 
     [Space(15)] [Header("Direction Options"), Space(5)] 
     
