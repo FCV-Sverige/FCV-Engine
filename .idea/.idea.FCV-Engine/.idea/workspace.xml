@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="made PlatformFinder into a prefab so that it is clear what you need for the enemies to work">
+    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Palettes/GroundRuleTile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Palettes/GroundRuleTile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DemoScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/1. UnityEditorInterface/KeyConcepts/3-Prefabs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/1. UnityEditorInterface/KeyConcepts/3-Prefabs.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EditorResources/ItemNameDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EditorResources/ItemNameDatabase.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactable/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactable/Door.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactable/Item.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactable/Item.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/4. Inventory/InventoryTutorial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/4. Inventory/InventoryTutorial.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,16 +22,20 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c77f0cfb8c8749918602f6f7dc15c51620a00/55/ba684386/CircleCollider2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/0d/0d9f250b/ISerializationCallbackReceiver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/18/feb7d166/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/73/a6565849/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/92/4caccb05/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/95/47ee5619/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/b6/9f95634b/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/d4/40218b03/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Palettes/Tiles/Tilesheet - WOODS.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Enemy/JumpStrikeEliminator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/PathFinding/PlatformFinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SceneCreatorEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scripts/Inventory/Item.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
@@ -42,6 +46,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Tutorials/1. UnityEditorInterface/KeyConcepts/3-Prefabs.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Tutorials/2. FCVEngine/2. TilePalette/3-LastPageTilePalette.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Tutorials/2. FCVEngine/3. Enemies/3-EnemyTutorialEnd.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -52,28 +59,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\christian.backstrom\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\christian.backstrom\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\christian.backstrom\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\christian.backstrom\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\christian.backstrom\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\christian.backstrom\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Builds/test/Main Project.exe" />
@@ -139,55 +146,8 @@
       <workItem from="1722234271413" duration="24827000" />
       <workItem from="1722315568391" duration="23407000" />
       <workItem from="1722575070852" duration="11141000" />
-      <workItem from="1722841592376" duration="5235000" />
-    </task>
-    <task id="LOCAL-00031" summary="made sure the health is set to maxHealth in Awake">
-      <option name="closed" value="true" />
-      <created>1722240390872</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1722240390872</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Made Damager.cs for generic damage done through collision">
-      <option name="closed" value="true" />
-      <created>1722240529291</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1722240529291</updated>
-    </task>
-    <task id="LOCAL-00033" summary="added Health and damager component to Enemy.prefab">
-      <option name="closed" value="true" />
-      <created>1722240574330</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1722240574330</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Added Health component to Player.prefab">
-      <option name="closed" value="true" />
-      <created>1722240589316</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1722240589316</updated>
-    </task>
-    <task id="LOCAL-00035" summary="removed print for moving platform">
-      <option name="closed" value="true" />
-      <created>1722240942032</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1722240942032</updated>
-    </task>
-    <task id="LOCAL-00036" summary="made new function to minimize code multiplication">
-      <option name="closed" value="true" />
-      <created>1722241277353</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1722241277353</updated>
+      <workItem from="1722841592376" duration="14143000" />
+      <workItem from="1722926575529" duration="2211000" />
     </task>
     <task id="LOCAL-00037" summary="inverted if statement to reduce nesting">
       <option name="closed" value="true" />
@@ -533,7 +493,55 @@
       <option name="project" value="LOCAL" />
       <updated>1722847623213</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Added tile palette tutorial and creating a new scene tutorial">
+      <option name="closed" value="true" />
+      <created>1722851209684</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1722851209685</updated>
+    </task>
+    <task id="LOCAL-00081" summary="removed SampleScene.unity">
+      <option name="closed" value="true" />
+      <created>1722855688455</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1722855688455</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Made enemies tutorial and new scene for tutorial use">
+      <option name="closed" value="true" />
+      <created>1722863663901</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1722863663901</updated>
+    </task>
+    <task id="LOCAL-00083" summary="fixed AutoComplete in criterions">
+      <option name="closed" value="true" />
+      <created>1722863744478</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1722863744478</updated>
+    </task>
+    <task id="LOCAL-00084" summary="start of inventory system tutorial">
+      <option name="closed" value="true" />
+      <created>1722869705461</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1722869705461</updated>
+    </task>
+    <task id="LOCAL-00085" summary="has its own onTriggerEnter system and adds itself to the inventory">
+      <option name="closed" value="true" />
+      <created>1722869725771</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1722869725771</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,12 +568,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="MovingPlatform.cs parents player standing on it to have player move with the platform" />
-    <MESSAGE value="removed debugging prints" />
-    <MESSAGE value="tweaked variables in Enemy.prefab to work better in the game" />
-    <MESSAGE value="Scene update" />
-    <MESSAGE value="Seperated the IsWithinFov from the range" />
-    <MESSAGE value="Removed IsWithinFOVAndRange to IsWithinFov since range is already acounted for" />
     <MESSAGE value="Made a script to handle jumping on Enemy" />
     <MESSAGE value="Added JumpStrikeEliminator component to Enemy.prefab" />
     <MESSAGE value="Made Gizmos on selected and made them translucent" />
@@ -585,6 +587,12 @@
     <MESSAGE value="Made float animation script and added it to weapon, used to make the world more alive" />
     <MESSAGE value="Removed old tutorials and added the Unity Editor tutorials from the 2D_GamekitSGC project" />
     <MESSAGE value="made PlatformFinder into a prefab so that it is clear what you need for the enemies to work" />
-    <option name="LAST_COMMIT_MESSAGE" value="made PlatformFinder into a prefab so that it is clear what you need for the enemies to work" />
+    <MESSAGE value="Added tile palette tutorial and creating a new scene tutorial" />
+    <MESSAGE value="removed SampleScene.unity" />
+    <MESSAGE value="Made enemies tutorial and new scene for tutorial use" />
+    <MESSAGE value="fixed AutoComplete in criterions" />
+    <MESSAGE value="start of inventory system tutorial" />
+    <MESSAGE value="has its own onTriggerEnter system and adds itself to the inventory" />
+    <option name="LAST_COMMIT_MESSAGE" value="has its own onTriggerEnter system and adds itself to the inventory" />
   </component>
 </project>
