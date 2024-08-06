@@ -1,48 +1,49 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Tutorials.Core.Editor;
 using UnityEditor;
 using UnityEngine;
-
-public class FloatBetweenValuesCriterion : Criterion
+#if UNITY_EDITOR
+namespace Unity.Tutorials.Core.Editor
 {
-    [SerializeField] private float minValue, maxValue;
-
-    [SerializeField] private FutureObjectReference futureObjectReference;
-    [SerializeField] private string propertyPath;
-
-    private Object TargetObject => futureObjectReference.SceneObjectReference.ReferencedObject;
-    
-    public override void StartTesting()
+    public class FloatBetweenValuesCriterion : Criterion
     {
-        base.StartTesting();
-        UpdateCompletion();
+        [SerializeField] private float minValue, maxValue;
 
-        EditorApplication.update += UpdateCompletion;
-    }
-    
-    public override void StopTesting()
-    {
-        base.StopTesting();
+        [SerializeField] private FutureObjectReference futureObjectReference;
+        [SerializeField] private string propertyPath;
 
-        EditorApplication.update -= UpdateCompletion;
-    }
+        private Object TargetObject => futureObjectReference.SceneObjectReference.ReferencedObject;
 
-    protected override bool EvaluateCompletion()
-    {
-        SerializedProperty floatProperty = new SerializedObject(TargetObject).FindProperty(propertyPath);
-
-        if (floatProperty == null)
+        public override void StartTesting()
         {
-            Debug.Log("Property path returns null");
-            return false;
+            base.StartTesting();
+            UpdateCompletion();
+
+            EditorApplication.update += UpdateCompletion;
         }
 
-        return floatProperty.floatValue < maxValue && floatProperty.floatValue > minValue;
-    }
+        public override void StopTesting()
+        {
+            base.StopTesting();
 
-    public override bool AutoComplete()
-    {
-        return true;
+            EditorApplication.update -= UpdateCompletion;
+        }
+
+        protected override bool EvaluateCompletion()
+        {
+            SerializedProperty floatProperty = new SerializedObject(TargetObject).FindProperty(propertyPath);
+
+            if (floatProperty == null)
+            {
+                Debug.Log("Property path returns null");
+                return false;
+            }
+
+            return floatProperty.floatValue < maxValue && floatProperty.floatValue > minValue;
+        }
+
+        public override bool AutoComplete()
+        {
+            return true;
+        }
     }
 }
+#endif

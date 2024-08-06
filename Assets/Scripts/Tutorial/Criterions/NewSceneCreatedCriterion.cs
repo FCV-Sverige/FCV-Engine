@@ -1,11 +1,11 @@
-﻿using Unity.Tutorials.Core.Editor;
-using UnityEditor;
-using UnityEditor.SceneManagement;
-using UnityEngine;
+﻿using UnityEditor;
 using UnityEngine.SceneManagement;
 
+#if UNITY_EDITOR
+using UnityEditor.SceneManagement;
+
 // Very specific Criterion to check wether a new scene has been created or not
-namespace Tutorial.Criterions
+namespace Unity.Tutorials.Core.Editor
 {
     public class NewSceneCreatedCriterion : Criterion
     {
@@ -39,3 +39,4 @@ namespace Tutorial.Criterions
         }
     }
 }
+#endif

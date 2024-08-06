@@ -1,127 +1,125 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Tutorials.Core.Editor;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Object = UnityEngine.Object;
-
-public class ObjectArrayChangeCriterion : Criterion
+#if UNITY_EDITOR
+using UnityEditor;
+namespace Unity.Tutorials.Core.Editor
 {
-    [SerializeField] 
-    private Operation operation;
-    
-    [SerializeField] 
-    private Object m_Target;
-
-    [SerializeField, SerializedTypeFilter(typeof(Object), false)] 
-    private SerializedType m_serializedType;
-
-    [SerializeField] private string propertyPath;
-
-    private int startCount;
-
-
-    public override void StartTesting()
+    public class ObjectArrayChangeCriterion : Criterion
     {
-        base.StartTesting();
-        UpdateCompletion();
-        StartValue();
+        [SerializeField] private Operation operation;
 
-        EditorApplication.update += UpdateCompletion;
-    }
-    
-    /// <summary>
-    /// Sets the start count variable to the original array size of the property specified
-    /// </summary>
-    private void StartValue()
-    {
-        try
+        [SerializeField] private Object m_Target;
+
+        [SerializeField, SerializedTypeFilter(typeof(Object), false)]
+        private SerializedType m_serializedType;
+
+        [SerializeField] private string propertyPath;
+
+        private int startCount;
+
+
+        public override void StartTesting()
         {
-            if (m_Target == null)
-            {
-                Debug.LogWarning("target is not provided");
-                return;
-            }
-            
-            SerializedObject serializedObject = new SerializedObject(m_Target);
-            SerializedProperty serializedProperty = serializedObject.FindProperty(propertyPath);
-            
-            if (!serializedProperty.isArray)
-            {
-                Debug.LogWarning("The property path provided is not an array type");
-                return;
-            }
+            base.StartTesting();
+            UpdateCompletion();
+            StartValue();
 
-            startCount = serializedProperty.arraySize;
-
+            EditorApplication.update += UpdateCompletion;
         }
-        catch (Exception e)
+
+        /// <summary>
+        /// Sets the start count variable to the original array size of the property specified
+        /// </summary>
+        private void StartValue()
         {
-            Debug.LogException(e);
-        }
-    }
-
-    public override void StopTesting()
-    {
-        base.StopTesting();
-
-        EditorApplication.update -= UpdateCompletion;
-    }
-
-    protected override bool EvaluateCompletion()
-    {
-        bool completion = false;
-        
-        try
-        {
-            if (m_Target == null)
+            try
             {
-                Debug.LogWarning("Component is not on object provided");
-                return false;
+                if (m_Target == null)
+                {
+                    Debug.LogWarning("target is not provided");
+                    return;
+                }
+
+                SerializedObject serializedObject = new SerializedObject(m_Target);
+                SerializedProperty serializedProperty = serializedObject.FindProperty(propertyPath);
+
+                if (!serializedProperty.isArray)
+                {
+                    Debug.LogWarning("The property path provided is not an array type");
+                    return;
+                }
+
+                startCount = serializedProperty.arraySize;
+
             }
-            
-            SerializedObject serializedObject = new SerializedObject(m_Target);
-            
-            SerializedProperty serializedProperty = serializedObject.FindProperty(propertyPath);
-            
-            
-            if (!serializedProperty.isArray)
+            catch (Exception e)
             {
-                Debug.LogWarning("The property path provided is not an array type");
+                Debug.LogException(e);
+            }
+        }
+
+        public override void StopTesting()
+        {
+            base.StopTesting();
+
+            EditorApplication.update -= UpdateCompletion;
+        }
+
+        protected override bool EvaluateCompletion()
+        {
+            bool completion = false;
+
+            try
+            {
+                if (m_Target == null)
+                {
+                    Debug.LogWarning("Component is not on object provided");
+                    return false;
+                }
+
+                SerializedObject serializedObject = new SerializedObject(m_Target);
+
+                SerializedProperty serializedProperty = serializedObject.FindProperty(propertyPath);
+
+
+                if (!serializedProperty.isArray)
+                {
+                    Debug.LogWarning("The property path provided is not an array type");
+                    return true;
+                }
+
+                switch (operation)
+                {
+                    case Operation.Greater:
+                        completion = serializedProperty.arraySize > startCount;
+                        break;
+                    case Operation.Less:
+                        completion = serializedProperty.arraySize < startCount;
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+
+                return completion;
+            }
+            catch (Exception e)
+            {
+                Debug.LogException(e);
                 return true;
             }
-
-            switch (operation)
-            {
-                case Operation.Greater:
-                    completion = serializedProperty.arraySize > startCount;
-                    break;
-                case Operation.Less:
-                    completion = serializedProperty.arraySize < startCount;
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
-            
-            return completion;
         }
-        catch (Exception e)
+
+        public override bool AutoComplete()
         {
-            Debug.LogException(e);
             return true;
         }
-    }
 
-    public override bool AutoComplete()
-    {
-        return true;
-    }
-
-    public enum Operation
-    {
-        Greater,
-        Less
+        public enum Operation
+        {
+            Greater,
+            Less
+        }
     }
 }
+#endif

@@ -1,46 +1,48 @@
-using Unity.Tutorials.Core.Editor;
 using UnityEditor;
 using UnityEngine;
-
-public class InstantiateSpriteCriterion : Criterion
+#if UNITY_EDITOR
+namespace Unity.Tutorials.Core.Editor
 {
-    [SerializeField] 
-    private Sprite sprite;
-
-    public override void StartTesting()
+    public class InstantiateSpriteCriterion : Criterion
     {
-        base.StartTesting();
-        UpdateCompletion();
-        
+        [SerializeField] private Sprite sprite;
 
-        EditorApplication.update += UpdateCompletion;
-    }
-    
-    public override void StopTesting()
-    {
-        base.StopTesting();
-
-        EditorApplication.update -= UpdateCompletion;
-    }
-
-    protected override bool EvaluateCompletion()
-    {
-        foreach (var spriteRenderer in FindObjectsOfType<SpriteRenderer>())
+        public override void StartTesting()
         {
-            if (spriteRenderer.sprite == sprite)
-            {
-                return true;
-            }
+            base.StartTesting();
+            UpdateCompletion();
+
+
+            EditorApplication.update += UpdateCompletion;
         }
 
-        return false;
-    }
+        public override void StopTesting()
+        {
+            base.StopTesting();
+
+            EditorApplication.update -= UpdateCompletion;
+        }
+
+        protected override bool EvaluateCompletion()
+        {
+            foreach (var spriteRenderer in FindObjectsOfType<SpriteRenderer>())
+            {
+                if (spriteRenderer.sprite == sprite)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
 
 
-    public override bool AutoComplete()
-    {
-        Instantiate(sprite, Vector3.zero, Quaternion.identity);
+        public override bool AutoComplete()
+        {
+            Instantiate(sprite, Vector3.zero, Quaternion.identity);
 
-        return true;
+            return true;
+        }
     }
 }
+#endif

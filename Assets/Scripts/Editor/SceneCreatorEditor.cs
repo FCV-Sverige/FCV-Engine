@@ -9,6 +9,8 @@ public class SceneCreatorEditor : EditorWindow
 {
     protected string NewSceneName;
 
+    protected SceneAsset CopySceneAsset;
+
     protected readonly GUIContent NameContent = new GUIContent("New Scene Name");
 
     [MenuItem("Tools/Create New Scene...", priority = 100)]
@@ -22,6 +24,7 @@ public class SceneCreatorEditor : EditorWindow
     private void OnGUI()
     {
         NewSceneName = EditorGUILayout.TextField(NameContent, NewSceneName);
+        CopySceneAsset = (SceneAsset)EditorGUILayout.ObjectField(CopySceneAsset, typeof(SceneAsset));
 
         if (GUILayout.Button("Create"))
             CheckAndCreateScene();

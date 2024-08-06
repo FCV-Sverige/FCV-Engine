@@ -1,59 +1,60 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Tutorials.Core.Editor;
 using UnityEditor;
 using UnityEngine;
-
-public class MatchExactStringPropertiesCriterion : Criterion
+#if UNITY_EDITOR
+namespace Unity.Tutorials.Core.Editor
 {
-    [SerializeField] private FutureObjectReference objectReference1;
-    [SerializeField] private string propertyPath1 = "";
-
-    [SerializeField] private FutureObjectReference objectReference2;
-    [SerializeField] private string propertyPath2 = "";
-
-    private Object TargetObject1 => objectReference1.SceneObjectReference.ReferencedObject;
-    private Object TargetObject2 => objectReference2.SceneObjectReference.ReferencedObject;
-    
-    
-    
-    public override void StartTesting()
+    public class MatchExactStringPropertiesCriterion : Criterion
     {
-        base.StartTesting();
-        UpdateCompletion();
+        [SerializeField] private FutureObjectReference objectReference1;
+        [SerializeField] private string propertyPath1 = "";
 
-        EditorApplication.update += UpdateCompletion;
-    }
-    
-    public override void StopTesting()
-    {
-        base.StopTesting();
+        [SerializeField] private FutureObjectReference objectReference2;
+        [SerializeField] private string propertyPath2 = "";
 
-        EditorApplication.update -= UpdateCompletion;
-    }
+        private Object TargetObject1 => objectReference1.SceneObjectReference.ReferencedObject;
+        private Object TargetObject2 => objectReference2.SceneObjectReference.ReferencedObject;
 
-    protected override bool EvaluateCompletion()
-    {
-        if (!TargetObject1 || !TargetObject2)
+
+
+        public override void StartTesting()
         {
-            Debug.LogWarning("either or both of objectreferences are null");
-            return false;
-        }
-        
-        SerializedProperty string1Property = new SerializedObject(TargetObject1).FindProperty(propertyPath1);
-        SerializedProperty string2Property = new SerializedObject(TargetObject2).FindProperty(propertyPath2);
+            base.StartTesting();
+            UpdateCompletion();
 
-        if (string1Property == null || string2Property == null)
+            EditorApplication.update += UpdateCompletion;
+        }
+
+        public override void StopTesting()
         {
-            Debug.LogWarning("either or both of strings are null");
-            return false;
-        }
-        
-        return string1Property.stringValue.Equals(string2Property.stringValue);
-    }
+            base.StopTesting();
 
-    public override bool AutoComplete()
-    {
-        return true;
+            EditorApplication.update -= UpdateCompletion;
+        }
+
+        protected override bool EvaluateCompletion()
+        {
+            if (!TargetObject1 || !TargetObject2)
+            {
+                Debug.LogWarning("either or both of objectreferences are null");
+                return false;
+            }
+
+            SerializedProperty string1Property = new SerializedObject(TargetObject1).FindProperty(propertyPath1);
+            SerializedProperty string2Property = new SerializedObject(TargetObject2).FindProperty(propertyPath2);
+
+            if (string1Property == null || string2Property == null)
+            {
+                Debug.LogWarning("either or both of strings are null");
+                return false;
+            }
+
+            return string1Property.stringValue.Equals(string2Property.stringValue);
+        }
+
+        public override bool AutoComplete()
+        {
+            return true;
+        }
     }
 }
+#endif

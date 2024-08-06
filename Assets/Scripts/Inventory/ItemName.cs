@@ -2,6 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
+
 public class ItemName : PropertyAttribute
 {
     public ItemName()
@@ -9,6 +10,7 @@ public class ItemName : PropertyAttribute
     }
 }
 
+#if UNITY_EDITOR
 [CustomPropertyDrawer(typeof(ItemName))]
 public class ItemNameDrawer : PropertyDrawer
 {
@@ -34,3 +36,4 @@ public class ItemNameDrawer : PropertyDrawer
         }
     }
 }
+#endif
