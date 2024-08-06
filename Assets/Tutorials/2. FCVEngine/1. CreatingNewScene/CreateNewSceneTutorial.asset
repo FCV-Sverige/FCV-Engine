@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CreateNewSceneTutorial
   m_EditorClassIdentifier: 
   TutorialTitle:
-    m_Untranslated: 1. Create New Scene
+    m_Untranslated: Create New Scene
   m_ProgressTrackingEnabled: 0
   m_LessonId: 
   m_Version: 0

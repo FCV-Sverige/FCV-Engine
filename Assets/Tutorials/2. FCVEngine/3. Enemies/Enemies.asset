@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enemies
   m_EditorClassIdentifier: 
   TutorialTitle:
-    m_Untranslated: 3. Enemies
+    m_Untranslated: Enemies
   m_ProgressTrackingEnabled: 0
   m_LessonId: 
   m_Version: 0

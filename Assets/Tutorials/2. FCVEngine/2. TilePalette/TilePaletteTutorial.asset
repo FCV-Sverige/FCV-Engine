@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TilePaletteTutorial
   m_EditorClassIdentifier: 
   TutorialTitle:
-    m_Untranslated: 2. Painting a Level
+    m_Untranslated: Painting a Level
   m_ProgressTrackingEnabled: 0
   m_LessonId: 
   m_Version: 1
