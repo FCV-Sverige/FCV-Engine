@@ -22,7 +22,6 @@ public class Item : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("Added item to inventory");
         if (!other.TryGetComponent(out Inventory inventory)) return;
         inventory.TryAddItem(itemName, this);
         gameObject.SetActive(false);
