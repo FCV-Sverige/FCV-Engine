@@ -123,6 +123,57 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &251964428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 251964430}
+  - component: {fileID: 251964429}
+  m_Layer: 0
+  m_Name: CheckPointManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &251964429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251964428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08a2c89e760f9c44686c3aa889f77116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkPointGameObject: {fileID: 0}
+  playerTransform: {fileID: 8448425283276711344}
+  checkPoints:
+  - {x: 11.930157, y: -1.72106}
+  - {x: 0, y: -1.7276318}
+  - {x: 19.161896, y: 4.255765}
+  checkPointAcquiredDistance: 1
+--- !u!4 &251964430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251964428}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.6995273, y: -1.152145, z: -0.014146204}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &346048382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1319,6 +1370,10 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 8448425283276711344}
+    - target: {fileID: 312263493309444182, guid: 434c21a627234e34ab88c8a8d97c475b, type: 3}
+      propertyPath: checkPointManager
+      value: 
+      objectReference: {fileID: 251964429}
     - target: {fileID: 4387675261179683593, guid: 434c21a627234e34ab88c8a8d97c475b, type: 3}
       propertyPath: m_Name
       value: fallDetector
@@ -1455,3 +1510,4 @@ SceneRoots:
   - {fileID: 877237302}
   - {fileID: 1407265555}
   - {fileID: 2080198141}
+  - {fileID: 251964430}
