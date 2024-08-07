@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class fallDetectorScript : MonoBehaviour
 {
+    [SerializeField] private CheckPointManager checkPointManager;
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float yPositionThreshold = -20;
 
@@ -11,8 +12,15 @@ public class fallDetectorScript : MonoBehaviour
     {
         if (playerTransform != null)
         {
-            if (playerTransform.transform.position.y <= yPositionThreshold)
-                SceneManager.LoadScene(SceneManager.GetActiveScene().path);
+            if (playerTransform.transform.position.y > yPositionThreshold) return;
+
+            if (checkPointManager)
+            {
+                checkPointManager.PlaceAtCheckPoint();
+                return;
+            }
+            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().path);
         }
     }
 
