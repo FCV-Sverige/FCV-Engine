@@ -155,8 +155,8 @@ MonoBehaviour:
   checkPointGameObject: {fileID: 0}
   playerTransform: {fileID: 8448425283276711344}
   checkPoints:
-  - {x: 11.930157, y: -1.72106}
-  - {x: 0, y: -1.7276318}
+  - {x: 11.427365, y: -1.6492327}
+  - {x: 0.16161132, y: -1.6737614}
   - {x: 19.161896, y: 4.255765}
   checkPointAcquiredDistance: 1
 --- !u!4 &251964430
