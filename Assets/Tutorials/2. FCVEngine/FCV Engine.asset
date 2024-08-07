@@ -76,6 +76,16 @@ MonoBehaviour:
     Tutorial: {fileID: 11400000, guid: cf4805bff4f4ae544a42a4d9fb4227da, type: 2}
   - OrderInView: 0
     Heading:
+      m_Untranslated: Custom2DCollider
+    Text:
+      m_Untranslated: A walkthrough on how to use and how the Custom2DCollider component
+        works
+    Metadata: 
+    Url: 
+    Image: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: 204ad844d9583a44687ae588facae9a0, type: 2}
+  - OrderInView: 0
+    Heading:
       m_Untranslated: Damager
     Text:
       m_Untranslated: Walkthrough on how to implement damager on different objects
