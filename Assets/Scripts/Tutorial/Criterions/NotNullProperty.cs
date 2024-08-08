@@ -30,8 +30,9 @@ namespace Unity.Tutorials.Core.Editor
 
             SerializedObject serializedObject = new SerializedObject(m_Target.SceneObjectReference.ReferencedObject);
             SerializedProperty serializedProperty = serializedObject.FindProperty(propertyPath);
+            if (serializedProperty == null) return false;
+            
             return serializedProperty.objectReferenceValue ?? false;
-
         }
 
         public override bool AutoComplete()
