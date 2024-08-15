@@ -1,26 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6560088938854841939
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e519c4ce58cb5f4a9a7c8824396cb7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Completed:
-    m_PersistentCalls:
-      m_Calls: []
-  Invalidated:
-    m_PersistentCalls:
-      m_Calls: []
-  isTesting: 0
-  m_Target: {fileID: 1034459185437941057}
-  propertyPath: m_Sprite
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,9 +127,9 @@ MonoBehaviour:
               Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
           Criterion: {fileID: 1585643392178335414}
         - Type:
-            m_TypeName: NotNullProperty, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-              PublicKeyToken=null
-          Criterion: {fileID: -6560088938854841939}
+            m_TypeName: Unity.Tutorials.Core.Editor.NotNullProperty, Assembly-CSharp,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          Criterion: {fileID: 4527644870051585285}
       m_MaskingSettings:
         m_MaskingEnabled: 0
         m_UnmaskedViews: []
@@ -293,3 +272,24 @@ MonoBehaviour:
         m_AssetObject: {fileID: 0}
         m_Prefab: {fileID: 0}
       m_FutureObjectReference: {fileID: 0}
+--- !u!114 &4527644870051585285
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e519c4ce58cb5f4a9a7c8824396cb7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Completed:
+    m_PersistentCalls:
+      m_Calls: []
+  Invalidated:
+    m_PersistentCalls:
+      m_Calls: []
+  isTesting: 0
+  m_Target: {fileID: 1034459185437941057}
+  propertyPath: m_Sprite

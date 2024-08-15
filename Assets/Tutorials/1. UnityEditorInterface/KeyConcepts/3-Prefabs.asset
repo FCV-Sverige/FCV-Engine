@@ -99,12 +99,12 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: Drag 'Platform_02' prefab into scene
+        m_Untranslated: Drag 'Platform' prefab into scene
       Text:
-        m_Untranslated: '1. Navigate to ''Assets/Prefabs/Weapons''
+        m_Untranslated: '1. Navigate to ''Assets/Prefabs''
 
-          2.
-          Click and drag Key object into scene window'
+          2. Click and
+          drag ''Platform'' object into scene window'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -196,6 +196,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   isTesting: 0
-  m_PrefabParent: {fileID: 4868903438995980296, guid: de06d8b330b274c47bf9213cbb8104fa, type: 3}
+  m_PrefabParent: {fileID: 5863598028972174177, guid: 3acaa4f00ce7fd641b1e77fcafd535ea, type: 3}
   m_FuturePrefabInstances:
     m_Items: []
