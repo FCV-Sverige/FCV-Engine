@@ -75,8 +75,11 @@ MonoBehaviour:
 
           ____
 
-          Keyboard
-          shortcut: Scrool Wheel'
+          Mouse
+          shortcut: Scroll Wheel
+
+          Keyboard shortcut: Left Alt + right click
+          - drag'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
