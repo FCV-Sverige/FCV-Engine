@@ -59,10 +59,10 @@ public class CheckPointManagerEditor : Editor
 
     private void OnSceneGUI()
     {
-        MakePositionAndLineHandles();
+        MakePositionHandles();
     }
     
-    private void MakePositionAndLineHandles()
+    private void MakePositionHandles()
     {
         checkPoints = checkPointManager.CheckPoints;
         if (checkPoints.Count <= 0)
