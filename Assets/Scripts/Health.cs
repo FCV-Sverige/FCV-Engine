@@ -8,6 +8,7 @@ using UnityEngine.Serialization;
 public class Health : MonoBehaviour
 {
     public UnityEvent<int, int> onHealthChanged;
+    public UnityEvent<GameObject> onDeath;
     [SerializeField] private int maxHealth;
 
     public int CurrentHealth { get; private set; }
@@ -35,6 +36,13 @@ public class Health : MonoBehaviour
     {
         CurrentHealth += healthChange;
         CurrentHealth = Mathf.Clamp(CurrentHealth, 0, maxHealth);
-        onHealthChanged.Invoke(CurrentHealth, maxHealth);
+        if (CurrentHealth > 0)
+        {
+            onHealthChanged.Invoke(CurrentHealth, maxHealth);
+        }
+        else
+        {
+            onDeath.Invoke(this.gameObject);
+        }
     }
 }
