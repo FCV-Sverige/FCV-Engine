@@ -46,8 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkPointGameObject: {fileID: 0}
   playerTransform: {fileID: 0}
-  checkPoints:
-  - {x: 11.427365, y: -1.6492327}
-  - {x: 0.16161132, y: -1.6737614}
-  - {x: 19.161896, y: 4.255765}
+  checkPoints: []
   checkPointAcquiredDistance: 1
