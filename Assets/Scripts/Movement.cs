@@ -116,6 +116,7 @@ public class Movement : MonoBehaviour
 
         lastGroundedTime = 0;
         isJumping = true;
+        animator.SetTrigger("StartJump");
     }
 
     private void GravityScaling()
@@ -133,6 +134,7 @@ public class Movement : MonoBehaviour
     private void SetAnimation()
     {
         animator.SetFloat("speed", Mathf.Abs(moveInputs.x));
+        animator.SetBool("IsJumping", isJumping);
     }
 
     private bool canJump()
@@ -144,12 +146,12 @@ public class Movement : MonoBehaviour
     {
         if (moveInputs.x > 0.01f)
         {
-            spriteRenderer.flipX = false;
+            spriteRenderer.flipX = true;
         }
 
         if (moveInputs.x < -0.01f)
         {
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = false;
         }
     }
 

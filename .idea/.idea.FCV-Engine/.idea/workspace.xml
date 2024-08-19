@@ -4,8 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="">
+    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="updated scene with new tileset">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animation controller.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animation controller.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/New Animator Controller.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/New Animator Controller.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PLAYER ANIMATOR CONTROLLER.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PLAYER ANIMATOR CONTROLLER.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Hit.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Hit/Hit.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Hit/Hit.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Idkeanim.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Idkeanim.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/Idle Animation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/Idle Animation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/IdleAnim.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/IdleAnim.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/New Animation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/New Animation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/Player Idle_animation.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/Player Idle_animation.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/Player.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/Player.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Jumpanim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Jumpanim/JumpAnim.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Jumpanim/JumpAnim.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Runanim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Runanim/RunAnim.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Runanim/RunAnim.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_idleanim.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_idleanim.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/TutorialScenes/TutorialDemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/TutorialScenes/TutorialDemoScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +68,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/b6/9f95634b/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/d4/33c36d4c/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/d4/40218b03/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Prefabs/CheckPointManager.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scenes/main scene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Enemy/JumpStrikeEliminator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/PathFinding/PlatformFinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SceneCreatorEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Door.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scripts/GameplaySystems/CheckPointManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
@@ -159,22 +189,7 @@
       <workItem from="1723121447327" duration="2804000" />
       <workItem from="1723702823926" duration="4123000" />
       <workItem from="1723807154604" duration="3297000" />
-    </task>
-    <task id="LOCAL-00074" summary="Scene Update">
-      <option name="closed" value="true" />
-      <created>1722578499375</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1722578499375</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Removed test items from scene">
-      <option name="closed" value="true" />
-      <created>1722578530620</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1722578530620</updated>
+      <workItem from="1724049783487" duration="2999000" />
     </task>
     <task id="LOCAL-00076" summary="Updated ItemNameDatabase.asset">
       <option name="closed" value="true" />
@@ -552,7 +567,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723810993564</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="removed rule tile with old tileset and added Isaacs tile set">
+      <option name="closed" value="true" />
+      <created>1724049823542</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1724049823542</updated>
+    </task>
+    <task id="LOCAL-00124" summary="updated scene with new tileset">
+      <option name="closed" value="true" />
+      <created>1724050011365</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1724050011365</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,8 +610,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="removed index marker from tutorial titles" />
-    <MESSAGE value="Missed to add final page to InventoryTutorial.asset" />
     <MESSAGE value="added FallDetector to the demo scene" />
     <MESSAGE value="added last page for DamagerTutorial.asset" />
     <MESSAGE value="added CheckPointManager to ease the difficulty of respawning the Player" />
@@ -604,6 +633,8 @@
     <MESSAGE value="renamed function to match functionality" />
     <MESSAGE value="removed points from CheckPointManager.prefab checkPoints list" />
     <MESSAGE value="Added CheckPointManager tutorial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CheckPointManager tutorial" />
+    <MESSAGE value="removed rule tile with old tileset and added Isaacs tile set" />
+    <MESSAGE value="updated scene with new tileset" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated scene with new tileset" />
   </component>
 </project>
