@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="removed print">
+    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/SceneCreatorEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/SceneCreatorEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform/Editor/MovingPlatformEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform/Editor/MovingPlatformEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform/MovingPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform/MovingPlatform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/4. Inventory/7-InventorySystemEnd.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/4. Inventory/7-InventorySystemEnd.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/4. Inventory/InventoryTutorial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/4. Inventory/InventoryTutorial.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/FCV Engine.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/FCV Engine.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/TestPlay/TestPlayGame.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/2. FCVEngine/TestPlay/TestPlayGame.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,24 +16,37 @@
     <option name="defaultAccountId" value="d0e91122-6112-484c-9df6-e69e3fb290ee" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/80a8ce1980c648dca8e68f0d8aa3b930954400/49/4ebe9051/MaskFieldGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/80a8ce1980c648dca8e68f0d8aa3b930954400/87/08e4e15f/Editor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/80a8ce1980c648dca8e68f0d8aa3b930954400/a1/6fb5d79c/MaskField.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a2962025aa4e4ce69f848f262c199834a200/bc/d4d110bb/Tilemap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c77f0cfb8c8749918602f6f7dc15c51620a00/40/4ed10517/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c77f0cfb8c8749918602f6f7dc15c51620a00/55/ba684386/CircleCollider2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c77f0cfb8c8749918602f6f7dc15c51620a00/7d/d9164d0d/RigidbodyType2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/0d/0d9f250b/ISerializationCallbackReceiver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/18/feb7d166/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/2f/5298132c/HeaderAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/73/a6565849/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/92/4caccb05/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/95/47ee5619/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/b3/b5df8c8c/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/b6/9f95634b/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/d4/33c36d4c/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/d4/40218b03/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/EditorResources/ItemNameDatabase.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Prefabs/CheckPointManager.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scenes/main scene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Enemy/JumpStrikeEliminator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/PathFinding/PlatformFinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SceneCreatorEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Door.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scripts/GameplaySystems/CheckPointManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial/Criterions/TilemapChangeCriterion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HealthUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/FOVUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LayerMaskUtility.cs" root0="FORCE_HIGHLIGHTING" />
@@ -48,6 +54,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Tutorials/TutorialScenes/TutorialDemoScene.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -82,7 +89,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/Builds/test/Main Project.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Builds/test\Main Project.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\Users\christian.backstrom\Documents\Unity\FCV\FCV-Engine\Builds\test" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -146,287 +153,12 @@
       <workItem from="1722315568391" duration="23407000" />
       <workItem from="1722575070852" duration="11141000" />
       <workItem from="1722841592376" duration="14143000" />
-      <workItem from="1722926575529" duration="5350000" />
-    </task>
-    <task id="LOCAL-00039" summary="Damager.cs fixed to work properly with FOV angles">
-      <option name="closed" value="true" />
-      <created>1722252477492</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1722252477492</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Updated scene">
-      <option name="closed" value="true" />
-      <created>1722252501785</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1722252501785</updated>
-    </task>
-    <task id="LOCAL-00041" summary="made AddSceneToBuildSettings private since it is not intended for any other class to use">
-      <option name="closed" value="true" />
-      <created>1722252577486</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1722252577486</updated>
-    </task>
-    <task id="LOCAL-00042" summary="renamed Rigidbody and Collider2D in weapon to match syntax">
-      <option name="closed" value="true" />
-      <created>1722252708945</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1722252708945</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Made public accessors for health &amp; maxHealth. Renamed method to be more descriptive">
-      <option name="closed" value="true" />
-      <created>1722254482135</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1722254482135</updated>
-    </task>
-    <task id="LOCAL-00044" summary="fixed naming issue">
-      <option name="closed" value="true" />
-      <created>1722254612876</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1722254612876</updated>
-    </task>
-    <task id="LOCAL-00045" summary="converted currentHealth to auto property to have public access">
-      <option name="closed" value="true" />
-      <created>1722255289829</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1722255289829</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Added onHealthChanged event to Health.cs">
-      <option name="closed" value="true" />
-      <created>1722257313581</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1722257313581</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Made script to send the percentage of health compared to maxHealth">
-      <option name="closed" value="true" />
-      <created>1722257358392</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1722257358392</updated>
-    </task>
-    <task id="LOCAL-00048" summary="added UI to display the amount of life left">
-      <option name="closed" value="true" />
-      <created>1722257378322</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1722257378322</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Removed TutorialManager.cs since it is not used">
-      <option name="closed" value="true" />
-      <created>1722259038320</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1722259038320</updated>
-    </task>
-    <task id="LOCAL-00050" summary="added macros to make sure non-compilable code is not included in build">
-      <option name="closed" value="true" />
-      <created>1722259081061</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1722259081063</updated>
-    </task>
-    <task id="LOCAL-00051" summary="removed unsused scenes from EditorBuildSettings.asset and added mainScene only">
-      <option name="closed" value="true" />
-      <created>1722259098357</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1722259098357</updated>
-    </task>
-    <task id="LOCAL-00052" summary="added macro for excluding non-compilable code for when building the game">
-      <option name="closed" value="true" />
-      <created>1722259417771</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1722259417772</updated>
-    </task>
-    <task id="LOCAL-00053" summary="removed unnecessary assets">
-      <option name="closed" value="true" />
-      <created>1722261204811</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1722261204811</updated>
-    </task>
-    <task id="LOCAL-00054" summary="fixed issue with SceneSwitcher.cs not working in build">
-      <option name="closed" value="true" />
-      <created>1722262504015</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1722262504015</updated>
-    </task>
-    <task id="LOCAL-00055" summary="MovingPlatform.cs parents player standing on it to have player move with the platform">
-      <option name="closed" value="true" />
-      <created>1722316629858</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1722316629858</updated>
-    </task>
-    <task id="LOCAL-00056" summary="removed debugging prints">
-      <option name="closed" value="true" />
-      <created>1722317196715</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1722317196715</updated>
-    </task>
-    <task id="LOCAL-00057" summary="tweaked variables in Enemy.prefab to work better in the game">
-      <option name="closed" value="true" />
-      <created>1722318989388</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1722318989388</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Scene update">
-      <option name="closed" value="true" />
-      <created>1722318998829</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1722318998829</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Seperated the IsWithinFov from the range">
-      <option name="closed" value="true" />
-      <created>1722320491613</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1722320491613</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Removed IsWithinFOVAndRange to IsWithinFov since range is already acounted for">
-      <option name="closed" value="true" />
-      <created>1722320548288</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1722320548288</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Made a script to handle jumping on Enemy">
-      <option name="closed" value="true" />
-      <created>1722320605388</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1722320605388</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Added JumpStrikeEliminator component to Enemy.prefab">
-      <option name="closed" value="true" />
-      <created>1722320671894</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1722320671894</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Made Gizmos on selected and made them translucent">
-      <option name="closed" value="true" />
-      <created>1722321223081</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1722321223081</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Made JumpStrikeEliminator component more forgiving by increasing angle to be able to jump kill enemies">
-      <option name="closed" value="true" />
-      <created>1722321407550</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1722321407550</updated>
-    </task>
-    <task id="LOCAL-00065" summary="fixed fallDetectorScript.cs to work and reload the scene once threshold is reached. added visualization to it">
-      <option name="closed" value="true" />
-      <created>1722322553313</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1722322553313</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Update scene">
-      <option name="closed" value="true" />
-      <created>1722322564628</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1722322564628</updated>
-    </task>
-    <task id="LOCAL-00067" summary="fixed MeleeWeapon.cs equip to always default to same transform values">
-      <option name="closed" value="true" />
-      <created>1722323528264</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1722323528264</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Scaled up prefab to match the sword and player">
-      <option name="closed" value="true" />
-      <created>1722324830076</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1722324830076</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Made a new item system with a editor window that is easier to use, still uses the original inventory system">
-      <option name="closed" value="true" />
-      <created>1722350834947</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1722350834948</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Added ItemName property to itemsToCheck variable so that it uses the new item system">
-      <option name="closed" value="true" />
-      <created>1722350864535</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1722350864535</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Update scenes">
-      <option name="closed" value="true" />
-      <created>1722350873488</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1722350873488</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Updated item name database">
-      <option name="closed" value="true" />
-      <created>1722575220310</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1722575220311</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Removed physics from weapons and made them part of a seperate inventory system which makes the player have up to 10 weapons equipped and be switched between">
-      <option name="closed" value="true" />
-      <created>1722578488822</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1722578488822</updated>
+      <workItem from="1722926575529" duration="17135000" />
+      <workItem from="1723012495651" duration="11710000" />
+      <workItem from="1723100416785" duration="7019000" />
+      <workItem from="1723121447327" duration="2804000" />
+      <workItem from="1723702823926" duration="4123000" />
+      <workItem from="1723807154604" duration="3297000" />
     </task>
     <task id="LOCAL-00074" summary="Scene Update">
       <option name="closed" value="true" />
@@ -540,7 +272,287 @@
       <option name="project" value="LOCAL" />
       <updated>1722930457782</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="fixed some issues with MovingPlatformEditor.cs">
+      <option name="closed" value="true" />
+      <created>1722933751853</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1722933751854</updated>
+    </task>
+    <task id="LOCAL-00089" summary="added some explicit protection levels to functions to make them more clear">
+      <option name="closed" value="true" />
+      <created>1722934165874</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1722934165874</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Added movingPlatforms tutorial">
+      <option name="closed" value="true" />
+      <created>1722934184763</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1722934184764</updated>
+    </task>
+    <task id="LOCAL-00091" summary="renamed Platform_02.prefab to Platform.prefab">
+      <option name="closed" value="true" />
+      <created>1722943826779</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1722943826779</updated>
+    </task>
+    <task id="LOCAL-00092" summary="changed text in tutorial to match platform prefabs correct name">
+      <option name="closed" value="true" />
+      <created>1722943882675</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1722943882675</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Fixed criterions so that they do not crash the build">
+      <option name="closed" value="true" />
+      <created>1722946912153</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1722946912153</updated>
+    </task>
+    <task id="LOCAL-00094" summary="added extra criterions for the UnityEditorInterface unity manipulation tutorial so that the camera needs to be moved on focus and zoom parts">
+      <option name="closed" value="true" />
+      <created>1722946996541</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1722946996541</updated>
+    </task>
+    <task id="LOCAL-00095" summary="removed old and unused assets">
+      <option name="closed" value="true" />
+      <created>1722949119647</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1722949119647</updated>
+    </task>
+    <task id="LOCAL-00096" summary="added base stats for the Damager.cs to make tutorial easier to follow">
+      <option name="closed" value="true" />
+      <created>1722954383129</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1722954383129</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Added damager tutorial to showcase how to use the damager and how it can be used outside of enemies">
+      <option name="closed" value="true" />
+      <created>1722954408098</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1722954408098</updated>
+    </task>
+    <task id="LOCAL-00098" summary="removed index marker from tutorial titles">
+      <option name="closed" value="true" />
+      <created>1722954542839</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1722954542839</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Missed to add final page to InventoryTutorial.asset">
+      <option name="closed" value="true" />
+      <created>1722954914794</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1722954914794</updated>
+    </task>
+    <task id="LOCAL-00100" summary="added FallDetector to the demo scene">
+      <option name="closed" value="true" />
+      <created>1723012531931</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1723012531931</updated>
+    </task>
+    <task id="LOCAL-00101" summary="added last page for DamagerTutorial.asset">
+      <option name="closed" value="true" />
+      <created>1723012550853</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1723012550853</updated>
+    </task>
+    <task id="LOCAL-00102" summary="added CheckPointManager to ease the difficulty of respawning the Player">
+      <option name="closed" value="true" />
+      <created>1723016912589</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1723016912589</updated>
+    </task>
+    <task id="LOCAL-00103" summary="fallDetectorScript.cs now makes use of the CheckPointManager.cs">
+      <option name="closed" value="true" />
+      <created>1723016935919</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1723016935919</updated>
+    </task>
+    <task id="LOCAL-00104" summary="added CheckPointManager.cs to the demo scene to ease the use of it">
+      <option name="closed" value="true" />
+      <created>1723017049844</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1723017049844</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Made prefab of CheckPointManager">
+      <option name="closed" value="true" />
+      <created>1723022011344</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1723022011344</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Update Scene">
+      <option name="closed" value="true" />
+      <created>1723022033659</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1723022033659</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Fixed corrupt reference for ArrayChangeCriterion">
+      <option name="closed" value="true" />
+      <created>1723022059202</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1723022059202</updated>
+    </task>
+    <task id="LOCAL-00108" summary="updated DemoScene.unity">
+      <option name="closed" value="true" />
+      <created>1723029652262</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1723029652262</updated>
+    </task>
+    <task id="LOCAL-00109" summary="removed tutorial that was not necessary">
+      <option name="closed" value="true" />
+      <created>1723032459010</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1723032459010</updated>
+    </task>
+    <task id="LOCAL-00110" summary="fixed issue with NotNullProperty.cs criterion giving error codes by adding a null check">
+      <option name="closed" value="true" />
+      <created>1723108827397</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1723108827398</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Added a tutorial for Custom2DColliders which also has some information on how to use Door.prefab">
+      <option name="closed" value="true" />
+      <created>1723108866441</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1723108866441</updated>
+    </task>
+    <task id="LOCAL-00112" summary="fixed key concept feedback from Leo">
+      <option name="closed" value="true" />
+      <created>1723709347653</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1723709347653</updated>
+    </task>
+    <task id="LOCAL-00113" summary="fix: typo    feat: added another shortcut">
+      <option name="closed" value="true" />
+      <created>1723709482376</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1723709482376</updated>
+    </task>
+    <task id="LOCAL-00114" summary="ADDED pictures for tutorial">
+      <option name="closed" value="true" />
+      <created>1723709818585</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1723709818585</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Added image to better visualize where in toolbar to click">
+      <option name="closed" value="true" />
+      <created>1723710961778</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1723710961779</updated>
+    </task>
+    <task id="LOCAL-00116" summary="added criterion to check wether tilemap has changed or not">
+      <option name="closed" value="true" />
+      <created>1723710989468</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1723710989468</updated>
+    </task>
+    <task id="LOCAL-00117" summary="added onDeath unity event to Health.cs">
+      <option name="closed" value="true" />
+      <created>1723807824815</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1723807824815</updated>
+    </task>
+    <task id="LOCAL-00118" summary="added CheckPointManager.prefab to the main scene">
+      <option name="closed" value="true" />
+      <created>1723807844907</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1723807844907</updated>
+    </task>
+    <task id="LOCAL-00119" summary="updated TutorialDemoScene.unity">
+      <option name="closed" value="true" />
+      <created>1723807855710</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1723807855710</updated>
+    </task>
+    <task id="LOCAL-00120" summary="renamed function to match functionality">
+      <option name="closed" value="true" />
+      <created>1723807879246</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1723807879246</updated>
+    </task>
+    <task id="LOCAL-00121" summary="removed points from CheckPointManager.prefab checkPoints list">
+      <option name="closed" value="true" />
+      <created>1723807896754</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1723807896754</updated>
+    </task>
+    <task id="LOCAL-00122" summary="Added CheckPointManager tutorial">
+      <option name="closed" value="true" />
+      <created>1723810993564</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1723810993564</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,31 +579,31 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Made Gizmos on selected and made them translucent" />
-    <MESSAGE value="Made JumpStrikeEliminator component more forgiving by increasing angle to be able to jump kill enemies" />
-    <MESSAGE value="fixed fallDetectorScript.cs to work and reload the scene once threshold is reached. added visualization to it" />
-    <MESSAGE value="Update scene" />
-    <MESSAGE value="fixed MeleeWeapon.cs equip to always default to same transform values" />
-    <MESSAGE value="Scaled up prefab to match the sword and player" />
-    <MESSAGE value="Made a new item system with a editor window that is easier to use, still uses the original inventory system" />
-    <MESSAGE value="Added ItemName property to itemsToCheck variable so that it uses the new item system" />
-    <MESSAGE value="Update scenes" />
-    <MESSAGE value="Updated item name database" />
-    <MESSAGE value="Removed physics from weapons and made them part of a seperate inventory system which makes the player have up to 10 weapons equipped and be switched between" />
-    <MESSAGE value="Scene Update" />
-    <MESSAGE value="Removed test items from scene" />
-    <MESSAGE value="Updated ItemNameDatabase.asset" />
-    <MESSAGE value="Made float animation script and added it to weapon, used to make the world more alive" />
-    <MESSAGE value="Removed old tutorials and added the Unity Editor tutorials from the 2D_GamekitSGC project" />
-    <MESSAGE value="made PlatformFinder into a prefab so that it is clear what you need for the enemies to work" />
-    <MESSAGE value="Added tile palette tutorial and creating a new scene tutorial" />
-    <MESSAGE value="removed SampleScene.unity" />
-    <MESSAGE value="Made enemies tutorial and new scene for tutorial use" />
-    <MESSAGE value="fixed AutoComplete in criterions" />
-    <MESSAGE value="start of inventory system tutorial" />
-    <MESSAGE value="has its own onTriggerEnter system and adds itself to the inventory" />
-    <MESSAGE value="Finished InventoryTutorial.asset" />
-    <MESSAGE value="removed print" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed print" />
+    <MESSAGE value="removed index marker from tutorial titles" />
+    <MESSAGE value="Missed to add final page to InventoryTutorial.asset" />
+    <MESSAGE value="added FallDetector to the demo scene" />
+    <MESSAGE value="added last page for DamagerTutorial.asset" />
+    <MESSAGE value="added CheckPointManager to ease the difficulty of respawning the Player" />
+    <MESSAGE value="fallDetectorScript.cs now makes use of the CheckPointManager.cs" />
+    <MESSAGE value="added CheckPointManager.cs to the demo scene to ease the use of it" />
+    <MESSAGE value="Made prefab of CheckPointManager" />
+    <MESSAGE value="Update Scene" />
+    <MESSAGE value="Fixed corrupt reference for ArrayChangeCriterion" />
+    <MESSAGE value="updated DemoScene.unity" />
+    <MESSAGE value="removed tutorial that was not necessary" />
+    <MESSAGE value="fixed issue with NotNullProperty.cs criterion giving error codes by adding a null check" />
+    <MESSAGE value="Added a tutorial for Custom2DColliders which also has some information on how to use Door.prefab" />
+    <MESSAGE value="fixed key concept feedback from Leo" />
+    <MESSAGE value="fix: typo    feat: added another shortcut" />
+    <MESSAGE value="ADDED pictures for tutorial" />
+    <MESSAGE value="Added image to better visualize where in toolbar to click" />
+    <MESSAGE value="added criterion to check wether tilemap has changed or not" />
+    <MESSAGE value="added onDeath unity event to Health.cs" />
+    <MESSAGE value="added CheckPointManager.prefab to the main scene" />
+    <MESSAGE value="updated TutorialDemoScene.unity" />
+    <MESSAGE value="renamed function to match functionality" />
+    <MESSAGE value="removed points from CheckPointManager.prefab checkPoints list" />
+    <MESSAGE value="Added CheckPointManager tutorial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added CheckPointManager tutorial" />
   </component>
 </project>
