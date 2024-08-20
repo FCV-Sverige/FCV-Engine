@@ -17,6 +17,7 @@ public class PatrolEnemy : MonoBehaviour
     [SerializeField] private float detectionRadius = 5;
     [SerializeField, Range(0, 360)] private float detectionAngle = 360;
 
+    private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
     private int currentPointIndex = 0;
     private bool movingForward = true;
@@ -36,6 +37,7 @@ public class PatrolEnemy : MonoBehaviour
     private PlatformFinder platformFinder;
     private void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         platformFinder = PlatformFinder.Instance;
         playerTransform = Movement.PlayerTransform;
         rb = GetComponent<Rigidbody2D>();
@@ -69,6 +71,7 @@ public class PatrolEnemy : MonoBehaviour
         }
 
         PatrolMovement();
+        spriteRenderer.flipX = !movingForward;
     }
 
     private void PatrolMovement()
