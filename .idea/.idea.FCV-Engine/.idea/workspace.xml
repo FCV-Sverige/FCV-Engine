@@ -4,43 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="updated scene with new tileset">
+    <list default="true" id="44cea5c1-179c-4c8d-8697-2e0cff9ef72c" name="Changes" comment="Updated Door.prefab with new art and animations">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FCV-Engine/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animation controller.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animation controller.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/New Animator Controller.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/New Animator Controller.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PLAYER ANIMATOR CONTROLLER.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PLAYER ANIMATOR CONTROLLER.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Hit.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Hit/Hit.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Hit/Hit.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Idkeanim.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Idkeanim.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/Idle Animation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/Idle Animation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/IdleAnim.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/IdleAnim.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/New Animation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/New Animation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/Player Idle_animation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/Player Idle_animation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/Player.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_IdleAnim/Player.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Jumpanim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Jumpanim/JumpAnim.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Jumpanim/JumpAnim.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Runanim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Runanim/RunAnim.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_Runanim/RunAnim.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_idleanim.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player_idleanim.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/TutorialScenes/TutorialDemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tutorials/TutorialScenes/TutorialDemoScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/1.5. Unity Engine/Audio-Sound.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/1.5. Unity Engine/Audio-Sound/AudioSoundTutorial.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tutorials/1.5. Unity Engine/Audio-Sound/AudioSoundTutorial.asset.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +36,26 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/b6/9f95634b/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/d4/33c36d4c/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cb81df0c49c643b1a04d9fc6ccca2433175400/d4/40218b03/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Animations/Door/Open.anim" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Animations/Player/Player.controller" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Art/Items/platform_item_button.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Art/Items/platform_item_platform.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Prefabs/Enemies/Enemy.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Prefabs/Interactable/Door.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Prefabs/Interactable/Door.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Prefabs/Platform.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Prefabs/Weapons/Gun.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Prefabs/Weapons/Gun.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Prefabs/Weapons/Projectile.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Prefabs/Weapons/Sword.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scenes/main scene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/Enemy/JumpStrikeEliminator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Scripts/AI/Enemy/PatrolEnemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/PathFinding/PlatformFinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SceneCreatorEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactables/AnimationEventHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/ItemName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
@@ -84,6 +67,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/Ranged/RangedWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/WeaponController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Tutorials/1. UnityEditorInterface/UnityEditorInterface.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Tutorials/TutorialScenes/TutorialDemoScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Tutorials/TutorialScenes/TutorialDemoScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Tutorials/TutorialScenes/TutorialDemoScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Tutorials/TutorialScenes/TutorialDemoScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/christian.backstrom/Documents/Unity/FCV/FCV-Engine/Assets/Tutorials/TutorialScenes/TutorialDemoScene.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -189,127 +177,7 @@
       <workItem from="1723121447327" duration="2804000" />
       <workItem from="1723702823926" duration="4123000" />
       <workItem from="1723807154604" duration="3297000" />
-      <workItem from="1724049783487" duration="2999000" />
-    </task>
-    <task id="LOCAL-00076" summary="Updated ItemNameDatabase.asset">
-      <option name="closed" value="true" />
-      <created>1722581838975</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1722581838975</updated>
-    </task>
-    <task id="LOCAL-00077" summary="Made float animation script and added it to weapon, used to make the world more alive">
-      <option name="closed" value="true" />
-      <created>1722587313086</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1722587313086</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Removed old tutorials and added the Unity Editor tutorials from the 2D_GamekitSGC project">
-      <option name="closed" value="true" />
-      <created>1722846281866</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1722846281866</updated>
-    </task>
-    <task id="LOCAL-00079" summary="made PlatformFinder into a prefab so that it is clear what you need for the enemies to work">
-      <option name="closed" value="true" />
-      <created>1722847623213</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1722847623213</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Added tile palette tutorial and creating a new scene tutorial">
-      <option name="closed" value="true" />
-      <created>1722851209684</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1722851209685</updated>
-    </task>
-    <task id="LOCAL-00081" summary="removed SampleScene.unity">
-      <option name="closed" value="true" />
-      <created>1722855688455</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1722855688455</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Made enemies tutorial and new scene for tutorial use">
-      <option name="closed" value="true" />
-      <created>1722863663901</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1722863663901</updated>
-    </task>
-    <task id="LOCAL-00083" summary="fixed AutoComplete in criterions">
-      <option name="closed" value="true" />
-      <created>1722863744478</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1722863744478</updated>
-    </task>
-    <task id="LOCAL-00084" summary="start of inventory system tutorial">
-      <option name="closed" value="true" />
-      <created>1722869705461</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1722869705461</updated>
-    </task>
-    <task id="LOCAL-00085" summary="has its own onTriggerEnter system and adds itself to the inventory">
-      <option name="closed" value="true" />
-      <created>1722869725771</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1722869725771</updated>
-    </task>
-    <task id="LOCAL-00086" summary="Finished InventoryTutorial.asset">
-      <option name="closed" value="true" />
-      <created>1722930443595</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1722930443595</updated>
-    </task>
-    <task id="LOCAL-00087" summary="removed print">
-      <option name="closed" value="true" />
-      <created>1722930457782</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1722930457782</updated>
-    </task>
-    <task id="LOCAL-00088" summary="fixed some issues with MovingPlatformEditor.cs">
-      <option name="closed" value="true" />
-      <created>1722933751853</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1722933751854</updated>
-    </task>
-    <task id="LOCAL-00089" summary="added some explicit protection levels to functions to make them more clear">
-      <option name="closed" value="true" />
-      <created>1722934165874</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1722934165874</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Added movingPlatforms tutorial">
-      <option name="closed" value="true" />
-      <created>1722934184763</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1722934184764</updated>
+      <workItem from="1724049783487" duration="13348000" />
     </task>
     <task id="LOCAL-00091" summary="renamed Platform_02.prefab to Platform.prefab">
       <option name="closed" value="true" />
@@ -583,7 +451,127 @@
       <option name="project" value="LOCAL" />
       <updated>1724050011365</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="Added animations for player using Isaacs new sprites">
+      <option name="closed" value="true" />
+      <created>1724074060243</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1724074060244</updated>
+    </task>
+    <task id="LOCAL-00126" summary="Update Player.controller and removed exit time">
+      <option name="closed" value="true" />
+      <created>1724074082648</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1724074082648</updated>
+    </task>
+    <task id="LOCAL-00127" summary="Added Isaacs art for items">
+      <option name="closed" value="true" />
+      <created>1724074549870</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1724074549870</updated>
+    </task>
+    <task id="LOCAL-00128" summary="Sword now uses the new art">
+      <option name="closed" value="true" />
+      <created>1724074725836</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1724074725836</updated>
+    </task>
+    <task id="LOCAL-00129" summary="Gun and its projectile now has the new art implemented">
+      <option name="closed" value="true" />
+      <created>1724074744424</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1724074744424</updated>
+    </task>
+    <task id="LOCAL-00130" summary="made Platform.prefab use the new art: platform_item_platform.png.meta">
+      <option name="closed" value="true" />
+      <created>1724075158348</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1724075158348</updated>
+    </task>
+    <task id="LOCAL-00131" summary="added platform to scene">
+      <option name="closed" value="true" />
+      <created>1724075167469</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1724075167469</updated>
+    </task>
+    <task id="LOCAL-00132" summary="removed platform.prefab from scene">
+      <option name="closed" value="true" />
+      <created>1724075185745</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1724075185745</updated>
+    </task>
+    <task id="LOCAL-00133" summary="added animator for enemy and made it flipX correctly">
+      <option name="closed" value="true" />
+      <created>1724135936690</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1724135936690</updated>
+    </task>
+    <task id="LOCAL-00134" summary="changed sprite pixels to unit to 32">
+      <option name="closed" value="true" />
+      <created>1724141005277</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1724141005277</updated>
+    </task>
+    <task id="LOCAL-00135" summary="made door animation make use of isaacs door animation before actual opening happens">
+      <option name="closed" value="true" />
+      <created>1724141025278</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1724141025278</updated>
+    </task>
+    <task id="LOCAL-00136" summary="Updated scenes with new tile set">
+      <option name="closed" value="true" />
+      <created>1724144604943</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1724144604943</updated>
+    </task>
+    <task id="LOCAL-00137" summary="changed background of UnityEditorInterface.asset">
+      <option name="closed" value="true" />
+      <created>1724144618304</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1724144618304</updated>
+    </task>
+    <task id="LOCAL-00138" summary="Made folder for Unity Engine tutorials and sound-Audio tutorial as child folder">
+      <option name="closed" value="true" />
+      <created>1724144763038</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1724144763038</updated>
+    </task>
+    <task id="LOCAL-00139" summary="Updated Door.prefab with new art and animations">
+      <option name="closed" value="true" />
+      <created>1724145937872</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1724145937872</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,22 +598,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added FallDetector to the demo scene" />
-    <MESSAGE value="added last page for DamagerTutorial.asset" />
-    <MESSAGE value="added CheckPointManager to ease the difficulty of respawning the Player" />
-    <MESSAGE value="fallDetectorScript.cs now makes use of the CheckPointManager.cs" />
-    <MESSAGE value="added CheckPointManager.cs to the demo scene to ease the use of it" />
-    <MESSAGE value="Made prefab of CheckPointManager" />
-    <MESSAGE value="Update Scene" />
-    <MESSAGE value="Fixed corrupt reference for ArrayChangeCriterion" />
-    <MESSAGE value="updated DemoScene.unity" />
-    <MESSAGE value="removed tutorial that was not necessary" />
-    <MESSAGE value="fixed issue with NotNullProperty.cs criterion giving error codes by adding a null check" />
-    <MESSAGE value="Added a tutorial for Custom2DColliders which also has some information on how to use Door.prefab" />
-    <MESSAGE value="fixed key concept feedback from Leo" />
-    <MESSAGE value="fix: typo    feat: added another shortcut" />
-    <MESSAGE value="ADDED pictures for tutorial" />
-    <MESSAGE value="Added image to better visualize where in toolbar to click" />
     <MESSAGE value="added criterion to check wether tilemap has changed or not" />
     <MESSAGE value="added onDeath unity event to Health.cs" />
     <MESSAGE value="added CheckPointManager.prefab to the main scene" />
@@ -635,6 +607,22 @@
     <MESSAGE value="Added CheckPointManager tutorial" />
     <MESSAGE value="removed rule tile with old tileset and added Isaacs tile set" />
     <MESSAGE value="updated scene with new tileset" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated scene with new tileset" />
+    <MESSAGE value="Added animations for player using Isaacs new sprites" />
+    <MESSAGE value="Update Player.controller and removed exit time" />
+    <MESSAGE value="Added Isaacs art for items" />
+    <MESSAGE value="Sword now uses the new art" />
+    <MESSAGE value="Gun and its projectile now has the new art implemented" />
+    <MESSAGE value="made Platform.prefab use the new art: platform_item_platform.png.meta" />
+    <MESSAGE value="added platform to scene" />
+    <MESSAGE value="removed platform.prefab from scene" />
+    <MESSAGE value="added animator for enemy and made it flipX correctly" />
+    <MESSAGE value="changed sprite pixels to unit to 32" />
+    <MESSAGE value="made door animation make use of isaacs door animation before actual opening happens" />
+    <MESSAGE value="Updated scenes with new tile set" />
+    <MESSAGE value="changed background of UnityEditorInterface.asset" />
+    <MESSAGE value="Made folder for Unity Engine tutorials" />
+    <MESSAGE value="Made folder for Unity Engine tutorials and sound-Audio tutorial as child folder" />
+    <MESSAGE value="Updated Door.prefab with new art and animations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Door.prefab with new art and animations" />
   </component>
 </project>
