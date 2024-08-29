@@ -41,6 +41,8 @@ MonoBehaviour:
     m_Items:
     - {fileID: 11400000, guid: ef46ad43b654f414c9ca9d4f39c8661a, type: 2}
     - {fileID: 11400000, guid: e1d7fa722d267be46a534adeb3ddeb13, type: 2}
+    - {fileID: 11400000, guid: 51d41473bb7b0814eb7f294cb999812a, type: 2}
+    - {fileID: 11400000, guid: 2b92d39c7d7c6ea40a04a436e9fe552b, type: 2}
   CompletionDialog: {fileID: 0}
   Modified:
     m_PersistentCalls:

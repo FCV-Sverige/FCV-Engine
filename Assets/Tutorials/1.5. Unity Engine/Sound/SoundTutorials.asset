@@ -36,3 +36,13 @@ MonoBehaviour:
     Url: 
     Image: {fileID: 0}
     Tutorial: {fileID: 11400000, guid: 5e5046ae60b55a04e94d6a4e70b61cec, type: 2}
+  - OrderInView: 0
+    Heading:
+      m_Untranslated: Audio Mixer
+    Text:
+      m_Untranslated: Walkthrough on how to centralise all volume/pitch levels on
+        audios in your game
+    Metadata: 
+    Url: 
+    Image: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: 909e74fad9aadd24bae1e052dc07efc2, type: 2}
