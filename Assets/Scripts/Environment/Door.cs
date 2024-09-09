@@ -3,13 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class Door : MonoBehaviour
 {
     [SerializeField] private Vector2 doorOpenOffset;
+    [SerializeField] private Animator animator;
     [SerializeField] private float animationTime = 1f;
-    [SerializeField] protected UnityEvent doorOpened;
-    [SerializeField] protected UnityEvent doorClosed;
+    [SerializeField] protected UnityEvent doorOpeningStarted;
+    [FormerlySerializedAs("doorClosed")] [SerializeField] protected UnityEvent doorClosingStarted;
 
     private Vector2 closedPosition;
     private Vector2 OpenPosition => closedPosition + doorOpenOffset;
@@ -22,9 +24,16 @@ public class Door : MonoBehaviour
         closedPosition = transform.position;
     }
 
+    public void StartDoorOpeningAnimation()
+    {
+        if (animator)
+            animator.SetTrigger("OpenDoor");
+    }
+
     public void OpenDoor()
     {
         if (opened | moving) return;
+        doorOpeningStarted.Invoke();
         StartCoroutine(MoveDoor(closedPosition, OpenPosition));
         opened = true;
     }
@@ -32,6 +41,7 @@ public class Door : MonoBehaviour
     public void CloseDoor()
     {
         if (!opened | moving) return;
+        doorClosingStarted.Invoke();
         StartCoroutine(MoveDoor(OpenPosition, closedPosition));
         opened = false;
     }

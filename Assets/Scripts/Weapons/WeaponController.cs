@@ -1,47 +1,83 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
 public class WeaponController : MonoBehaviour
 {
     [SerializeField] private Transform weaponParentTransform;
-    [SerializeField] private float pickupDistance = 1f; 
-        
-        
-    private Weapon equippedWeapon;
+    [SerializeField] private float pickupDistance = 1f;
 
-    private Weapon[] weapons;
+
+    private int currentIndex;
+    private List<Weapon> equippedWeapons = new();
+    
+    
+    private List<Weapon> weapons;
+
+    private static readonly KeyCode[] NumberKeys =
+    {
+        KeyCode.Alpha1,
+        KeyCode.Alpha2,
+        KeyCode.Alpha3,
+        KeyCode.Alpha4,
+        KeyCode.Alpha5,
+        KeyCode.Alpha6,
+        KeyCode.Alpha7,
+        KeyCode.Alpha8,
+        KeyCode.Alpha9
+    };
+
     private void Start()
     {
-        weapons = FindObjectsOfType<Weapon>();
+        weapons = FindObjectsOfType<Weapon>().ToList();
     }
 
     private void Update()
     {
-        for (int i = 0; i < weapons.Length; i++)
+        for (int i = weapons.Count - 1; i >= 0; i--)
         {
-            if (!weapons[i].CanBeEquipped | weapons[i].IsEquipped | Vector2.Distance(transform.position, weapons[i].transform.position) > pickupDistance) continue;
+            if (Vector2.Distance(transform.position, weapons[i].transform.position) > pickupDistance) continue;
             
-            SetCurrentWeapon(weapons[i]);
+            AddWeapon(weapons[i]);
+            SetActiveWeapon(equippedWeapons.Count - 1);
         }
+        
+        CheckForInput();
     }
 
 
-    private void SetCurrentWeapon(Weapon weapon)
+    private void AddWeapon(Weapon weapon)
     {
-        if (equippedWeapon)
-        {
-            equippedWeapon.IsEquipped = false;
-            equippedWeapon.UnEquip();
-        }
-        
-        weaponParentTransform.DetachChildren();
-        equippedWeapon = weapon;
-        weapon.IsEquipped = true;
         weapon.transform.SetParent(weaponParentTransform);
         weapon.transform.localPosition = Vector2.zero;
-        weapon.Equip();
+        weapon.gameObject.SetActive(false);
+        
+        equippedWeapons.Add(weapon);
+        weapons.Remove(weapon);
+        weapon.GetComponent<FloatAnimation>()?.StopAnimation();
+    }
+
+    private void CheckForInput()
+    {
+        for (int i = 0; i < equippedWeapons.Count; i++)
+        {
+            if (!Input.GetKeyDown(NumberKeys[i])) continue;
+            
+            SetActiveWeapon(i);
+        }
+    }
+
+    private void SetActiveWeapon(int index)
+    {
+        equippedWeapons[currentIndex].UnEquip();
+        equippedWeapons[currentIndex].gameObject.SetActive(false);
+            
+        currentIndex = index;
+            
+        equippedWeapons[currentIndex].gameObject.SetActive(true);
+        equippedWeapons[currentIndex].Equip();
     }
 }

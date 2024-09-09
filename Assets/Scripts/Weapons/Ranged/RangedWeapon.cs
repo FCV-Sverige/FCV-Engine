@@ -7,9 +7,10 @@ public class RangedWeapon : Weapon
     [SerializeField] private Transform firepoint;
 
     private SpriteRenderer spriteRenderer;
-    protected override void Awake()
+    
+    
+    protected void Awake()
     {
-        base.Awake();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
@@ -26,8 +27,9 @@ public class RangedWeapon : Weapon
 
     protected override void Update()
     {
+        if (!Equipped) return;
+        
         base.Update();
-        if (!IsEquipped) return;
         
         transform.rotation = GetRotationToMouse();
         

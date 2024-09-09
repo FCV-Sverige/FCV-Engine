@@ -1,33 +1,40 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class SceneSwitcher : MonoBehaviour
 {
+#if UNITY_EDITOR
     [SerializeField] private SceneAsset _sceneAsset;
+#endif
+
+    [SerializeField] private string scenePath;
 
 
-    public void StartTransition(GameObject gameObject = null)
+    public void StartTransition(GameObject transitioningGameObject = null)
     {
-        if (gameObject)
-            DontDestroyOnLoad(gameObject);
+        if (transitioningGameObject)
+            DontDestroyOnLoad(transitioningGameObject);
         
-        SceneManager.LoadScene(_sceneAsset.name);
+        SceneManager.LoadScene(scenePath);
     }
-
+#if UNITY_EDITOR
+    
     private void OnValidate()
     {
-        var scenePath = AssetDatabase.GetAssetPath(_sceneAsset);
+        var sceneAssetPath = AssetDatabase.GetAssetPath(_sceneAsset);
         bool sceneAdded = false;
         foreach (var scene in EditorBuildSettings.scenes)
         {
             if (sceneAdded) continue;
             
-            sceneAdded = scene.path == scenePath;
+            sceneAdded = scene.path == sceneAssetPath;
         }
+
+        scenePath = sceneAssetPath;
         
         if (sceneAdded) return;
         
@@ -39,7 +46,7 @@ public class SceneSwitcher : MonoBehaviour
     /// </summary>
     /// <param name="scene"></param>
     /// <param name="enabled"></param>
-    public static void AddSceneToBuildSettings(SceneAsset scene, bool enabled = true)
+    private static void AddSceneToBuildSettings(SceneAsset scene, bool enabled = true)
     {
         var scenes = new EditorBuildSettingsScene[EditorBuildSettings.scenes.Length + 1];
         for (int i = 0; i < EditorBuildSettings.scenes.Length; ++i)
@@ -51,4 +58,5 @@ public class SceneSwitcher : MonoBehaviour
 
         EditorBuildSettings.scenes = scenes;
     }
+#endif
 }

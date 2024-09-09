@@ -1,6 +1,8 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
+
 public class BasicObjectSpawner : EditorWindow
 {
     string objectBaseName = "";
@@ -53,3 +55,4 @@ public class BasicObjectSpawner : EditorWindow
         newObject.name = objectBaseName + objectID++;
     }
 }
+#endif

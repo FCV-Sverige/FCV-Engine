@@ -17,11 +17,17 @@ MonoBehaviour:
       m_Calls: []
   m_Image: {fileID: 0}
   m_WindowTitle:
-    m_Untranslated: Window Title
+    m_Untranslated: FCV Engine Tutorials
   m_Title:
-    m_Untranslated: This Is the Title
+    m_Untranslated: Welcome to the FCV Engine tutorials
   m_Description:
-    m_Untranslated: This is the description.
+    m_Untranslated: 'This is a project with tutorials regarding the FCV-Engine package
+      and Unity in general. At the top of the window you can click ''Tutorials''
+      and then ''Show Tutorials'' to see all the tutorials available to you.
+
+
+      I
+      hope you have fun learning Unity!'
   m_Buttons:
   - Text:
       m_Untranslated: Close
