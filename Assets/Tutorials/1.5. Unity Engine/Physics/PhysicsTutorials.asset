@@ -39,10 +39,10 @@ MonoBehaviour:
     Tutorial: {fileID: 11400000, guid: 9e852a4fdf5aefc428ca9f1b722c3407, type: 2}
   - OrderInView: 0
     Heading:
-      m_Untranslated: Rigidbody -NOT IMPLEMENTED YET
+      m_Untranslated: Rigidbody
     Text:
       m_Untranslated: This tutorial will show you how to make an object have physics
     Metadata: 
     Url: 
     Image: {fileID: 0}
-    Tutorial: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: 4c494e0f5207eba46bf85986e3b9b969, type: 2}

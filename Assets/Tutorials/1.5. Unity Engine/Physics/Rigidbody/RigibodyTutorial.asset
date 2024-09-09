@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: RigibodyTutorial
   m_EditorClassIdentifier: 
   TutorialTitle:
-    m_Untranslated: 
+    m_Untranslated: Rigidbody Tutorial
   m_ProgressTrackingEnabled: 0
   m_LessonId: 
   m_Version: 0
   m_SceneManagementBehavior: 0
-  m_Scenes: []
+  m_Scenes:
+  - {fileID: 102900000, guid: 40a004a3abd51c4429b1b8e3b7632841, type: 3}
   m_DefaultSceneCameraSettings:
     m_CameraMode: 0
     m_FocusMode: 0
@@ -35,9 +36,13 @@ MonoBehaviour:
       m_AssetObject: {fileID: 0}
       m_Prefab: {fileID: 0}
     m_Enabled: 0
-  m_WindowLayout: {fileID: 0}
+  m_WindowLayout: {fileID: 102900000, guid: 951254c389b351642917f33ec9df1585, type: 3}
   m_Pages:
-    m_Items: []
+    m_Items:
+    - {fileID: 11400000, guid: f9651dac64a04974dba808b78c66b1d5, type: 2}
+    - {fileID: 11400000, guid: 19bbd674d919d114cbd6cdf418c8aa04, type: 2}
+    - {fileID: 11400000, guid: 579e767c23d79e741bb6a6a43d0cb272, type: 2}
+    - {fileID: 11400000, guid: a9c2ff7d08ec9154ba59694340832222, type: 2}
   CompletionDialog: {fileID: 0}
   Modified:
     m_PersistentCalls:

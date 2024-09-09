@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3-ColliderOutro
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: 
+    m_Untranslated: Collider
   m_Paragraphs:
     m_Items:
     - m_Type: 6
@@ -28,7 +28,7 @@ MonoBehaviour:
       m_Criteria:
         m_Items: []
       m_MaskingSettings:
-        m_MaskingEnabled: 0
+        m_MaskingEnabled: 1
         m_UnmaskedViews: []
       m_Summary: 
       m_Description: 
@@ -39,7 +39,9 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: Put your tutorial narrative description here
+        m_Untranslated: 'Now you know how to make use of the collider in a physical
+          context. To make use of them as triggers I recommend checking out the FCV
+          Engine tutorial about Custom Colliders. '
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -56,9 +58,9 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: Instruction title
+        m_Untranslated: 
       Text:
-        m_Untranslated: Put your tutorial instructions here
+        m_Untranslated: 
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -77,8 +79,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: 'Tutorial X: Make the best game!'
-      m_Tutorial: {fileID: 0}
+        m_Untranslated: Rigidbody Tutorial
+      m_Tutorial: {fileID: 11400000, guid: 4c494e0f5207eba46bf85986e3b9b969, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
