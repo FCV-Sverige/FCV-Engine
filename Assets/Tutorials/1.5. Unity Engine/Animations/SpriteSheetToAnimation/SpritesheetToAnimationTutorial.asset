@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f107dc6d4c984c45bdafd3bb15f98f0, type: 3}
-  m_Name: SpriteSheetTutorial
+  m_Name: SpritesheetToAnimationTutorial
   m_EditorClassIdentifier: 
   TutorialTitle:
-    m_Untranslated: Srpite Sheet Splitting
+    m_Untranslated: 
   m_ProgressTrackingEnabled: 0
   m_LessonId: 
   m_Version: 0
-  m_SceneManagementBehavior: 1
-  m_Scenes: []
+  m_SceneManagementBehavior: 0
+  m_Scenes:
+  - {fileID: 102900000, guid: 40a004a3abd51c4429b1b8e3b7632841, type: 3}
   m_DefaultSceneCameraSettings:
     m_CameraMode: 0
     m_FocusMode: 0
@@ -38,10 +39,10 @@ MonoBehaviour:
   m_WindowLayout: {fileID: 102900000, guid: 951254c389b351642917f33ec9df1585, type: 3}
   m_Pages:
     m_Items:
-    - {fileID: 11400000, guid: 334847ae111dcd142b4eccf5fb8ad9e7, type: 2}
-    - {fileID: 11400000, guid: c86f32df236fcdc4f8c9d3f5511cb3b2, type: 2}
-    - {fileID: 11400000, guid: f28dd53b7a0958b4a9d0c4ae09ca2055, type: 2}
-    - {fileID: 11400000, guid: 2b15bac0d4b0a744594a4b0e3679654d, type: 2}
+    - {fileID: 11400000, guid: 5691e0ffd8474894dac61db51927280f, type: 2}
+    - {fileID: 11400000, guid: 4244ae8230970de48a2622a65462f47f, type: 2}
+    - {fileID: 11400000, guid: 579e767c23d79e741bb6a6a43d0cb272, type: 2}
+    - {fileID: 11400000, guid: 7ccb90e62fc3eb74898ecaaf1cd4531e, type: 2}
   CompletionDialog: {fileID: 0}
   Modified:
     m_PersistentCalls:

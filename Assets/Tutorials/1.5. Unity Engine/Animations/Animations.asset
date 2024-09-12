@@ -37,3 +37,13 @@ MonoBehaviour:
     Url: 
     Image: {fileID: 0}
     Tutorial: {fileID: 11400000, guid: 47062f040d8fe99479a55cb2e59cb104, type: 2}
+  - OrderInView: 0
+    Heading:
+      m_Untranslated: Animation
+    Text:
+      m_Untranslated: This tutorial will walk you through how to setup animations
+        using several sprites
+    Metadata: 
+    Url: 
+    Image: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: 2df429f1bbcf0d44f9fd45300fd1ac97, type: 2}
