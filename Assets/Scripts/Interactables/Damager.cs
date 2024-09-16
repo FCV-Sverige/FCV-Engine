@@ -71,13 +71,11 @@ public class Damager : MonoBehaviour
     {
         if (!FOVUtility.IsWithinFOV(transform.position, other.transform.position, StartDirection,  fovAngle))
         {
-            print("Not within FOV");
             return;
         }
 
         if (!other.TryGetComponent(out Health health))
         {
-            print("Crazy");
             return;
         }
         
