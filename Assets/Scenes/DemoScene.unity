@@ -581,7 +581,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9007498148887084709, guid: b48b465f26dc9fa4db83fbffc3783bbd, type: 3}
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007498148887084709, guid: b48b465f26dc9fa4db83fbffc3783bbd, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007498148887084709, guid: b48b465f26dc9fa4db83fbffc3783bbd, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 513386306}
+    - target: {fileID: 9007498148887084709, guid: b48b465f26dc9fa4db83fbffc3783bbd, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007498148887084709, guid: b48b465f26dc9fa4db83fbffc3783bbd, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartDoorOpeningAnimation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007498148887084709, guid: b48b465f26dc9fa4db83fbffc3783bbd, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Door, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007498148887084709, guid: b48b465f26dc9fa4db83fbffc3783bbd, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
