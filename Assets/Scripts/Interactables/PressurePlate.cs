@@ -25,7 +25,13 @@ public class PressurePlate : MonoBehaviour
     public void OnStandingOn()
     {
         if (activated) return;
-        print("standing On");
+
+        if (!useStandTime)
+        {
+            activated = true;
+            Activated?.Invoke();
+        }
+        
         currentPushTime += Time.deltaTime;
 
         if (!(currentPushTime >= pushTime))
@@ -33,7 +39,6 @@ public class PressurePlate : MonoBehaviour
             PushPlateDown(Mathf.Clamp01(currentPushTime / pushTime));
             return;
         }
-        print("Activated");
         activated = true;
         Activated?.Invoke();
     }
