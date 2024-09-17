@@ -49,11 +49,13 @@ namespace Unity.Tutorials.Core.Editor
                 return true;
             }
 
+            Debug.Log(property.propertyType);
+            int value = property.numericType == SerializedPropertyNumericType.Float ? Mathf.RoundToInt(property.floatValue) : property.intValue;
 
             if (property.isArray)
                 return property.arraySize > 0;
             
-            return property.intValue == intTargetValue;
+            return value == intTargetValue;
         }
 
         public override bool AutoComplete()
