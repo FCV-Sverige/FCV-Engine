@@ -18,7 +18,6 @@ namespace Unity.Tutorials.Core.Editor
             base.StartTesting();
             string path = AssetDatabase.GetAssetPath(referencedObject);
             textureImporter = AssetImporter.GetAtPath(path) as TextureImporter;
-            Debug.Log(textureImporter);
 
             EditorApplication.update += UpdateCompletion;
         }
@@ -49,11 +48,13 @@ namespace Unity.Tutorials.Core.Editor
                 return true;
             }
 
+            if (property.isArray)
+                return property.arraySize > intTargetValue;
+            
             Debug.Log(property.propertyType);
+
             int value = property.numericType == SerializedPropertyNumericType.Float ? Mathf.RoundToInt(property.floatValue) : property.intValue;
 
-            if (property.isArray)
-                return property.arraySize > 0;
             
             return value == intTargetValue;
         }

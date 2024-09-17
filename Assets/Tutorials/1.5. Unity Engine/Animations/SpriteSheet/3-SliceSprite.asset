@@ -44,7 +44,7 @@ MonoBehaviour:
   isTesting: 0
   referencedObject: {fileID: 2800000, guid: 090bdf5a1102546429251186ed2e7fdb, type: 3}
   propertyPath: m_SpriteSheet.m_Sprites
-  intTargetValue: 0
+  intTargetValue: 10
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +81,17 @@ MonoBehaviour:
           m_EditorWindowType:
             m_TypeName: UnityEditor.U2D.Sprites.SpriteEditorWindow, Unity.2D.Sprite.Editor,
               Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          m_AlternateEditorWindowTypes:
+            m_Items: []
+          m_MaskType: 0
+          m_MaskSizeModifier: 0
+          m_UnmaskedControls: []
+        - m_SelectorType: 1
+          m_ViewType:
+            m_TypeName: 
+          m_EditorWindowType:
+            m_TypeName: UnityEditor.PopupWindow, UnityEditor.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
           m_AlternateEditorWindowTypes:
             m_Items: []
           m_MaskType: 0
