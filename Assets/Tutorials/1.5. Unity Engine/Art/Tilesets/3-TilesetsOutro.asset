@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
-  m_Name: 1-TilesetsIntro
+  m_Name: 3-TilesetsOutro
   m_EditorClassIdentifier: 
   Title:
     m_Untranslated: Tileset
@@ -37,13 +37,49 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 0
       Title:
+        m_Untranslated: Page title
+      Text:
+        m_Untranslated: 'Now you know the easy process of setting up tilesets. This
+          is a very efficent tool to use during level creation. '
+      m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+    - m_Type: 1
+      Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: 'Tileset are a way to collect all the pieces you need to
-          build a level. This will make the process of creating levels much easier
-          since you''ll have easy access to all pieces. There are also ways you can
-          make them automatic so you only need to set up rules for '
+        m_Untranslated: 
       m_Tutorial: {fileID: 0}
+      m_Image: {fileID: 0}
+      m_Video: {fileID: 0}
+      m_CriteriaCompletion: 0
+      m_Criteria:
+        m_Items: []
+      m_MaskingSettings:
+        m_MaskingEnabled: 0
+        m_UnmaskedViews: []
+      m_Summary: 
+      m_Description: 
+      m_InstructionBoxTitle: 
+      m_InstructionText: 
+      m_TutorialButtonText: 
+    - m_Type: 2
+      Title:
+        m_Untranslated: 
+      Text:
+        m_Untranslated: Collider Tutorial
+      m_Tutorial: {fileID: 11400000, guid: 9e852a4fdf5aefc428ca9f1b722c3407, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
