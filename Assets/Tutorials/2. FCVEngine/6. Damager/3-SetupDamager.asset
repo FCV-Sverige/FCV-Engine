@@ -109,6 +109,17 @@ MonoBehaviour:
           m_MaskType: 0
           m_MaskSizeModifier: 0
           m_UnmaskedControls: []
+        - m_SelectorType: 1
+          m_ViewType:
+            m_TypeName: 
+          m_EditorWindowType:
+            m_TypeName: UnityEditor.PopupWindow, UnityEditor.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          m_AlternateEditorWindowTypes:
+            m_Items: []
+          m_MaskType: 0
+          m_MaskSizeModifier: 0
+          m_UnmaskedControls: []
       m_Summary: 
       m_Description: 
       m_InstructionBoxTitle: 
@@ -142,10 +153,9 @@ MonoBehaviour:
           Navigate to the Damager component\n3. Set the 'Start Angle' to 90 so that
           the angle will be pointing upwards\n4. Set the 'Fov Angle' to something
           between 45 and 90\n5. Set the 'Layer Mask' to include Player so that it
-          will damage our player in the scene. \n(if highlight option is not working
-          then click down arrow until you are on the 'Player' layer and click enter)\n\n_____\ntip:
-          if you want to tweak the damage, collision Distance or the attack cooldown
-          there are variable fields for that in the inspector for you to change. "
+          will damage our player in the scene. \n\n_____\ntip: if you want to tweak
+          the damage, collision Distance or the attack cooldown there are variable
+          fields for that in the inspector for you to change. "
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
