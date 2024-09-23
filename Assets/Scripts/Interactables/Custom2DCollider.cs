@@ -72,9 +72,12 @@ class Custom2DCollider : MonoBehaviour
     private void FireEvent(ref UnityEvent unityEvent, GameObject collidingObject)
     {
         if (!LayerMaskUtility.IsInLayerMask(collidingObject, collisionLayers)) return;
-        
+
         if (!checkItems)
+        {
             unityEvent.Invoke();
+            return;
+        }
         
         if (collidingObject.TryGetComponent(out Inventory inventory) && CheckItems(inventory))
             unityEvent.Invoke();
