@@ -1,26 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField] private Dictionary<string, Item> inventoryItems = new();
-    
-    public Dictionary<string, Item> InventoryItems => inventoryItems;
+    private Dictionary<string, Item> InventoryItems { get; set; } = new();
 
+    private void Awake()
+    {
+        InventoryItems = new();
+    }
 
     public void TryAddItem(string itemName, Item item)
     {
-        inventoryItems.TryAdd(itemName, item);
+        InventoryItems.TryAdd(itemName, item);
     }
 
     public bool TryRemoveItem(string itemName)
     {
-        return inventoryItems.Remove(itemName);
+        return InventoryItems.Remove(itemName);
     }
 
     public bool HasItem(string itemName)
     {
-        return inventoryItems.ContainsKey(itemName);
+        return InventoryItems.ContainsKey(itemName);
     }
 }
