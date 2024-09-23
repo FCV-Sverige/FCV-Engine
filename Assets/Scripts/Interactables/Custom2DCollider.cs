@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -81,13 +82,15 @@ class Custom2DCollider : MonoBehaviour
 
     private bool CheckItems(Inventory inventory)
     {
-        foreach (var item in itemsToCheck)
+        foreach (var hasItem in itemsToCheck.Select(inventory.HasItem))
         {
-            bool hasItem = inventory.HasItem(item);
-            
-            if (hasItem && !needAllItems) return true;
-
-            if (!hasItem && needAllItems) return false;
+            switch (hasItem)
+            {
+                case true when !needAllItems:
+                    return true;
+                case false when needAllItems:
+                    return false;
+            }
         }
 
         return true;
