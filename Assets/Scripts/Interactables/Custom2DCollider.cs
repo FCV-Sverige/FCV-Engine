@@ -95,8 +95,8 @@ class Custom2DCollider : MonoBehaviour
                     return false;
             }
         }
-
-        return true;
+        
+        return needAllItems;
     }
 }
 #if UNITY_EDITOR
