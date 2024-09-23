@@ -129,6 +129,17 @@ MonoBehaviour:
           m_MaskType: 0
           m_MaskSizeModifier: 0
           m_UnmaskedControls: []
+        - m_SelectorType: 1
+          m_ViewType:
+            m_TypeName: 
+          m_EditorWindowType:
+            m_TypeName: UnityEditor.ObjectSelector, UnityEditor.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          m_AlternateEditorWindowTypes:
+            m_Items: []
+          m_MaskType: 0
+          m_MaskSizeModifier: 0
+          m_UnmaskedControls: []
       m_Summary: 
       m_Description: 
       m_InstructionBoxTitle: 
@@ -163,11 +174,12 @@ MonoBehaviour:
         m_Untranslated: "1. Navigate to 'Assets/Audio'\n\n2. Find 'AudioMixer' and
           double click it (a window called \"Audio Mixer\" should appear)\n\n3. In
           the Audio Mixer window find the 'Groups' tab and slect the 'Master'\n\n4.
-          Click the plus to make a child under 'Master' and name it \"Music\"\n\n5.
-          Navigate to the scene hierarchy and click the object named 'Audio'\n\n6.
-          Navigate to the inspector and find the variable field called 'Output' \n\n7.
-          Click the circle right of the variable field and find the new group (\"Music\")
-          and click it to assign it"
+          select 'Master' and click the plus (right of 'Groups' text) to make a child
+          under 'Master' and name it \"Music\"\n\n5. Navigate to the scene hierarchy
+          and click the object named 'Audio'\n\n6. Navigate to the inspector and
+          find the variable field called 'Output' \n\n7. Click the circle right of
+          the variable field and find the new group (\"Music\") and click it to assign
+          it"
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1-AudioMixerIntro
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Page title
+    m_Untranslated: Audio Mixer
   m_Paragraphs:
     m_Items:
     - m_Type: 6
@@ -28,7 +28,7 @@ MonoBehaviour:
       m_Criteria:
         m_Items: []
       m_MaskingSettings:
-        m_MaskingEnabled: 0
+        m_MaskingEnabled: 1
         m_UnmaskedViews: []
       m_Summary: 
       m_Description: 
