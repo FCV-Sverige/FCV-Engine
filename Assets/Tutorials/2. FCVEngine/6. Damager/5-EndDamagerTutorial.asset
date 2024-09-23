@@ -28,7 +28,7 @@ MonoBehaviour:
       m_Criteria:
         m_Items: []
       m_MaskingSettings:
-        m_MaskingEnabled: 0
+        m_MaskingEnabled: 1
         m_UnmaskedViews: []
       m_Summary: 
       m_Description: 
@@ -79,8 +79,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: 'Tutorial X: Make the best game!'
-      m_Tutorial: {fileID: 0}
+        m_Untranslated: Check Point System
+      m_Tutorial: {fileID: 11400000, guid: cb14b93efda36cf4bbf0c1559acec8f8, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
