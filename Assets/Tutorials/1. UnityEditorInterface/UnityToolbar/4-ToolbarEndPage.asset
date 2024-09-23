@@ -28,7 +28,7 @@ MonoBehaviour:
       m_Criteria:
         m_Items: []
       m_MaskingSettings:
-        m_MaskingEnabled: 0
+        m_MaskingEnabled: 1
         m_UnmaskedViews: []
       m_Summary: 
       m_Description: 
@@ -77,8 +77,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Unity Gameobject Manipulation
-      m_Tutorial: {fileID: 11400000, guid: d50b30c266f1ea742ab1fb54f7c9cd3f, type: 2}
+        m_Untranslated: Unity Editor Concepts
+      m_Tutorial: {fileID: 11400000, guid: 266dd7a55a1da554e8c17d294d054b74, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0

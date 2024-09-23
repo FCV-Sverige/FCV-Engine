@@ -46,15 +46,6 @@ MonoBehaviour:
     Tutorial: {fileID: 11400000, guid: 87b1b71cafebc9e419328121d2103ca8, type: 2}
   - OrderInView: 2
     Heading:
-      m_Untranslated: Unity Gameobject Manipulation
-    Text:
-      m_Untranslated: 
-    Metadata: 
-    Url: 
-    Image: {fileID: 0}
-    Tutorial: {fileID: 11400000, guid: d50b30c266f1ea742ab1fb54f7c9cd3f, type: 2}
-  - OrderInView: 3
-    Heading:
       m_Untranslated: Unity Editor Concepts
     Text:
       m_Untranslated: 
@@ -62,3 +53,12 @@ MonoBehaviour:
     Url: 
     Image: {fileID: 0}
     Tutorial: {fileID: 11400000, guid: 266dd7a55a1da554e8c17d294d054b74, type: 2}
+  - OrderInView: 3
+    Heading:
+      m_Untranslated: Unity Gameobject Manipulation
+    Text:
+      m_Untranslated: 
+    Metadata: 
+    Url: 
+    Image: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: d50b30c266f1ea742ab1fb54f7c9cd3f, type: 2}

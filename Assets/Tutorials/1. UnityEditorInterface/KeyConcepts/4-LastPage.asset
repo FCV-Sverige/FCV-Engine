@@ -77,9 +77,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Let's head into FCV-Engine with learning about how to create
-          new scenes
-      m_Tutorial: {fileID: 11400000, guid: 8609901547be3b3498913f56718a549d, type: 2}
+        m_Untranslated: Unity Manipulation Tutorial
+      m_Tutorial: {fileID: 11400000, guid: d50b30c266f1ea742ab1fb54f7c9cd3f, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
