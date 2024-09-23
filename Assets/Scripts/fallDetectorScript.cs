@@ -8,6 +8,12 @@ public class fallDetectorScript : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float yPositionThreshold = -20;
 
+    private void Awake()
+    {
+        if (!checkPointManager)
+            checkPointManager = FindObjectOfType<CheckPointManager>();
+    }
+
     void Update()
     {
         if (playerTransform != null)
