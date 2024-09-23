@@ -78,8 +78,9 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: 'Tutorial X: Make the best game!'
-      m_Tutorial: {fileID: 0}
+        m_Untranslated: Let's head into FCV-Engine with learning about how to create
+          new scenes
+      m_Tutorial: {fileID: 11400000, guid: 8609901547be3b3498913f56718a549d, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0

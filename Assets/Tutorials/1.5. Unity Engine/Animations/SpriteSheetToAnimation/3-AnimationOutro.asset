@@ -79,8 +79,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: 
-      m_Tutorial: {fileID: 0}
+        m_Untranslated: Pixel Art Sprite Setup
+      m_Tutorial: {fileID: 11400000, guid: 09bf380f62f730d469f20b9b95c2c5ad, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0

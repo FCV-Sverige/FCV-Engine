@@ -79,8 +79,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: 
-      m_Tutorial: {fileID: 0}
+        m_Untranslated: Physics Colliders
+      m_Tutorial: {fileID: 11400000, guid: 9e852a4fdf5aefc428ca9f1b722c3407, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
