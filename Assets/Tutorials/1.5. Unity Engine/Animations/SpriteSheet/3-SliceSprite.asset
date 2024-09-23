@@ -90,8 +90,8 @@ MonoBehaviour:
           m_ViewType:
             m_TypeName: 
           m_EditorWindowType:
-            m_TypeName: UnityEditor.PopupWindow, UnityEditor.CoreModule, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
+            m_TypeName: UnityEditor.U2D.Sprites.SpriteEditorMenu, Unity.2D.Sprite.Editor,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
           m_AlternateEditorWindowTypes:
             m_Items: []
           m_MaskType: 0
