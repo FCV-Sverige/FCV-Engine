@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
-  m_Name: 2-OpenTilePalette 1
+  m_Name: 2-PaintUsingTilePalette
   m_EditorClassIdentifier: 
   Title:
     m_Untranslated: Painting The Level
@@ -52,6 +52,17 @@ MonoBehaviour:
           m_MaskType: 0
           m_MaskSizeModifier: 0
           m_UnmaskedControls: []
+        - m_SelectorType: 1
+          m_ViewType:
+            m_TypeName: 
+          m_EditorWindowType:
+            m_TypeName: UnityEditor.PopupWindow, UnityEditor.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          m_AlternateEditorWindowTypes:
+            m_Items: []
+          m_MaskType: 0
+          m_MaskSizeModifier: 0
+          m_UnmaskedControls: []
       m_Summary: 
       m_Description: 
       m_InstructionBoxTitle: 
@@ -62,8 +73,8 @@ MonoBehaviour:
         m_Untranslated: 
       Text:
         m_Untranslated: We have created two Tile Palettes that allow you to draw
-          out levels. These tiles use the Scriptable Tile system of the Unity Tilemap.
-          They automatically choose the right sprite for a platform.
+          out levels. These tiles use the Scriptable Rule Tile system of the Unity
+          Tilemap. They automatically choose the right sprite for a platform.
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -93,8 +104,13 @@ MonoBehaviour:
           ________
 
 
-          TIP: If you make
-          a mistake, you can hold ''shift + left click'' to erase Tiles '
+          NOTE: if it says
+          ''TutorialPalette'' to the top-left of the grid: click it and change it
+          to ''Rule Tile Palette''
+
+
+          TIP: If you make a mistake, you can
+          hold ''shift + left click'' to erase Tiles '
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
