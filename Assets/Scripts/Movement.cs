@@ -21,9 +21,11 @@ public class Movement : MonoBehaviour
     [Header("Jump Settings")]
     [Space(10)]
 
-    [SerializeField] public float jumpForce;
-    [SerializeField] public float jumpCoyoteTime;
-    [SerializeField] public float jumpBufferTime;
+    [SerializeField] private float jumpForce;
+    [SerializeField] private float jumpCoyoteTime;
+    [SerializeField] private float jumpBufferTime;
+    // set to 0 if no extra jumps are to be used
+    [SerializeField] private int extraJumps;
     #endregion
     [Space(20)]
 
@@ -42,9 +44,11 @@ public class Movement : MonoBehaviour
     [SerializeField] private string horizontalAxisName;
     [SerializeField] private KeyCode jumpButton;
     private Vector2 moveInputs = new Vector2();
+    private float lastJumpTimestamp;
     private bool isGrounded;
     private bool isJumping;
     private bool jumpPressed;
+    private int jumpsAmount;
 
 
     private float lastGroundedTime;
@@ -75,8 +79,10 @@ public class Movement : MonoBehaviour
         isGrounded = Physics2D.OverlapBox((Vector2)transform.position + overlapBoxOffset, overlapBoxSize, 0, groundLayer);
         if (isGrounded) 
         {
+            // resets jump values
             lastGroundedTime = jumpCoyoteTime;
             isJumping = false;
+            jumpsAmount = 0;
         }
 
         SetAnimation();
@@ -88,10 +94,11 @@ public class Movement : MonoBehaviour
     {
         Run();
 
-        if (canJump() && !isJumping && Input.GetKey(jumpButton))
+        if (CanJump() && Input.GetKey(jumpButton))
             Jump();
     }
-
+    
+    // calculates the targeted speed and applies it over time using rigidbody2D
     private void Run()
     {
         float targetSpeed = moveInputs.x * maxSpeed;
@@ -117,8 +124,11 @@ public class Movement : MonoBehaviour
         lastGroundedTime = 0;
         isJumping = true;
         animator.SetTrigger("StartJump");
+        lastJumpTimestamp = Time.time;
+        jumpsAmount++;
     }
 
+    // scales gravity so that the player has higher gravity when falling compared to jumping
     private void GravityScaling()
     {
         if (rb.velocity.y < 0)
@@ -136,10 +146,17 @@ public class Movement : MonoBehaviour
         animator.SetFloat("speed", Mathf.Abs(moveInputs.x));
         animator.SetBool("IsJumping", isJumping);
     }
-
-    private bool canJump()
+    
+    private bool CanJump()
     {
-        return lastGroundedTime > 0;
+        bool bufferTime = Time.time - lastJumpTimestamp >= jumpBufferTime;
+        
+        if (extraJumps > 0)
+        {
+            return bufferTime && jumpsAmount < extraJumps + 1;
+        }
+
+        return bufferTime && lastGroundedTime > 0 && !isJumping;
     }
 
     private void Flip()
