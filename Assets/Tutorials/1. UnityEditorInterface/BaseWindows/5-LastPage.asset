@@ -39,7 +39,7 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Now you know the basics of the most important unity windows
+        m_Untranslated: Now you know the basics of the most important unity windows.
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

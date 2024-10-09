@@ -22,7 +22,7 @@ MonoBehaviour:
       Text:
         m_Untranslated: 
       m_Tutorial: {fileID: 0}
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 2800000, guid: 302e7ed88c19f544aa198e40b2bc297d, type: 3}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
       m_Criteria:
@@ -84,12 +84,12 @@ MonoBehaviour:
         m_Untranslated: 
       Text:
         m_Untranslated: "Every object in the game world exists as a GameObject in
-          Unity. GameObjects are given specific features by giving them appropriate
-          components, which provide a wide range of different functionality. When
-          you create a new GameObject, it comes with a Transform component already
+          Unity. \n\n- GameObjects are given specific features by giving them appropriate
+          components, which provide a wide range of different functionality. \n\n-
+          When you create a new GameObject, it comes with a Transform component already
           attached. This component controls the GameObject\u2019s positional properties
-          in the 3D (or 2D) gamespace. You need to add all other components manually
-          in the Inspector. "
+          in the 3D (or 2D) gamespace. \n\n- You need to add all other components
+          manually in the Inspector. "
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -108,10 +108,20 @@ MonoBehaviour:
       Title:
         m_Untranslated: Add 'SpriteRenderer' to 'Base Gameobject'
       Text:
-        m_Untranslated: "1. Select 'Base Gameobject' \n2. Scroll all the way down
-          in inspector window\n3. Click 'AddComponent'\n4. Search for 'Sprite Renderer'
-          and select it\n5. Press 'Enter'\n6. Click the circle right of 'Sprite'
-          field and select a sprite"
+        m_Untranslated: '1. Select ''Base Gameobject''.
+
+          2. Scroll all
+          the way down in inspector window.
+
+          3. Click ''AddComponent''.
+
+          4.
+          Search for ''Sprite Renderer'' and select it.
+
+          5. Press ''Enter''.
+
+          6.
+          Click the circle right of ''Sprite'' field and select a sprite.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

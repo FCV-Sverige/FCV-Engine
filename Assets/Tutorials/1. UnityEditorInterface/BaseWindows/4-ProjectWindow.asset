@@ -50,11 +50,11 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: This is where you manage your Project Assets. Assets are
+        m_Untranslated: "This is where you manage your Project Assets. Assets are
           the media files used in a Project (for example, images, 3D models and sound
-          files). The Project window acts like a file explorer, and can be used to
-          explore and create folders on your computer. When the walkthrough asks
-          you to find an Asset at a given file path, use this window.
+          files). \n\nThe Project window acts like a file explorer, and can be used
+          to explore and create folders on your computer. When the walkthrough asks
+          you to find an Asset at a given file path, use this window."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

@@ -104,10 +104,10 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: 'Another useful shortcut is the F key, which enables you
-          to focus on a selected object.  If you forget where a GameObject is in
-          your Scene, select it in the Hierarchy. Then move your cursor over the
-          Scene view,  and press F to center it. '
+        m_Untranslated: "Another useful shortcut is the F key, which enables you
+          to focus on a selected object.  \n\nIf you forget where a GameObject is
+          in your Scene, select it in the Hierarchy. Then move your cursor over the
+          Scene view,  and press F to center it. "
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -126,7 +126,7 @@ MonoBehaviour:
       Title:
         m_Untranslated: 'Keyboard shortcut: F'
       Text:
-        m_Untranslated: Select the 'Base Gameobject' object and click 'F'
+        m_Untranslated: Select the 'Base Gameobject' object and click 'F'.
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

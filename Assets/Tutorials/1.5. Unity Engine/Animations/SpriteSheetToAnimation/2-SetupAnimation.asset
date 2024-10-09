@@ -35,7 +35,7 @@ MonoBehaviour:
   m_Name: 2-SetupAnimation
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Animation
+    m_Untranslated: Animations
   m_Paragraphs:
     m_Items:
     - m_Type: 6
@@ -118,9 +118,9 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: 'For this tutorial there is a ready made animation for the
-          ''Animation'' object in the scene. We will be setting up an idle animation
-          for it. '
+        m_Untranslated: We have prepared some Animation files for this Tutorial to
+          see what happens when we add an idle animation to the 'Animation' object
+          within this scene.
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -140,12 +140,16 @@ MonoBehaviour:
         m_Untranslated: Let's set it up
       Text:
         m_Untranslated: "1. Navigate to 'Assets/Animations/Tutorial' in the project
-          browser and double click 'Tutorial' object to open 'Animation' window\n\n2.
-          Select the 'Animation' object in the hierarchy\n\n2. Navigate to 'Assets/Art/Tutorial'
-          and open the sprite sheet that we split in the previous tutorial. \nWith
-          our spritesheet that we split you can select the first 10 sprites and drag
-          them into the 'Animation' window.\n\n3. Now drag them out so that they
-          are run over a longer span of time\n\n"
+          browser and double click 'Tutorial' object to open the 'Animation' window.\n\n2.
+          Select the 'Animation' object in the hierarchy. (When working with animations
+          it is important that you have the Game Object that you want to animate
+          selected)\n\n2. Navigate to 'Assets/Art/Tutorial' and open the sprite sheet
+          that we split in the previous tutorial. \nWith our spritesheet that we
+          split you can select the first 10 sprites and drag them into the 'Animation'
+          window.\n\n3. Now drag them out so that they are run over a longer span
+          of time.\n\n____\nNote: You may add additional Animation files later by:\n1.
+          Right Click in the Project Window. (Or click on the + icon)\n2. Go to Create
+          and select Animation.\n\nAnd then follow the same steps as told above."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

@@ -22,7 +22,7 @@ MonoBehaviour:
       Text:
         m_Untranslated: 
       m_Tutorial: {fileID: 0}
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 2800000, guid: 59610bcf0dc8aa642bdf9c95624582b3, type: 3}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
       m_Criteria:
@@ -75,14 +75,14 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Prefabs are a great way to configure and store GameObjects
+        m_Untranslated: "Prefabs are a great way to configure and store GameObjects
           for re-use in your game. They act as templates, storing the components
           and properties of a specific GameObject and enabling you to create multiple
-          instances of it within a Scene.  All copies of the Prefab template in a
-          Scene are linked. This means that if you change the object values for the
-          health potion Prefab, for example, each copy of that Prefab within the
-          Scene will change to match it. However, you can also make specific instances
-          of the GameObject different to the default Prefab settings.
+          instances of it within a Scene.  \n\nAll copies of the Prefab template
+          in a Scene are linked. This means that if you change the object values
+          for the health potion Prefab, for example, each copy of that Prefab within
+          the Scene will change to match it. However, you can also make specific
+          instances of the GameObject different to the default Prefab settings."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -101,10 +101,10 @@ MonoBehaviour:
       Title:
         m_Untranslated: Drag 'Platform' prefab into scene
       Text:
-        m_Untranslated: '1. Navigate to ''Assets/Prefabs''
+        m_Untranslated: '1. Navigate to ''Assets/Prefabs''.
 
           2. Click and
-          drag ''Platform'' object into scene window'
+          drag ''Platform'' object into scene window.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

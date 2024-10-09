@@ -21,7 +21,7 @@ MonoBehaviour:
   Title:
     m_Untranslated: Art
   Subtitle:
-    m_Untranslated: 
+    m_Untranslated: Tutorials on how to implement your own art into the engine.
   Description:
     m_Untranslated: 
   ProjectLayout: {fileID: 0}

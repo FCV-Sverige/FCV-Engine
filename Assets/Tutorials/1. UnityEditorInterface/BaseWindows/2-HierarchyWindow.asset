@@ -51,7 +51,7 @@ MonoBehaviour:
         m_Untranslated: 
       Text:
         m_Untranslated: "This is a list of all the GameObjects in a Scene. Every
-          object in your game is a GameObject. These can be placed in a parent-child
+          object in your game is a GameObject. \n\nThese can be placed in a parent-child
           hierarchy, which lets you group objects \u2014 this means that when the
           parent object is moved, all of its children will move at the same time.  "
       m_Tutorial: {fileID: 0}

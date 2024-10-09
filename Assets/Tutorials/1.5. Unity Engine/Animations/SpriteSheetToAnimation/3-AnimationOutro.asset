@@ -39,9 +39,10 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: Now you know how to setup sprite changing animations. Animations
-          can also control transform and many different properties but for those
-          there are multiple tutorals online
+        m_Untranslated: "Now you know how to setup sprite animations. \n\nThere is
+          a lot more to working with Animations. Animations can also control transform
+          and many different properties. We recommend for you to look up more tutorals
+          online if you are interested."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

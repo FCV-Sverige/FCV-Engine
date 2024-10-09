@@ -22,7 +22,7 @@ MonoBehaviour:
       Text:
         m_Untranslated: 
       m_Tutorial: {fileID: 0}
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 2800000, guid: ccdee6643c22b7047bb0b6ba12c82055, type: 3}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
       m_Criteria:
@@ -39,10 +39,12 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: 'Often animation are made in one single image and to make
-          those into animations we need to split them inside unity. This will make
-          a single image be represented as several seperate images which can be used
-          to make animations or be used as single sprites. '
+        m_Untranslated: 'Animations are often created from a single image, which
+          we split into multiple frames in Unity.
+
+
+          By dividing a single
+          image into several individual frames, we can use them to create animations.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

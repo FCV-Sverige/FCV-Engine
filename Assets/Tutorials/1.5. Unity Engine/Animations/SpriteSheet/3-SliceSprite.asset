@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 3-SliceSprite
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Split Sprite Sheet
+    m_Untranslated: Sprite Sheet Splitting
   m_Paragraphs:
     m_Items:
     - m_Type: 6
@@ -67,7 +67,7 @@ MonoBehaviour:
       Text:
         m_Untranslated: 
       m_Tutorial: {fileID: 0}
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 2800000, guid: 990964a072727304b87fb79c0532a516, type: 3}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
       m_Criteria:
@@ -106,8 +106,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: 'Now that we have all the setup done for the sprite sheet
-          we can finally slice/split it into all the multiple sprites. '
+        m_Untranslated: 'Now that we have all the setup done, we can finally slice/split
+          the image into multiple sprites. '
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -126,23 +126,22 @@ MonoBehaviour:
       Title:
         m_Untranslated: Let's slice it
       Text:
-        m_Untranslated: '1. Navigate to the ''Sprite Editor'' window
+        m_Untranslated: '1. Navigate to the ''Sprite Editor'' window.
 
           2.
-          The second tab in the top of the window from the right there is a button
-          called ''Slice'', click it (a menu should open)
+          Click ''Slice'' at the top left corner of the window (a menu should open).
 
-          3. Change the
-          ''Type'' variable to ''Grid by Cell Size''
+          3.
+          Change the ''Type'' option to ''Grid by Cell Count''.
 
-          4. Set the ''Pixel
-          Size'' variable to ''x:32  y:32''
+          4. Set
+          ''Column & Row'' to ''C:10  R:10''.
 
           5. Click the ''Slice'' button
-          in the menu
+          in the menu.
 
-          6. Click ''Apply'' in the right corner in the ''Sprite
-          Editor'' window '
+          6. Make sure to click ''Apply'' in the right corner
+          of the ''Sprite Editor'' window to save your changes.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

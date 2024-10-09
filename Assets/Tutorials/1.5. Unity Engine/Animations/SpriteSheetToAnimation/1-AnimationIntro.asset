@@ -39,8 +39,10 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Now that we have a spritesheet split into severeal different
-          sprites we can make them into animations.
+        m_Untranslated: "Now that we have a spritesheet split into severeal different
+          sprites we can make them into animations.\n\nNote: If you haven\u2019t
+          completed Part 1 of this tutorial yet, we highly recommend doing that first
+          before proceeding with this section."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

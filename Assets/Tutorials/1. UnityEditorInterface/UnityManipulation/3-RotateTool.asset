@@ -21,7 +21,7 @@ MonoBehaviour:
   isTesting: 0
   objectReference:
     m_SceneObjectReference:
-      m_SceneGuid: 5c0053529770e10488bc1ef0fe7aed25
+      m_SceneGuid: c87ace2309a883a498e913608ab50b64
       m_GameObjectGuid: 2ebf292e-46e3-4e80-8b95-c63f058681e1
       m_SerializedComponentType:
         m_TypeName: 

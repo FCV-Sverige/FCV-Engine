@@ -103,7 +103,7 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: Select the 'Base Gameobject' in hierarchy window
+        m_Untranslated: Select the 'Base Gameobject' in hierarchy window.
       Text:
         m_Untranslated: 
       m_Tutorial: {fileID: 0}
