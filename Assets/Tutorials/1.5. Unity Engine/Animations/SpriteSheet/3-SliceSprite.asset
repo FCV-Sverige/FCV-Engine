@@ -140,8 +140,16 @@ MonoBehaviour:
           5. Click the ''Slice'' button
           in the menu.
 
-          6. Make sure to click ''Apply'' in the right corner
-          of the ''Sprite Editor'' window to save your changes.'
+          6. Make sure to click ''Apply'' in the upper right
+          corner of the ''Sprite Editor'' window to save your changes.
+
+
+          ____
+
+          Note:
+          This sprite is structured with a 10x10 grid pattern. When importing your
+          own animation, make sure to adjust the Columns and Rows settings according
+          to your sprite''s structure.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

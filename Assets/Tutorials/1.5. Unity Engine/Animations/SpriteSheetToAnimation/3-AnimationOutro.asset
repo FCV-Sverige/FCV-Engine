@@ -39,10 +39,13 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: "Now you know how to setup sprite animations. \n\nThere is
-          a lot more to working with Animations. Animations can also control transform
-          and many different properties. We recommend for you to look up more tutorals
-          online if you are interested."
+        m_Untranslated: "Now you know how to set up sprite animations.\n\nThere\u2019s
+          much more to working with animations. Once you\u2019ve set up all your
+          animations, you\u2019ll want to control them through an Animator Controller.
+          The link below directs you to a tutorial that explains in more detail how
+          to implement all your animations into a character.\n\nhttps://www.youtube.com/watch?v=hkaysu1Z-N8\n\nAnimations
+          can also control transforms and many other properties. We recommend exploring
+          additional tutorials online if you're interested in learning more."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
