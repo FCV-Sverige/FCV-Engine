@@ -89,7 +89,7 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: Create New Scene
+        m_Untranslated: Create A New Scene
       Text:
         m_Untranslated: '1. In the top menu, click ''Tools''
 
