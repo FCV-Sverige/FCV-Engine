@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 4-SetupColliderComponent
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Custom Collider
+    m_Untranslated: Collider 2D Handler
   m_Paragraphs:
     m_Items:
     - m_Type: 6

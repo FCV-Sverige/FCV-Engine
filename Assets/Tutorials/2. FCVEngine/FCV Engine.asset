@@ -30,7 +30,8 @@ MonoBehaviour:
     Heading:
       m_Untranslated: Creating a New Scene
     Text:
-      m_Untranslated: This tutorial shows you how to create a new scene.
+      m_Untranslated: 'This tutorial shows you how to create a new scene to start
+        building a level from scratch.  '
     Metadata: 
     Url: 
     Image: {fileID: 2800000, guid: 08d740025d26044ba87326db221ac571, type: 3}
@@ -39,8 +40,8 @@ MonoBehaviour:
     Heading:
       m_Untranslated: Painting a Level
     Text:
-      m_Untranslated: This tutorial shows you how to use the tile palette and the
-        pre-made tiles.
+      m_Untranslated: This tutorial shows you how to use the Tile Palette to design
+        the layout of your level within a scene.
     Metadata: 
     Url: 
     Image: {fileID: 2800000, guid: 86408806ba4819c4494d51cb88d34da4, type: 3}
@@ -49,8 +50,8 @@ MonoBehaviour:
     Heading:
       m_Untranslated: Moving Platform
     Text:
-      m_Untranslated: Walkthrough on how to implement moving platforms into your
-        levels
+      m_Untranslated: 'A walkthrough on how to add and use moving platforms in your
+        levels.  '
     Metadata: 
     Url: 
     Image: {fileID: 2800000, guid: 105aa40a2a0f6584b9f32f87d3be5fed, type: 3}
@@ -59,7 +60,7 @@ MonoBehaviour:
     Heading:
       m_Untranslated: Enemies
     Text:
-      m_Untranslated: This tutorial shows you how to use the enemy prefab.
+      m_Untranslated: This tutorial shows you how to use the Enemy Prefab.
     Metadata: 
     Url: 
     Image: {fileID: 2800000, guid: 2d728ff08787c6640bbe4984c7ff018b, type: 3}
@@ -68,16 +69,18 @@ MonoBehaviour:
     Heading:
       m_Untranslated: Damager
     Text:
-      m_Untranslated: Walkthrough on how to implement damager on different objects
+      m_Untranslated: 'A walkthrough on how to make different objects capable of
+        dealing damage.  '
     Metadata: 
     Url: 
     Image: {fileID: 2800000, guid: 1425ea0db2b6f1e4598d3673dd66f3e8, type: 3}
     Tutorial: {fileID: 11400000, guid: afa1b2534f3ed3249baa21044d3eb768, type: 2}
   - OrderInView: 5
     Heading:
-      m_Untranslated: Custom Collider
+      m_Untranslated: Collision 2D Handler
     Text:
-      m_Untranslated: Walkthrough on how to implement and use the Custom Collider
+      m_Untranslated: 'A walkthrough on how to handle interactions between different
+        objects through collisions.  '
     Metadata: 
     Url: 
     Image: {fileID: 2800000, guid: 7e906c66033b10d4cb725944dc7ac228, type: 3}
@@ -86,17 +89,17 @@ MonoBehaviour:
     Heading:
       m_Untranslated: Inventory System
     Text:
-      m_Untranslated: Walkthrough on how to use the inventory system to expand your
-        own game.
+      m_Untranslated: A walkthrough on how to use the inventory system to expand
+        your own game.
     Metadata: 
     Url: 
     Image: {fileID: 2800000, guid: 5ef89e05f517e834980a1823f1ab7e49, type: 3}
     Tutorial: {fileID: 11400000, guid: 703847b2116861c48a47caf423c222d9, type: 2}
   - OrderInView: 7
     Heading:
-      m_Untranslated: Check Point System
+      m_Untranslated: Checkpoint System
     Text:
-      m_Untranslated: Walkthrough on how to implement the check point system
+      m_Untranslated: A walkthrough on how to use the checkpoint system.
     Metadata: 
     Url: 
     Image: {fileID: 2800000, guid: 5ef89e05f517e834980a1823f1ab7e49, type: 3}
