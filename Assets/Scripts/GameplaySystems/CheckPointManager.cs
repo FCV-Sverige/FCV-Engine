@@ -1,9 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
-using Unity.Tutorials.Core.Editor;
-using UnityEditor;
 using UnityEngine;
 
 public static class CheckPointManager
@@ -11,8 +5,6 @@ public static class CheckPointManager
     public static readonly float CheckPointAcquiredDistance = 1;
 
     private static Vector2 lastCheckPoint;
-
-
 
     public static void PlaceAtCheckPoint(Transform playerTransform)
     {
