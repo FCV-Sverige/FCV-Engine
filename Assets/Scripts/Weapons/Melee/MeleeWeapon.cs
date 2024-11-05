@@ -90,6 +90,8 @@ public class MeleeWeapon : Weapon
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (!Equipped) return;
+        
         if (other.TryGetComponent(out PatrolEnemy patrolEnemy))
         {
             Destroy(patrolEnemy.gameObject);
