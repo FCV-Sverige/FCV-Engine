@@ -74,7 +74,7 @@ public class Movement : MonoBehaviour
     {
         lastGroundedTime -= Time.deltaTime;
 
-        moveInputs.x = Input.GetAxis(horizontalAxisName);
+        CheckInputs();
 
         isGrounded = Physics2D.OverlapBox((Vector2)transform.position + overlapBoxOffset, overlapBoxSize, 0, groundLayer);
         if (isGrounded) 
@@ -88,6 +88,17 @@ public class Movement : MonoBehaviour
         SetAnimation();
         Flip();
         GravityScaling();
+    }
+
+    private void CheckInputs()
+    {
+        moveInputs.x = 0;
+        moveInputs.x = Input.GetAxis(horizontalAxisName);
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+            moveInputs.x = -1;
+        if (Input.GetKey(KeyCode.RightArrow))
+            moveInputs.x = 1;
     }
 
     private void FixedUpdate()
