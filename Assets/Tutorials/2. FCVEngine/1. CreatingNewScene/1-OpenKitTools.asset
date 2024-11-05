@@ -70,9 +70,14 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: The project allows us to automatically create a new default
-          Scene. This Scene contains our Player, a small platform, Health UI, and
-          two different weapons
+        m_Untranslated: 'FCV Engine allows us to automatically create a new default
+          scene, complete with playable assets, so you can quickly start learning
+          the basics and build further as you become more familiar with it''s tools.
+
+
+          The
+          default scene includes our Player, a small platform, Health UI, and two
+          different weapons.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -89,18 +94,25 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: Create New Scene
+        m_Untranslated: Create A New Scene!
       Text:
-        m_Untranslated: '1. In the top menu, click ''Tools''
+        m_Untranslated: '1. In the top menu, click ''Tools''.
 
-          2. Choose
-          Create New Scene... A new window opens
+          2. Select
+          ''Create New Scene''. A new window will open.
 
-          3. In the empty field
-          next to New Scene Name, enter the name you would like to call your Scene
+          3. In the empty
+          field next to ''New Scene Name'', type a name of your choice for your scene.
 
           4.
-          Click Create'
+          Click on ''Create''.
+
+          ____
+
+          Note: The other field allows
+          you to override the default scene template with any other existing scene.
+          Ignore it for now. This is useful if you''d like to create and use your
+          own templates in the future.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

@@ -39,8 +39,10 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: 'Now that you know how to split a sprite sheet, we can move
-          on to how we can use them as animations. '
+        m_Untranslated: '
+
+          You now know how to split a sprite sheet. In
+          the next tutorial we''ll show you how to use them as animations. '
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

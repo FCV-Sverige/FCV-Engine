@@ -77,3 +77,4 @@ crashlytics-build.properties
 # Ignore large files
 *.psd
 *.zip
+.vsconfig

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CustomColliderTutorial
   m_EditorClassIdentifier: 
   TutorialTitle:
-    m_Untranslated: Custom Collider
+    m_Untranslated: Collider 2D Handler
   m_ProgressTrackingEnabled: 0
   m_LessonId: 
   m_Version: 0

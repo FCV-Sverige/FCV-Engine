@@ -39,9 +39,26 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: The new scene has now been created in the base folder 'Assets'
-          in the project. It has also been opened and added to the build scenes so
-          that they will be included when you build the game
+        m_Untranslated: 'A new scene has now been created in the base folder ''Assets''
+          in the project.
+
+
+          It is also the current active scene, so feel
+          free to explore and play around to your heart''s content.
+
+
+          We
+          encourage you to try all the other tutorials for the FCV Engine. We recommend
+          completing each one in order to learn everything you need to start your
+          game development adventure!
+
+          ____
+
+          Note:
+
+          The
+          scene has also been added to the build scenes in the Build Settings, ensuring
+          it will be included when you are ready to create a build for the game.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

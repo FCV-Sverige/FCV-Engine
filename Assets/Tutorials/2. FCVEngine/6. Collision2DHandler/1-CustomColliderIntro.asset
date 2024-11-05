@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1-CustomColliderIntro
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Custom Collider
+    m_Untranslated: Collision 2D Handler
   m_Paragraphs:
     m_Items:
     - m_Type: 6
@@ -39,10 +39,10 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: In this project there is a component called Custom2DCollider
+        m_Untranslated: In this project there is a component called Collision2DHandler
           that makes it easier to use collision- and trigger events. It also has
           item checks implemented if you would for example want to check if the player
-          has a key to open a door
+          has a key to open a door.
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

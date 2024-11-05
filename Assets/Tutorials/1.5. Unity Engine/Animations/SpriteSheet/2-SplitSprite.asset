@@ -114,7 +114,7 @@ MonoBehaviour:
       Text:
         m_Untranslated: 
       m_Tutorial: {fileID: 0}
-      m_Image: {fileID: 0}
+      m_Image: {fileID: 2800000, guid: 090bdf5a1102546429251186ed2e7fdb, type: 3}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
       m_Criteria:
@@ -153,9 +153,10 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: "First we need to make sure that our imported image has the
-          right settings. \n\nYou may add your own art later after this Tutorial
-          simply by draging your image to the project window into the Assets folder."
+        m_Untranslated: "First, we need to ensure that our imported image has the
+          correct settings. For this tutorial, we've provided an image for you to
+          learn the basics.\n\nYou can try this same exercise with your own artwork
+          once you\u2019ve completed the tutorial."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -176,11 +177,14 @@ MonoBehaviour:
       Text:
         m_Untranslated: "1. Navigate to 'Assets/Art/Tutorial' and select 'rogueSpritesheet'.\n2.
           Navigate to the inspector.\n3. Change 'Sprite Mode' to 'Multiple'.\n4.
-          Set 'Pixels Per Unit' to '32' (Which is this sprite's resolution per square).\n5.
-          Make sure that 'Compression' is set to 'None'.\n6. Click on 'Apply'. \n7.
-          Click on the 'Sprite Editor' button in the inspector.\n\n_____\nNote: When
-          opening the sprite editor it might ask to apply settings, click apply and
-          all changes will be saved."
+          Set 'Pixels Per Unit' to '32' (Which is this sprite's resolution).\n5.
+          Make sure that 'Filter Mode' is set to 'Point (no filter)'.\n6. Click on
+          'Apply'. \n7. Click on the 'Sprite Editor' button in the inspector.\n\n_____\nNote:
+          When opening the sprite editor it might ask to apply settings, click apply
+          and all changes will be saved.\n\nDepending on the file size of your art
+          assets, you may want to change the 'Compression' setting to 'None,' especially
+          when working with pixel art. (This is already the case for our Rogue sprite.)\n\nCompression
+          is more useful for larger files."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
