@@ -94,40 +94,33 @@ public class MovingPlatform : MonoBehaviour
 
     private int GetNextIndex(int currentIndex, int arrayLength, LoopType movementType)
     {
-        if (movementType == LoopType.LOOP)
+        switch (movementType)
         {
             // Loop behavior: Move to the next index, wrapping around to 0 if needed
-            return (currentIndex + 1) % arrayLength;
-        }
-        
-        if (movementType == LoopType.PINGPONG)
-        {
+            case LoopType.LOOP:
+                return (currentIndex + 1) % arrayLength;
+
             // Ping-Pong-behavior: Move to the next index, reversing direction at the ends
-            if (!pingPongReversing)
+            case LoopType.PINGPONG when !pingPongReversing:
             {
-                if (currentIndex + 1 >= arrayLength)
-                {
-                    // Reverse direction at the end
-                    pingPongReversing = true;
-                    return currentIndex - 1;
-                }
-
-                return currentIndex + 1;
+                if (currentIndex + 1 < arrayLength) return currentIndex + 1;
+                // Reverse direction at the end
+                pingPongReversing = true;
+                return currentIndex - 1;
             }
-
-            if (currentIndex - 1 < 0)
-            {
+            
+            // Ping-Pong-Behaviour: Control reversing in ping-pong behaviour
+            case LoopType.PINGPONG when currentIndex - 1 < 0:
                 // Reverse direction at the start
                 pingPongReversing = false;
                 return currentIndex + 1;
-            }
-
-            return currentIndex - 1;
+            
+            case LoopType.PINGPONG:
+                return currentIndex - 1;
+            
+            default:
+                return currentIndex; // Default case (should not be reached)
         }
-        
-        
-
-        return currentIndex; // Default case (should not be reached)
     }
 
     private void OnCollisionEnter2D(Collision2D other)
