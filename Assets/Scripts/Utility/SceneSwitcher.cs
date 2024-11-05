@@ -11,7 +11,7 @@ public class SceneSwitcher : MonoBehaviour
     [SerializeField] private SceneAsset _sceneAsset;
 #endif
 
-    [SerializeField] private string scenePath;
+    private string scenePath;
 
 
     public void StartTransition(GameObject transitioningGameObject = null)
