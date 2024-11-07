@@ -10,6 +10,7 @@ public class Health : MonoBehaviour
     public UnityEvent<int, int> onHealthChanged;
     public UnityEvent<GameObject> onDeath;
     [SerializeField] private int maxHealth;
+    [SerializeField] private bool destroyOnDeath = false;
 
     public int CurrentHealth { get; private set; }
 
@@ -43,6 +44,9 @@ public class Health : MonoBehaviour
         else
         {
             onDeath.Invoke(this.gameObject);
+            
+            if (destroyOnDeath)
+                Destroy(gameObject);
         }
     }
 }
