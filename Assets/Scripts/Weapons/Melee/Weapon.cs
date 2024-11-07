@@ -11,7 +11,7 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] private KeyCode fireButton;
     [SerializeField] protected bool useLeftClick = false;
-    [SerializeField] protected float damage;
+    [SerializeField] protected int damage;
     [SerializeField] protected float cooldown;
 
     [SerializeField] protected UnityEvent fireAction;
