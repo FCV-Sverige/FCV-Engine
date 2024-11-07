@@ -52,9 +52,9 @@ public class RangedWeapon : Weapon
         return Quaternion.Euler(new Vector3(0,0, angle));
     }
 
-    private void ProjectileHit(PatrolEnemy patrolEnemy)
+    private void ProjectileHit(Health health)
     {
-        Destroy(patrolEnemy.gameObject);
+        health.RemoveHealth(damage);
     }
 
     private void OnDrawGizmos()

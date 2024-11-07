@@ -11,7 +11,9 @@ public class Projectile : MonoBehaviour
 
     [SerializeField] private float lifetime = 5;
 
-    public UnityEvent<PatrolEnemy> hitAction;
+    [SerializeField] private LayerMask hittableLayer;
+
+    public UnityEvent<Health> hitAction;
     private void Awake()
     {
         GetComponent<Rigidbody2D>().isKinematic = true;
@@ -32,9 +34,10 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.TryGetComponent(out PatrolEnemy patrolEnemy))
+        if (!LayerMaskUtility.IsInLayerMask(other.gameObject, hittableLayer)) return;
+        if (other.gameObject.TryGetComponent(out Health health))
         {
-            hitAction.Invoke(patrolEnemy);
+            hitAction.Invoke(health);
         }
         Destroy(gameObject);
     }

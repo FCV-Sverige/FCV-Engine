@@ -6,6 +6,7 @@ using UnityEngine;
 public class MeleeWeapon : Weapon
 {
     [SerializeField] private SwingAnimation swingAnimation = new();
+    [SerializeField] private LayerMask hittableLayer;
 
 
     private Vector2 startPosition;
@@ -91,10 +92,11 @@ public class MeleeWeapon : Weapon
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!Equipped) return;
+        if (!LayerMaskUtility.IsInLayerMask(other.gameObject, hittableLayer)) return;
         
-        if (other.TryGetComponent(out PatrolEnemy patrolEnemy))
+        if (other.TryGetComponent(out Health health))
         {
-            Destroy(patrolEnemy.gameObject);
+            health.RemoveHealth(damage);
         }
     }
 }
