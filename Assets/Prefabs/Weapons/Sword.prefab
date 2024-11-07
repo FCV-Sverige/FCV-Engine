@@ -65,6 +65,9 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     StartTime: 0
+  hittableLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &7066394039589391968
 MonoBehaviour:
   m_ObjectHideFlags: 0

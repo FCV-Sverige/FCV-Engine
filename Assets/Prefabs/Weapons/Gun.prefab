@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireButton: 107
   useLeftClick: 1
-  damage: 0
+  damage: 5
   cooldown: 0.5
   fireAction:
     m_PersistentCalls:

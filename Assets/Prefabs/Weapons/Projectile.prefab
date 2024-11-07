@@ -111,6 +111,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 25
   lifetime: 5
+  hittableLayer:
+    serializedVersion: 2
+    m_Bits: 256
   hitAction:
     m_PersistentCalls:
       m_Calls: []
