@@ -2,7 +2,7 @@ using UnityEngine;
 
 public static class CheckPointManager
 {
-    public static readonly float CheckPointAcquiredDistance = 1;
+    public const float CheckPointAcquiredDistance = 1;
 
     private static Vector2 lastCheckPoint;
 
