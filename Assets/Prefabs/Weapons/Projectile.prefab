@@ -113,7 +113,7 @@ MonoBehaviour:
   lifetime: 5
   hittableLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 384
   hitAction:
     m_PersistentCalls:
       m_Calls: []
