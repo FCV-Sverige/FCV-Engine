@@ -37,6 +37,7 @@ public class WeaponController : MonoBehaviour
 
     private void Update()
     {
+        // checks for distance to weapons and add them if they are close enough
         for (int i = weapons.Count - 1; i >= 0; i--)
         {
             if (Vector2.Distance(transform.position, weapons[i].transform.position) > pickupDistance) continue;
@@ -59,7 +60,10 @@ public class WeaponController : MonoBehaviour
         weapons.Remove(weapon);
         weapon.GetComponent<FloatAnimation>()?.StopAnimation();
     }
-
+    
+    /// <summary>
+    /// If input key was pressed set that to active weapon, only checks up to amount of active weapons
+    /// </summary>
     private void CheckForInput()
     {
         for (int i = 0; i < equippedWeapons.Count; i++)
@@ -69,7 +73,10 @@ public class WeaponController : MonoBehaviour
             SetActiveWeapon(i);
         }
     }
-
+    /// <summary>
+    /// Unequips old weapons and equips new one
+    /// </summary>
+    /// <param name="index">index for weapon</param>
     private void SetActiveWeapon(int index)
     {
         equippedWeapons[currentIndex].UnEquip();

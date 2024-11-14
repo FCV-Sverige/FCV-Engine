@@ -13,7 +13,9 @@ public class RangedWeapon : Weapon
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
-
+    /// <summary>
+    /// Spawns projectile on firepoint transform and subscribes to hitAction on projectile to control damage
+    /// </summary>
     protected override void Fire()
     {
         base.Fire();
@@ -24,7 +26,9 @@ public class RangedWeapon : Weapon
         
         spawnedProjectile.hitAction.AddListener(ProjectileHit);
     }
-
+    /// <summary>
+    /// Controls the visual and aim function for the ranged weapon
+    /// </summary>
     protected override void Update()
     {
         if (!Equipped) return;
@@ -51,7 +55,11 @@ public class RangedWeapon : Weapon
 
         return Quaternion.Euler(new Vector3(0,0, angle));
     }
-
+    
+    /// <summary>
+    /// If projectile hits this function removes health from the Health component provided
+    /// </summary>
+    /// <param name="health"></param>
     private void ProjectileHit(Health health)
     {
         health.RemoveHealth(damage);

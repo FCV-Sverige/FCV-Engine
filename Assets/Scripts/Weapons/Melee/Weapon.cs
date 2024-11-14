@@ -20,19 +20,27 @@ public class Weapon : MonoBehaviour
 
     protected bool Equipped = false;
     public bool IsEquipped => Equipped;
-
+    
+    /// <summary>
+    /// Equips weapon and subcribes to fireAction
+    /// </summary>
     public virtual void Equip()
     {
         Equipped = true;
         fireAction.AddListener(Fire);
     }
-
+    /// <summary>
+    /// Unequips and un-subscribes to fireAction
+    /// </summary>
     public virtual void UnEquip()
     {
         Equipped = false;
         fireAction.RemoveListener(Fire);
     }
-
+    
+    /// <summary>
+    /// Updates cooldown and controls input for invoking fireAction
+    /// </summary>
     protected virtual void Update()
     {
         if (!Equipped) return;
@@ -41,12 +49,19 @@ public class Weapon : MonoBehaviour
         bool leftClick = useLeftClick && Input.GetMouseButtonDown(0);
         if ((Input.GetKeyDown(fireButton) || leftClick) && CanFire()) fireAction.Invoke();
     }
-
+    
+    /// <summary>
+    /// Base function for Fire, should be overriden to control what happens on fire
+    /// </summary>
     protected virtual void Fire()
     {
         currentCooldown = cooldown;
     }
-
+    
+    /// <summary>
+    /// function for if the cooldown has elapsed
+    /// </summary>
+    /// <returns>true if cooldown has elapsed</returns>
     protected virtual bool CanFire()
     {
         return currentCooldown <= 0f;

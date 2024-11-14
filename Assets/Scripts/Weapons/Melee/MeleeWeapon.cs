@@ -28,7 +28,10 @@ public class MeleeWeapon : Weapon
     {
         lastPosition = transform.position;
     }
-
+    
+    /// <summary>
+    /// Equips melee weapon and sets default positions and rotations
+    /// </summary>
     public override void Equip()
     {
         base.Equip();
@@ -37,13 +40,16 @@ public class MeleeWeapon : Weapon
         startPosition = transform.localPosition;
         startRotation = transform.localRotation;
     }
-
+    
     public override void UnEquip()
     {
         base.UnEquip();
         spriteRenderer.enabled = true;
     }
-
+    
+    /// <summary>
+    /// Starts the swing animation and set start time for it
+    /// </summary>
     protected override void Fire()
     {
         base.Fire();
@@ -52,7 +58,11 @@ public class MeleeWeapon : Weapon
 
         StartCoroutine(Swing());
     }
-
+    
+    /// <summary>
+    /// Controls the swing animation by lerping rotations and positions on a local scale
+    /// </summary>
+    /// <returns></returns>
     protected virtual IEnumerator Swing()
     {
         spriteRenderer.enabled = true;
@@ -100,7 +110,9 @@ public class MeleeWeapon : Weapon
         }
     }
 }
-
+/// <summary>
+/// Struct for all animation data
+/// </summary>
 [Serializable]
 public struct SwingAnimation
 {
