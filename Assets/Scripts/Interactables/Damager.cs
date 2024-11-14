@@ -31,7 +31,10 @@ public class Damager : MonoBehaviour
     {
         lastPosition = transform.position;
     }
-
+    
+    /// <summary>
+    /// Checks for last position and in which direction the damager object is moving 
+    /// </summary>
     private void LateUpdate()
     {
         xSignedDirection = flippedBySpeed ? (int) Mathf.Sign(((Vector2)transform.position - lastPosition).x) : 1;
@@ -41,13 +44,17 @@ public class Damager : MonoBehaviour
     private void FixedUpdate()
     {
         if (!canAttack) return;
-        
+        // does collider hit check in layermask and if hit tries to deal damage to the colliding object
         Collider2D hitCollider = Physics2D.OverlapCircle(transform.position, collisionDistance, layerMask);
         
         if (hitCollider)
             CollisionChecks(hitCollider);
     }
-
+    
+    /// <summary>
+    /// Deals damage to Health component
+    /// </summary>
+    /// <param name="health">Health component to deal damage against</param>
     private void DealDamage(Health health)
     {
         if (!health)
@@ -61,12 +68,14 @@ public class Damager : MonoBehaviour
         
         Invoke(nameof(EnableAttack), attackCooldown);
     }
-
+    /// <summary>
+    /// Enable attacks of damager, used for cooldowns
+    /// </summary>
     private void EnableAttack()
     {
         canAttack = true;
     }
-
+    
     private void CollisionChecks(Collider2D other)
     {
         if (!FOVUtility.IsWithinFOV(transform.position, other.transform.position, StartDirection,  fovAngle))
