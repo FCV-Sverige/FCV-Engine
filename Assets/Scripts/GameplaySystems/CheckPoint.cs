@@ -6,12 +6,12 @@ public class CheckPoint : MonoBehaviour
     private Transform playerTransform;
 
 
-    private void Awake()
+    private void Start()
     {
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        playerTransform = Movement.PlayerTransform;
     }
 
-    // Update is called once per frame
+    // Update is called once per frame and checks if the player is close enough
     private void Update()
     {
         if (Vector2.Distance(playerTransform.position, transform.position) > CheckPointManager.CheckPointAcquiredDistance) return;
