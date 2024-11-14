@@ -39,8 +39,14 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: Now you know how to implement moving platforms into your
-          level. Add them to your levels to make them more challenging and interesting
+        m_Untranslated: 'Now you know how to implement moving platforms into your
+          level. Use them to add more variety and make your levels more interesting.
+
+
+          Consider
+          the flow and pacing of your levels. Waiting for a platform for too long
+          can feel tedious for some players. What can you do to avoid this in your
+          level?'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

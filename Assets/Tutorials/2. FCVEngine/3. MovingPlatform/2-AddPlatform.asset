@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 2-AddPlatform
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Add Platform
+    m_Untranslated: Add a Platform
   m_Paragraphs:
     m_Items:
     - m_Type: 6
@@ -117,8 +117,9 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: There is a prefab with platform that you can customise to
-          fit your level the best
+        m_Untranslated: "You can find the 'Platform' Prefab in the Project Window
+          by browsing inside the 'Asset' folder.\n\nLet\u2019s start by locating
+          it and adding the platform to our current scene."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -135,12 +136,12 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: Let's add a platform
+        m_Untranslated: Let's add a platform.
       Text:
-        m_Untranslated: '1. Navigate to ''Assets/Prefabs''
+        m_Untranslated: '1. In the Project Window, navigate to ''Assets/Prefabs''.
 
-          2. Find ''Platform''
-          and drag it into the scene'
+          2.
+          Find the ''Platform'' Prefab and drag it into the scene.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

@@ -121,7 +121,12 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: 
+        m_Untranslated: "Now that we have a platform in the scene, we can play around
+          with it however we like.\n\nThe \u2018MovingPlatform\u2019 script lets
+          us control how we want the platform to move by using something called \u2018World
+          Points\u2019.\n____\nNote:\nChanging a Prefab object inside a scene will
+          not override its default state. This allows us to add multiple platforms
+          and make each one move differently."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -138,21 +143,25 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: Let's add more points
+        m_Untranslated: Let's add more World Points!
       Text:
-        m_Untranslated: '1. Click the ''Platform'' object and navigate to the inspector
+        m_Untranslated: '1. Make sure the Platform object (the one you just added
+          to the scene) is selected.
 
-          2.
-          Find the MovingPlatform script and add more ''World Points''
+          2. In the Inspector, locate the MovingPlatform
+          script and add more World Points by pressing the + button or adjusting
+          the total number of elements.
 
-          3.
-          Change the ''Loop Type'' to LOOP
+          3. Set the Loop Type to LOOP.
+
+          4.
+          Experiment with the World Points and adjust their locations as you like.
 
 
           _____
 
-          tip: The
-          world points can be dragged using the handles in the scene view'
+          Tip:
+          You can drag the World Points using the handles in the Scene View.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

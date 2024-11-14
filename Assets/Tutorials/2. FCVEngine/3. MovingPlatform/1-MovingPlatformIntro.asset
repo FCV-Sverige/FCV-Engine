@@ -39,9 +39,11 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: 'The platforms are a easy to use system that lets you drag
-          hooks to where the platforms are suppose to go and if they should loop
-          or ping-pong between the point. '
+        m_Untranslated: "The Platform Prefab is easy to use and allows you to add
+          and drag location points to define where the platform should move. You
+          can also choose whether the platform should loop or ping-pong between these
+          points.\n\nLet\u2019s take a closer look at this prefab to help you understand
+          how to use it."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

@@ -125,10 +125,10 @@ MonoBehaviour:
       Title:
         m_Untranslated: Test the game
       Text:
-        m_Untranslated: '1. Click ''Play'' button in the top bar
+        m_Untranslated: '1. Click ''Play'' button in the top bar.
 
           2. Test
-          the feature we just added'
+          the feature we just added.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
