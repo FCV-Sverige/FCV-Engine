@@ -1,5 +1,6 @@
 #if UNITY_EDITOR
 using UnityEditor;
+using Utility;
 #endif
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,7 +14,10 @@ public class SceneSwitcher : MonoBehaviour
 
     private string scenePath;
 
-
+    /// <summary>
+    /// Starts the switching of scenes and makes an object not be destroyed on load if that is required
+    /// </summary>
+    /// <param name="transitioningGameObject">gameobject not to be destroyed</param>
     public void StartTransition(GameObject transitioningGameObject = null)
     {
         if (transitioningGameObject)
@@ -23,6 +27,9 @@ public class SceneSwitcher : MonoBehaviour
     }
 #if UNITY_EDITOR
     
+    /// <summary>
+    /// If scene asset path is not in build settings: add it
+    /// </summary>
     private void OnValidate()
     {
         var sceneAssetPath = AssetDatabase.GetAssetPath(_sceneAsset);
@@ -38,25 +45,9 @@ public class SceneSwitcher : MonoBehaviour
         
         if (sceneAdded) return;
         
-        AddSceneToBuildSettings(_sceneAsset);
+        EditorSceneUtility.AddSceneToBuildSettings(_sceneAsset);
     }
     
-    /// <summary>
-    /// Adds a Scene to Build Settings.
-    /// </summary>
-    /// <param name="scene"></param>
-    /// <param name="enabled"></param>
-    private static void AddSceneToBuildSettings(SceneAsset scene, bool enabled = true)
-    {
-        var scenes = new EditorBuildSettingsScene[EditorBuildSettings.scenes.Length + 1];
-        for (int i = 0; i < EditorBuildSettings.scenes.Length; ++i)
-        {
-            scenes[i] = EditorBuildSettings.scenes[i];
-        }
 
-        scenes[^1] = new EditorBuildSettingsScene(AssetDatabase.GetAssetPath(scene), enabled);
-
-        EditorBuildSettings.scenes = scenes;
-    }
 #endif
 }

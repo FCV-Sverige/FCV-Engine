@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Utility;
 
 public class MainMenuHandler : MonoBehaviour
 {
@@ -39,25 +40,7 @@ public class MainMenuHandler : MonoBehaviour
         
         if (sceneAdded) return;
         
-        AddSceneToBuildSettings(_sceneAsset);
-    }
-    
-    /// <summary>
-    /// Adds a Scene to Build Settings.
-    /// </summary>
-    /// <param name="scene"></param>
-    /// <param name="enabled"></param>
-    private static void AddSceneToBuildSettings(SceneAsset scene, bool enabled = true)
-    {
-        var scenes = new EditorBuildSettingsScene[EditorBuildSettings.scenes.Length + 1];
-        for (int i = 0; i < EditorBuildSettings.scenes.Length; ++i)
-        {
-            scenes[i] = EditorBuildSettings.scenes[i];
-        }
-
-        scenes[^1] = new EditorBuildSettingsScene(AssetDatabase.GetAssetPath(scene), enabled);
-
-        EditorBuildSettings.scenes = scenes;
+        EditorSceneUtility.AddSceneToBuildSettings(_sceneAsset);
     }
 #endif
 }

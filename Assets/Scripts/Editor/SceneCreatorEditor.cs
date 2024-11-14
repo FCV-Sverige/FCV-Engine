@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Utility;
 
 public class SceneCreatorEditor : EditorWindow
 {
@@ -98,7 +99,7 @@ public class SceneCreatorEditor : EditorWindow
         
         CopyAndMakeNewScene(AssetDatabase.GetAssetPath(CopySceneAsset), newScenePath);
         Scene newScene = EditorSceneManager.OpenScene(newScenePath, OpenSceneMode.Single);
-        AddSceneToBuildSettings(newScene);
+        EditorSceneUtility.AddSceneToBuildSettings(AssetDatabase.LoadAssetAtPath<SceneAsset>(newScene.path));
         Close();
     }
 
@@ -111,23 +112,5 @@ public class SceneCreatorEditor : EditorWindow
     {
         AssetDatabase.CopyAsset(AssetDatabase.GUIDToAssetPath(path), newScenePath);
         AssetDatabase.Refresh();
-    }
-
-    /// <summary>
-    /// Adds the new scene to the build settings so it is included in build
-    /// </summary>
-    /// <param name="scene">Scene to be added to the build settings</param>
-    protected void AddSceneToBuildSettings(Scene scene)
-    {
-        EditorBuildSettingsScene[] buildScenes = EditorBuildSettings.scenes;
-
-        EditorBuildSettingsScene[] newBuildScenes = new EditorBuildSettingsScene[buildScenes.Length + 1];
-        for (int i = 0; i < buildScenes.Length; i++)
-        {
-            newBuildScenes[i] = buildScenes[i];
-        }
-
-        newBuildScenes[buildScenes.Length] = new EditorBuildSettingsScene(scene.path, true);
-        EditorBuildSettings.scenes = newBuildScenes;
     }
 }
