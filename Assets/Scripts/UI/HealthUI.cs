@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+/// <summary>
+/// Class to connect Health with UI, made it generalised so it can be used in multiple places and be connected with multiple amounts of UI Elements
+/// </summary>
 public class HealthUI : MonoBehaviour
 {
     [SerializeField] private Health health;
