@@ -4,6 +4,12 @@ using UnityEngine;
 
 public static class PointLerp
 {
+    /// <summary>
+    /// Returns a lerped position between an array of vector3 by using a value between 0-1
+    /// </summary>
+    /// <param name="points">Array of Vector3 to be lerped through</param>
+    /// <param name="t">Float between 0-1</param>
+    /// <returns>The lerped position</returns>
     public static Vector3 LerpPoints(Vector3[] points, float t)
     {
         if (points == null || points.Length == 0)
