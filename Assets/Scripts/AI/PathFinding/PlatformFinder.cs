@@ -23,7 +23,12 @@ public class PlatformFinder : MonoBehaviour
     {
         SingletonCheck();
     }
-
+    
+    /// <summary>
+    /// Gets the tile that's closest below a position
+    /// </summary>
+    /// <param name="position">position to check from</param>
+    /// <returns></returns>
     public Vector3Int GetPlatformBelow(Vector3 position)
     {
         int i = 0;
@@ -43,6 +48,11 @@ public class PlatformFinder : MonoBehaviour
         return tileMap.WorldToCell(position);
     }
     
+    /// <summary>
+    /// Get the closest platform (tiles next to each other without a gap) below a certain position
+    /// </summary>
+    /// <param name="position">position to check from</param>
+    /// <returns></returns>
     public List<Vector3Int> GetClosestPlatform(Vector3 position)
     {
         List<Vector3Int> platformPositions = new();
@@ -57,7 +67,13 @@ public class PlatformFinder : MonoBehaviour
         platformPositions.AddRange(CheckPlatformInDirection(tilePosition, Vector2Int.right));
         return platformPositions.Select(x => x + Vector3Int.up).ToList();
     }
-
+    
+    /// <summary>
+    /// Gets all tiles in a certain direction that has no tiles above it
+    /// </summary>
+    /// <param name="start">start tile position</param>
+    /// <param name="direction">direction to check for other platforms</param>
+    /// <returns></returns>
     private List<Vector3Int> CheckPlatformInDirection(Vector3Int start, Vector2Int direction)
     {
         List<Vector3Int> platforms = new();
