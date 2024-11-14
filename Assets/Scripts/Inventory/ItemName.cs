@@ -11,6 +11,9 @@ public class ItemName : PropertyAttribute
 }
 
 #if UNITY_EDITOR
+/// <summary>
+/// PropertyDrawer for items to make selecting a string for inventoryItem name only be one from the database
+/// </summary>
 [CustomPropertyDrawer(typeof(ItemName))]
 public class ItemNameDrawer : PropertyDrawer
 {

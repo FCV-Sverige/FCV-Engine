@@ -13,15 +13,19 @@ public class Item : MonoBehaviour
     public string ItemName => itemName;
 
     private ItemDatabase itemDatabase;
-
+    
+    /// <summary>
+    /// Applies specified sprite automaticly from sprite variable
+    /// </summary>
     private void OnValidate()
     {
         if (TryGetComponent(out SpriteRenderer spriteRenderer))
             spriteRenderer.sprite = sprite;
     }
-
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // Adds item to inventory and deactivates the gameobject
         if (!other.TryGetComponent(out Inventory inventory)) return;
         inventory.TryAddItem(itemName, this);
         gameObject.SetActive(false);

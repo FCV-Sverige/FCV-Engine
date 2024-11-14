@@ -1,3 +1,4 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 
@@ -15,10 +16,16 @@ namespace Inventory.Editor
             GetWindow<ItemDatabaseEditor>("Item Data Editor");
         }
 
-        private void OnGUI()
+        private void CreateGUI()
         {
             GUILayout.Label("Item Database Editor", EditorStyles.boldLabel);
-
+        }
+    
+        /// <summary>
+        /// Holds functionality for all buttons in the itemDatabaseEditor (Create, Update, ClearAllItems)
+        /// </summary>
+        private void OnGUI()
+        {
             itemDatabase = AssetDatabase.LoadAssetAtPath<ItemDatabase>("Assets/EditorResources/ItemNameDatabase.asset");
 
             if (itemDatabase != null)
