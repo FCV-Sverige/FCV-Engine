@@ -9,6 +9,8 @@ public class CheckPoint : MonoBehaviour
     private void Start()
     {
         playerTransform = Movement.PlayerTransform;
+        
+        CheckPointManager.CheckPointReached(playerTransform.position);
     }
 
     // Update is called once per frame and checks if the player is close enough
