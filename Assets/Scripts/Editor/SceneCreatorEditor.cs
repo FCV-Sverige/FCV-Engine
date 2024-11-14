@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -20,16 +21,30 @@ public class SceneCreatorEditor : EditorWindow
         window.Show();
         window.NewSceneName = "NewScene";
     }
-    
+
+    private void CreateGUI()
+    {
+        string[] results = AssetDatabase.FindAssets("DemoScene");
+        
+        if (results.Length <= 0) return;
+        
+        SceneAsset demoScene = AssetDatabase.LoadAssetAtPath<SceneAsset>(AssetDatabase.GUIDToAssetPath(results[0]));
+        CopySceneAsset = demoScene;
+    }
+
     private void OnGUI()
     {
         NewSceneName = EditorGUILayout.TextField(NameContent, NewSceneName);
-        CopySceneAsset = (SceneAsset)EditorGUILayout.ObjectField(CopySceneAsset, typeof(SceneAsset));
+        
+        CopySceneAsset = (SceneAsset)EditorGUILayout.ObjectField(CopySceneAsset, typeof(SceneAsset), false);
 
         if (GUILayout.Button("Create"))
             CheckAndCreateScene();
     }
-
+    
+    /// <summary>
+    /// Checks wether the current scene is not saved and prompts user to save or not before new scene is created and opened
+    /// </summary>
     protected void CheckAndCreateScene()
     {
         if (EditorApplication.isPlaying)
@@ -65,29 +80,43 @@ public class SceneCreatorEditor : EditorWindow
 
         CreateScene();
     }
-
+    
+    /// <summary>
+    /// Creates a new scene using the base fields in the class by copying a specified scene
+    /// </summary>
     protected void CreateScene()
     {
-        string[] result = AssetDatabase.FindAssets("DemoScene");
-
-        if (result.Length > 0)
+        if (!CopySceneAsset)
         {
-            string newScenePath = "Assets/Scenes/" + NewSceneName + ".unity";
-            AssetDatabase.CopyAsset(AssetDatabase.GUIDToAssetPath(result[0]), newScenePath);
-            AssetDatabase.Refresh();
-            Scene newScene = EditorSceneManager.OpenScene(newScenePath, OpenSceneMode.Single);
-            AddSceneToBuildSettings(newScene);
-            Close();
-        }
-        else
-        {
-            //Debug.LogError("The template scene <b>_TemplateScene</b> couldn't be found ");
             EditorUtility.DisplayDialog("Error",
-                "The scene DemoScene was not found in Assets/Scenes folder. This scene is required by the Scene Creator.",
+                "No scene to copy was assigned, this needs to be assigned so that we have a base scene to copy from",
                 "OK");
+            return;
         }
+        
+        string newScenePath = "Assets/Scenes/" + NewSceneName + ".unity";
+        
+        CopyAndMakeNewScene(AssetDatabase.GetAssetPath(CopySceneAsset), newScenePath);
+        Scene newScene = EditorSceneManager.OpenScene(newScenePath, OpenSceneMode.Single);
+        AddSceneToBuildSettings(newScene);
+        Close();
     }
 
+    /// <summary>
+    /// Creates a new scene at the newScenePath using the path from the old scene
+    /// </summary>
+    /// <param name="path">Path to scene that is to be copied</param>
+    /// <param name="newScenePath">Path for the new scene</param>
+    protected void CopyAndMakeNewScene(string path, string newScenePath)
+    {
+        AssetDatabase.CopyAsset(AssetDatabase.GUIDToAssetPath(path), newScenePath);
+        AssetDatabase.Refresh();
+    }
+
+    /// <summary>
+    /// Adds the new scene to the build settings so it is included in build
+    /// </summary>
+    /// <param name="scene">Scene to be added to the build settings</param>
     protected void AddSceneToBuildSettings(Scene scene)
     {
         EditorBuildSettingsScene[] buildScenes = EditorBuildSettings.scenes;
