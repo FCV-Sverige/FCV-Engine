@@ -54,6 +54,7 @@ public class PatrolEnemy : MonoBehaviour
     {
         if (patrolPoints is {Count: 0}) return;
         
+        // if player is within range: start chase, if not: stop chase
         if (FOVUtility.IsWithinFOVAndRange(transform.position, playerTransform.position, Vector3.right * Direction, detectionRadius, detectionAngle))
         {
             chasing = true;
@@ -73,7 +74,8 @@ public class PatrolEnemy : MonoBehaviour
         PatrolMovement();
         spriteRenderer.flipX = !movingForward;
     }
-
+    
+    // controls the movement of the enemy by its patrol points, reversing when end is reached
     private void PatrolMovement()
     {
         if (patrolPoints.Count == 0)
