@@ -69,6 +69,11 @@ class Custom2DCollider : MonoBehaviour
         FireEvent(ref onCollisionExit, other.gameObject);
     }
 
+    /// <summary>
+    /// Fires of the designated event and checking if collidingObject is in layermask and if check items is true checks the inventory for correct items
+    /// </summary>
+    /// <param name="unityEvent"></param>
+    /// <param name="collidingObject"></param>
     private void FireEvent(ref UnityEvent unityEvent, GameObject collidingObject)
     {
         if (!LayerMaskUtility.IsInLayerMask(collidingObject, collisionLayers)) return;
@@ -82,7 +87,12 @@ class Custom2DCollider : MonoBehaviour
         if (collidingObject.TryGetComponent(out Inventory inventory) && CheckItems(inventory))
             unityEvent.Invoke();
     }
-
+    
+    /// <summary>
+    /// Checks the inventory if the specified items are in inventory 
+    /// </summary>
+    /// <param name="inventory">Inventory to check against</param>
+    /// <returns></returns>
     private bool CheckItems(Inventory inventory)
     {
         foreach (var hasItem in itemsToCheck.Select(inventory.HasItem))
