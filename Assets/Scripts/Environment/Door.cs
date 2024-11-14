@@ -23,13 +23,19 @@ public class Door : MonoBehaviour
     {
         closedPosition = transform.position;
     }
-
+    
+    /// <summary>
+    /// Starts the door opening animation. The animation in its own turn runs the Open Door function from the animation
+    /// </summary>
     public void StartDoorOpeningAnimation()
     {
         if (animator)
             animator.SetTrigger("OpenDoor");
     }
-
+    
+    /// <summary>
+    /// Starts opening the door using a coroutine
+    /// </summary>
     public void OpenDoor()
     {
         if (opened | moving) return;
@@ -37,7 +43,10 @@ public class Door : MonoBehaviour
         StartCoroutine(MoveDoor(closedPosition, OpenPosition));
         opened = true;
     }
-
+    
+    /// <summary>
+    /// Closes the door without doing an animation
+    /// </summary>
     public void CloseDoor()
     {
         if (!opened | moving) return;
@@ -45,7 +54,13 @@ public class Door : MonoBehaviour
         StartCoroutine(MoveDoor(OpenPosition, closedPosition));
         opened = false;
     }
-
+    
+    /// <summary>
+    /// Moves the door using lerp with the time specified from animationTime variable
+    /// </summary>
+    /// <param name="start">start position</param>
+    /// <param name="end">end position</param>
+    /// <returns></returns>
     private IEnumerator MoveDoor(Vector2 start, Vector2 end)
     {
         moving = true;
