@@ -56,7 +56,9 @@ public class MovingPlatform : MonoBehaviour
     }
 
 
-
+    /// <summary>
+    /// Moves platform in a constant speed no matter the distance between current points
+    /// </summary>
     private void Update()
     {
         if (worldPoints.Length == 0)
@@ -91,7 +93,13 @@ public class MovingPlatform : MonoBehaviour
         journeyLength = Vector3.Distance(previousPosition, currentTarget);
     }
     
-
+    /// <summary>
+    /// Gets the next index on moving platform based on the movement type
+    /// </summary>
+    /// <param name="currentIndex">current index platform is going to</param>
+    /// <param name="arrayLength">The number of points in pointList</param>
+    /// <param name="movementType">which type of movement is it (Loop, PingPong)</param>
+    /// <returns>the next index platform should move to</returns>
     private int GetNextIndex(int currentIndex, int arrayLength, LoopType movementType)
     {
         switch (movementType)
