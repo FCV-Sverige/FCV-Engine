@@ -76,8 +76,9 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: For this project one pre-made enemy have been made that uses
-          the tilemap for patrolling and chasing the player
+        m_Untranslated: "We\u2019ve created a pre-made Enemy Prefab to help you add
+          some challenge to your game. You can easily adjust settings like health,
+          movement, and appearance without needing to touch any code."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -94,10 +95,10 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: Let's add an enemy to our scene
+        m_Untranslated: Let's add an enemy to our scene.
       Text:
-        m_Untranslated: "1. Navigate to 'Assets/Prefabs/Enemies' \n2. Find 'Enemy'
-          prefab and drag it into the scene"
+        m_Untranslated: "1. In the Project Window, navigate to 'Assets/Prefabs/Enemies'
+          \n2. Find the 'Enemy' Prefab and drag it into the scene."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

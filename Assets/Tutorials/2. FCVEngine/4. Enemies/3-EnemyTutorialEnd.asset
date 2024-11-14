@@ -39,8 +39,29 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: Now that you know how to add and modify the enemies you can
-          go wild with them in your level
+        m_Untranslated: 'Now that you know how to add and modify enemies, you can
+          go wild with them in your level!
+
+
+          Keep in mind that different
+          enemies should generally look distinct from one another. Feel free to change
+          their appearances to make it clear that they behave differently. For example,
+          a large rock enemy might look strong and tough but moves and attacks slowly,
+          while an insect could move and attack quickly but only cause minor damage.
+
+
+          Good
+          luck, and have fun experimenting with the Enemy Prefab!
+
+
+          ____
+
+          Note:
+
+          Once
+          you''ve created a version of your enemy, you can drag it from the Hierarchy
+          into the Asset folder in the Project Window. This will create a new Prefab
+          that you can easily reuse throughout the project.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

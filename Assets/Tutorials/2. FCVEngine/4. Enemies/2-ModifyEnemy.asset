@@ -115,8 +115,12 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: The enemies have a lot of different options and can be modified
-          to have different types of enemies
+        m_Untranslated: "We can now modify this enemy however we like within this
+          scene.\n\nAdjust its default values based on the level of challenge you
+          want to provide. For example, increasing its damage would make it stronger,
+          potentially allowing it to defeat the player more quickly or even in a
+          single hit.\n\nFor now, let\u2019s see what happens if we make the enemy
+          move faster."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -133,19 +137,19 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: Let's modify our enemy
+        m_Untranslated: Let's modify our enemy!
       Text:
-        m_Untranslated: '1. Select the ''Enemy'' object in the scene hierarchy window
+        m_Untranslated: '1. Make sure the Enemy object (the one you just added to
+          the scene) is selected.
 
-          2.
-          Try changing the patrol speed to be bigger than the original
+          2. Try increasing the ''patrol speed''
+          value.
 
 
-          ____________
+          ____
 
-          tip:
-          Look through and test changing the different variables on the patrol enemy
-          script to see the differences they make.'
+          Tip: Try adjusting the various variables
+          in the Patrol Enemy script to see how each one affects the enemy''s behavior.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
