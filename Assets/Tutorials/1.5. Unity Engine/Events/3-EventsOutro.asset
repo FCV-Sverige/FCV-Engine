@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
-  m_Name: 4-AudioMixerOutro
+  m_Name: 3-EventsOutro
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Audio Mixer
+    m_Untranslated: Unity Events
   m_Paragraphs:
     m_Items:
     - m_Type: 6
@@ -37,10 +37,11 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 0
       Title:
-        m_Untranslated: Page title
+        m_Untranslated: 
       Text:
-        m_Untranslated: Now you know the basics of how to centralise all your sounds
-          to make settings in the game and relative volume levels more easily adjustable
+        m_Untranslated: Now you know how to assign events. This is a very useful
+          function to remember since it can be used to make your game less linear
+          and make the level feel more alive and interesting
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -78,8 +79,9 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Assigning Events with Unity Events
-      m_Tutorial: {fileID: 11400000, guid: e8ce47f9da2ca804fa748eb0a0336c6f, type: 2}
+        m_Untranslated: Let's head into FCV-Engine with learning about how to create
+          new scenes
+      m_Tutorial: {fileID: 11400000, guid: 8609901547be3b3498913f56718a549d, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0

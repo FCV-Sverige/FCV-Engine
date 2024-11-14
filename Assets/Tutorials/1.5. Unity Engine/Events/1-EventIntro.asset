@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
-  m_Name: 4-AudioMixerOutro
+  m_Name: 1-EventIntro
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Audio Mixer
+    m_Untranslated: Unity Events
   m_Paragraphs:
     m_Items:
     - m_Type: 6
@@ -37,49 +37,12 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 0
       Title:
-        m_Untranslated: Page title
+        m_Untranslated: 
       Text:
-        m_Untranslated: Now you know the basics of how to centralise all your sounds
-          to make settings in the game and relative volume levels more easily adjustable
+        m_Untranslated: 'Unity events are an efficent way to add functionality when
+          a certain condition is meet. They can easily be assigned using the inspector
+          so no code is required at all. '
       m_Tutorial: {fileID: 0}
-      m_Image: {fileID: 0}
-      m_Video: {fileID: 0}
-      m_CriteriaCompletion: 0
-      m_Criteria:
-        m_Items: []
-      m_MaskingSettings:
-        m_MaskingEnabled: 0
-        m_UnmaskedViews: []
-      m_Summary: 
-      m_Description: 
-      m_InstructionBoxTitle: 
-      m_InstructionText: 
-      m_TutorialButtonText: 
-    - m_Type: 1
-      Title:
-        m_Untranslated: 
-      Text:
-        m_Untranslated: 
-      m_Tutorial: {fileID: 0}
-      m_Image: {fileID: 0}
-      m_Video: {fileID: 0}
-      m_CriteriaCompletion: 0
-      m_Criteria:
-        m_Items: []
-      m_MaskingSettings:
-        m_MaskingEnabled: 0
-        m_UnmaskedViews: []
-      m_Summary: 
-      m_Description: 
-      m_InstructionBoxTitle: 
-      m_InstructionText: 
-      m_TutorialButtonText: 
-    - m_Type: 2
-      Title:
-        m_Untranslated: 
-      Text:
-        m_Untranslated: Assigning Events with Unity Events
-      m_Tutorial: {fileID: 11400000, guid: e8ce47f9da2ca804fa748eb0a0336c6f, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0

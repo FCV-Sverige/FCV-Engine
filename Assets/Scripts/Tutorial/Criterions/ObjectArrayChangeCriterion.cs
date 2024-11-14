@@ -9,10 +9,7 @@ namespace Unity.Tutorials.Core.Editor
     {
         [SerializeField] private Operation operation;
 
-        [SerializeField] private Object m_Target;
-
-        [SerializeField, SerializedTypeFilter(typeof(Object), false)]
-        private SerializedType m_serializedType;
+        [SerializeField] private ObjectReference m_Target;
 
         [SerializeField] private string propertyPath;
 
@@ -41,7 +38,7 @@ namespace Unity.Tutorials.Core.Editor
                     return;
                 }
 
-                SerializedObject serializedObject = new SerializedObject(m_Target);
+                SerializedObject serializedObject = new SerializedObject(m_Target.SceneObjectReference.ReferencedObject);
                 SerializedProperty serializedProperty = serializedObject.FindProperty(propertyPath);
 
                 if (!serializedProperty.isArray)
@@ -78,7 +75,7 @@ namespace Unity.Tutorials.Core.Editor
                     return false;
                 }
 
-                SerializedObject serializedObject = new SerializedObject(m_Target);
+                SerializedObject serializedObject = new SerializedObject(m_Target.SceneObjectReference.ReferencedObject);
 
                 SerializedProperty serializedProperty = serializedObject.FindProperty(propertyPath);
 
