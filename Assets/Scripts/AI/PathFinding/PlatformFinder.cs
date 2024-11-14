@@ -85,9 +85,11 @@ public class PlatformFinder : MonoBehaviour
         {
             if (nextTile != start) platforms.Add(nextTile);
             
-            nextTile += (Vector3Int)direction;
-            if (Physics2D.Raycast((Vector2Int)nextTile + (Vector2.up * 1.1f), direction, 1, layerCantWalkThrough).collider != null)
+            Debug.DrawRay((Vector2Int)nextTile + (Vector2.up * 1.1f),  (Vector2)direction, Color.magenta, 10);
+            if (Physics2D.Raycast((Vector2Int)nextTile + (Vector2.up * 1.1f), direction / 2, 1, layerCantWalkThrough).collider)
                 return platforms;
+            
+            nextTile += (Vector3Int)direction;
         }
 
         return platforms;
