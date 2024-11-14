@@ -1,7 +1,9 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/// <summary>
+/// Class that resets place if it falls below this gameobjects y position
+/// </summary>
 public class FallDetectorScript : MonoBehaviour
 {
     [SerializeField] private Transform playerTransform;

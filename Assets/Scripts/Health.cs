@@ -20,19 +20,29 @@ public class Health : MonoBehaviour
     {
         CurrentHealth = maxHealth;
     }
-
+    /// <summary>
+    /// Removes health by amount
+    /// </summary>
+    /// <param name="amount">Amount to remove from health</param>
     public void RemoveHealth(int amount)
     {
         if (amount > 0) amount *= -1;
         ModifyHealth(amount);
     }
-
+    
+    /// <summary>
+    /// Adds to health by amount
+    /// </summary>
+    /// <param name="amount">Amount to heal</param>
     public void AddHealth(int amount)
     {
         if (amount < 0) amount *= -1;
         ModifyHealth(amount);
     }
-
+    /// <summary>
+    /// Modifies health int and invokes related UnityEvents
+    /// </summary>
+    /// <param name="healthChange"></param>
     private void ModifyHealth(int healthChange)
     {
         CurrentHealth += healthChange;

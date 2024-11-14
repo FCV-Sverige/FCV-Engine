@@ -89,7 +89,9 @@ public class Movement : MonoBehaviour
         Flip();
         GravityScaling();
     }
-
+    /// <summary>
+    /// Checks for all inputs and assigns values based on the pressed key
+    /// </summary>
     private void CheckInputs()
     {
         moveInputs.x = 0;
@@ -109,7 +111,9 @@ public class Movement : MonoBehaviour
             Jump();
     }
     
-    // calculates the targeted speed and applies it over time using rigidbody2D
+    /// <summary>
+    /// Calculates the targeted speed and applies it over time using rigidbody2D
+    /// </summary>
     private void Run()
     {
         float targetSpeed = moveInputs.x * maxSpeed;
@@ -124,7 +128,10 @@ public class Movement : MonoBehaviour
 
         rb.AddForce(movement * Vector2.right, ForceMode2D.Force);
     }
-
+    
+    /// <summary>
+    /// Applies a force upward to simulate a jump 
+    /// </summary>
     private void Jump()
     {
         float force = jumpForce;
@@ -139,7 +146,9 @@ public class Movement : MonoBehaviour
         jumpsAmount++;
     }
 
-    // scales gravity so that the player has higher gravity when falling compared to jumping
+    /// <summary>
+    /// Scales gravity so that the player has higher gravity when falling compared to jumping
+    /// </summary>
     private void GravityScaling()
     {
         if (rb.velocity.y < 0)
@@ -151,13 +160,20 @@ public class Movement : MonoBehaviour
             rb.gravityScale = gravityScale;
         }
     }
-
+    
+    /// <summary>
+    /// Sets the animations of the player 
+    /// </summary>
     private void SetAnimation()
     {
         animator.SetFloat("speed", Mathf.Abs(moveInputs.x));
         animator.SetBool("IsJumping", isJumping);
     }
     
+    /// <summary>
+    /// Checks if all conditions for player jump is met
+    /// </summary>
+    /// <returns>returns true if all requirements are met</returns>
     private bool CanJump()
     {
         bool bufferTime = Time.time - lastJumpTimestamp >= jumpBufferTime;
@@ -169,7 +185,10 @@ public class Movement : MonoBehaviour
 
         return bufferTime && lastGroundedTime > 0 && !isJumping;
     }
-
+    
+    /// <summary>
+    /// Flips sprite depending on direction of movement inputs
+    /// </summary>
     private void Flip()
     {
         if (moveInputs.x > 0.01f)
