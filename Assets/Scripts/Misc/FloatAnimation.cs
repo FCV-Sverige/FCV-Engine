@@ -22,7 +22,11 @@ public class FloatAnimation : MonoBehaviour
     {
         StartCoroutine(FloatAnimationLogic());
     }
-
+    
+    /// <summary>
+    /// Makes the item float up and down using a easing curve and coroutine
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator FloatAnimationLogic()
     {
         float t = 0;
@@ -37,7 +41,10 @@ public class FloatAnimation : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
     }
-
+    
+    /// <summary>
+    /// Stops the floating animation
+    /// </summary>
     public void StopAnimation()
     {
         isFloating = false;

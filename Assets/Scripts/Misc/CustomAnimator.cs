@@ -13,7 +13,11 @@ public class CustomAnimator : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-
+    
+    /// <summary>
+    /// Changes the sprite of SpriteRenderer depending on a percentile
+    /// </summary>
+    /// <param name="percentile">a value from 0 to 1</param>
     public void PercentileAnimation(float percentile)
     {
         int animationIndex = Mathf.FloorToInt(animationSprites.Count * percentile);
