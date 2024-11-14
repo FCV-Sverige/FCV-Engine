@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2-PaintUsingTilePalette
   m_EditorClassIdentifier: 
   Title:
-    m_Untranslated: Painting The Level
+    m_Untranslated: Painting a Level
   m_Paragraphs:
     m_Items:
     - m_Type: 7
@@ -72,9 +72,10 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: We have created two Tile Palettes that allow you to draw
-          out levels. These tiles use the Scriptable Rule Tile system of the Unity
-          Tilemap. They automatically choose the right sprite for a platform.
+        m_Untranslated: We have created a Tile Palette that lets you draw out levels
+          using the Scriptable Rule Tile system. This system ensures that, as you
+          draw, the art automatically adapts and selects the correct sprite to create
+          a cohesive look.
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -91,26 +92,15 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: How to paint
+        m_Untranslated: How to paint!
       Text:
-        m_Untranslated: '1. Click on a tile in the Tile Palette to select it
-
-          2.
-          Navigate to the Scene View
-
-          3. Hold or press ''left-click'' and
-          drag to draw your level
-
-          ________
-
-
-          NOTE: if it says
-          ''TutorialPalette'' to the top-left of the grid: click it and change it
-          to ''Rule Tile Palette''
-
-
-          TIP: If you make a mistake, you can
-          hold ''shift + left click'' to erase Tiles '
+        m_Untranslated: "1. In the \u2018Tile Palette\u2019 window, select the tile
+          you want to use by clicking on it.\n2. Go to the Scene View.\n3. Press
+          \u2018left-click\u2019 to add one tile at a time, or hold \u2018left-click\u2019
+          and drag to draw your level.\n\nTip: If you make a mistake, you can hold
+          \u2018Shift + left-click\u2019 to erase tiles.\n____\nNote:\nIf the top-left
+          of the Tile Palette window shows \u2018TutorialPalette\u2019, click on
+          it and switch to \u2018Rule Tile Palette\u2019."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

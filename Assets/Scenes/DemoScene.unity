@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &251964429 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5200609582649405380, guid: c77547b9e4d094d4e9d1bb57354060e4, type: 3}
-  m_PrefabInstance: {fileID: 8914163173924577594}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08a2c89e760f9c44686c3aa889f77116, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &346048382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1649,7 +1638,7 @@ PrefabInstance:
     - target: {fileID: 312263493309444182, guid: 434c21a627234e34ab88c8a8d97c475b, type: 3}
       propertyPath: checkPointManager
       value: 
-      objectReference: {fileID: 251964429}
+      objectReference: {fileID: 0}
     - target: {fileID: 4387675261179683593, guid: 434c21a627234e34ab88c8a8d97c475b, type: 3}
       propertyPath: m_Name
       value: fallDetector

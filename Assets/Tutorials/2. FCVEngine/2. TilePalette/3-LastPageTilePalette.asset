@@ -39,7 +39,12 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: Now you can paint a level to make interesting and fun courses!
+        m_Untranslated: "Now you know how to paint a level!\n\nFeel free to experiment
+          more in your own scenes after closing this tutorial (perhaps in the scene
+          you created in the first tutorial, 'Creating a New Scene') and create something
+          fun and interesting!\n\nBe sure to test your level thoroughly, and don\u2019t
+          be afraid to make adjustments if there\u2019s anything you\u2019d like
+          to change or if you want to adjust the difficulty."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

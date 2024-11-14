@@ -57,7 +57,7 @@ MonoBehaviour:
           Note:
 
           The
-          scene has also been added to the build scenes in the Build Settings, ensuring
+          scene has also been added to the build scenes in Build Settings, ensuring
           it will be included when you are ready to create a build for the game.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
