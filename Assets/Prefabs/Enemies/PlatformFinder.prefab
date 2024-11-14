@@ -45,3 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileMap: {fileID: 0}
+  layerCantWalkThrough:
+    serializedVersion: 2
+    m_Bits: 129

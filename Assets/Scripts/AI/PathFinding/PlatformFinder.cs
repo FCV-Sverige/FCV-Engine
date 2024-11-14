@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.Tilemaps;
 using Random = UnityEngine.Random;
 
@@ -11,7 +12,7 @@ public class PlatformFinder : MonoBehaviour
     public static PlatformFinder Instance { get; private set; }
 
     [SerializeField] private Tilemap tileMap;
-
+    [FormerlySerializedAs("enemyCantWalkThrough")] [SerializeField] private LayerMask layerCantWalkThrough;
 
     private List<Vector3Int> walkablePositions;
 
@@ -85,6 +86,8 @@ public class PlatformFinder : MonoBehaviour
             if (nextTile != start) platforms.Add(nextTile);
             
             nextTile += (Vector3Int)direction;
+            if (Physics2D.Raycast((Vector2Int)nextTile + (Vector2.up * 1.1f), direction, 1, layerCantWalkThrough).collider != null)
+                return platforms;
         }
 
         return platforms;
