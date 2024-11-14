@@ -72,7 +72,7 @@ public class PatrolEnemy : MonoBehaviour
         }
 
         PatrolMovement();
-        spriteRenderer.flipX = !movingForward;
+        spriteRenderer.flipX = movingForward; // TODO: Change to not moving forward when Isaac delivers new animations
     }
     
     // controls the movement of the enemy by its patrol points, reversing when end is reached
