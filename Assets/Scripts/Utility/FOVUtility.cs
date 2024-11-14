@@ -47,7 +47,15 @@ public static class FOVUtility
 
         return IsWithinFOV(source, target, direction, fovAngle);
     }
-
+    
+    /// <summary>
+    /// Checks wether a positions is within a Field of View angle from another position
+    /// </summary>
+    /// <param name="source">Source position</param>
+    /// <param name="target">Target position</param>
+    /// <param name="direction">which direction the angle is suppose to be checked from</param>
+    /// <param name="fovAngle">the angle in degrees</param>
+    /// <returns></returns>
     public static bool IsWithinFOV(Vector3 source, Vector3 target, Vector3 direction, float fovAngle)
     {
         // Calculate the vector from source to target

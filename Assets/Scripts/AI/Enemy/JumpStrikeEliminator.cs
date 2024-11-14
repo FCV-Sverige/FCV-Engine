@@ -3,6 +3,9 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
+/// <summary>
+/// Destroys the gameobject when an object in the layermask jumps on it.
+/// </summary>
 public class JumpStrikeEliminator : MonoBehaviour
 {
     [SerializeField] private LayerMask collisionLayerMask;
