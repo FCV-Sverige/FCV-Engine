@@ -21,18 +21,14 @@ public class WeaponUI : MonoBehaviour
         
         WeaponController weaponController = FindObjectOfType<WeaponController>();
 
-        if (weaponController)
-        {
-            if (!MethodSubsribed(weaponController.weaponPickedUp, nameof(AddWeaponSlot)))
-            {
-                weaponController.weaponPickedUp.AddListener(AddWeaponSlot);
-            }
-            
-            if (!MethodSubsribed(weaponController.weaponPickedUp, nameof(WeaponChanged)))
-            {
-                weaponController.weaponChanged.AddListener(WeaponChanged);
-            }
-        }
+        if (!weaponController) return;
+        
+        if (!MethodSubsribed(weaponController.weaponPickedUp, nameof(AddWeaponSlot)))
+            weaponController.weaponPickedUp.AddListener(AddWeaponSlot);
+        
+        if (!MethodSubsribed(weaponController.weaponPickedUp, nameof(WeaponChanged)))
+            weaponController.weaponChanged.AddListener(WeaponChanged);
+        
     }
 
     private void Start()
