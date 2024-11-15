@@ -14,7 +14,12 @@ public class Knockback : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
     }
-
+    
+    /// <summary>
+    /// Applies a force in a direction with a force depending on a percentile
+    /// </summary>
+    /// <param name="direction">direction to apply force</param>
+    /// <param name="amount">a value between 0-1 to applie towards max force</param>
     public void ApplyForce(Vector2 direction, float amount)
     {
         amount = Mathf.Clamp01(amount);
