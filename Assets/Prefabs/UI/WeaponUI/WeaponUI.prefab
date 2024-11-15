@@ -188,3 +188,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotPrefab: {fileID: 3114743211334963278, guid: 4f759d974836602409646c272c3fa355, type: 3}
   weaponUIHolder: {fileID: 2451319849485368555}
+  setupEventsAutomatically: 1
