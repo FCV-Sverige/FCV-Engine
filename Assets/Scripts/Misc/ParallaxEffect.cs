@@ -16,16 +16,18 @@ public class ParallaxEffect : MonoBehaviour
         length = GetComponent<SpriteRenderer>().bounds.size.x;
         if (Camera.main != null) cameraTransform = Camera.main.transform;
     }
-
+    
+    /// <summary>
+    /// Moves backgrounds in parallax effect and places them acording for seamless scrolling
+    /// </summary>
     private void Update()
     {
         float temp = (cameraTransform.position.x * (1 - parallaxEffect));
-        if (gameObject.name == "3")
-            print($"{temp}, {startPosition + length}");
         float dist = (cameraTransform.position.x * parallaxEffect);
 
         transform.position = new Vector3(startPosition + dist, transform.position.y, transform.position.z);
-
+        
+        // if they extend beyond length of background sprite move one unit in corresponding direction for seamless scrolling
         if (temp > startPosition + length) startPosition += length;
         else if (temp < startPosition - length) startPosition -= length;
     }
