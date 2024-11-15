@@ -23,10 +23,10 @@ public class WeaponUI : MonoBehaviour
 
         if (!weaponController) return;
         
-        if (!MethodSubsribed(weaponController.weaponPickedUp, nameof(AddWeaponSlot)))
+        if (!MethodSubscribed(weaponController.weaponPickedUp, nameof(AddWeaponSlot)))
             weaponController.weaponPickedUp.AddListener(AddWeaponSlot);
         
-        if (!MethodSubsribed(weaponController.weaponPickedUp, nameof(WeaponChanged)))
+        if (!MethodSubscribed(weaponController.weaponPickedUp, nameof(WeaponChanged)))
             weaponController.weaponChanged.AddListener(WeaponChanged);
         
     }
@@ -43,7 +43,7 @@ public class WeaponUI : MonoBehaviour
     /// <param name="event">Unity Event to check against</param>
     /// <param name="methodName">Name of method to be checked</param>
     /// <returns></returns>
-    private bool MethodSubsribed([NotNull] UnityEventBase @event, [NotNull] string methodName)
+    private bool MethodSubscribed([NotNull] UnityEventBase @event, [NotNull] string methodName)
     {
         if (@event == null) throw new ArgumentNullException(nameof(@event));
         if (methodName == null) throw new ArgumentNullException(nameof(methodName));
