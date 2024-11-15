@@ -3,12 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Collider2D))]
 public class WeaponController : MonoBehaviour
 {
     [SerializeField] private Transform weaponParentTransform;
     [SerializeField] private float pickupDistance = 1f;
+
+    [SerializeField] public UnityEvent<Weapon, int> weaponPickedUp;
+    [SerializeField] public UnityEvent<int> weaponChanged;
 
 
     private int currentIndex;
@@ -49,7 +54,10 @@ public class WeaponController : MonoBehaviour
         CheckForInput();
     }
 
-
+    /// <summary>
+    /// Sets the weapon up to be stored in the weapon controller
+    /// </summary>
+    /// <param name="weapon">Weapon to be added</param>
     private void AddWeapon(Weapon weapon)
     {
         weapon.transform.SetParent(weaponParentTransform);
@@ -58,6 +66,7 @@ public class WeaponController : MonoBehaviour
         
         equippedWeapons.Add(weapon);
         weapons.Remove(weapon);
+        weaponPickedUp.Invoke(weapon, equippedWeapons.Count);
         weapon.GetComponent<FloatAnimation>()?.StopAnimation();
     }
     
@@ -86,5 +95,7 @@ public class WeaponController : MonoBehaviour
             
         equippedWeapons[currentIndex].gameObject.SetActive(true);
         equippedWeapons[currentIndex].Equip();
+        
+        weaponChanged.Invoke(currentIndex);
     }
 }

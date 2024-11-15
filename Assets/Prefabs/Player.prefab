@@ -130,7 +130,7 @@ Animator:
   m_GameObject: {fileID: 572659982524308652}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e7e40424f93cb96439dcf8af2a2b7f07, type: 2}
+  m_Controller: {fileID: 9100000, guid: dba921e8116820746943285d792b7c27, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -185,6 +185,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponParentTransform: {fileID: 5765281435648999057}
   pickupDistance: 1
+  weaponPickedUp:
+    m_PersistentCalls:
+      m_Calls: []
+  weaponChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5496175564381152349
 MonoBehaviour:
   m_ObjectHideFlags: 0
