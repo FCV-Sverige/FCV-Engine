@@ -69,6 +69,7 @@ GameObject:
   - component: {fileID: 4080441134506777493}
   - component: {fileID: -1306140843600562443}
   - component: {fileID: 1492720956958653268}
+  - component: {fileID: 6453706587530109078}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
@@ -131,7 +132,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2084382115
-  m_SortingLayer: 3
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: -6056987297122131021, guid: 3750f45c844123341b9a777a96cb1eca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -152,7 +153,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3603941651359332717}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 148f33af2469f8e48827d8c2f5a460ce, type: 2}
   m_CullingMode: 0
@@ -257,7 +258,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onHealthChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6624642388312468407}
+        m_TargetAssemblyTypeName: Damager, Assembly-CSharp
+        m_MethodName: SetAttackCooldown
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.3
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDeath:
     m_PersistentCalls:
       m_Calls: []
@@ -279,3 +292,16 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   angle: 112.9
+--- !u!114 &6453706587530109078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3603941651359332717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7df8a21bc4660f4abd13cbe7abf3061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackFactor: 20
