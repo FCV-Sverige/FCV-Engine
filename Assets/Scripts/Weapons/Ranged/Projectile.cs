@@ -13,7 +13,7 @@ public class Projectile : MonoBehaviour
 
     [SerializeField] private LayerMask hittableLayer;
 
-    public UnityEvent<Health> hitAction;
+    public UnityEvent<Health, Vector2> hitAction;
     private void Awake()
     {
         GetComponent<Rigidbody2D>().isKinematic = true;
@@ -37,7 +37,7 @@ public class Projectile : MonoBehaviour
         if (!LayerMaskUtility.IsInLayerMask(other.gameObject, hittableLayer)) return;
         if (other.gameObject.TryGetComponent(out Health health))
         {
-            hitAction.Invoke(health);
+            hitAction.Invoke(health, other.transform.position - transform.position);
         }
         Destroy(gameObject);
     }

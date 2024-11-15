@@ -57,6 +57,23 @@ public class Weapon : MonoBehaviour
     {
         currentCooldown = cooldown;
     }
+
+    /// <summary>
+    /// If weapon hits: this function removes health from the Health component provided
+    /// </summary>
+    /// <param name="health">Health component to deal damage to</param>
+    /// <param name="direction">direction hit came from, put to (0,0) if no knockback is desired</param>
+    protected virtual void DealDamage(Health health, Vector2 direction)
+    {
+        if (!health) return;
+
+        if (health.TryGetComponent(out Knockback knockback))
+        {
+            knockback.ApplyForce(direction, (float)damage / health.MaxHealth);
+        }
+        
+        health.RemoveHealth(damage);
+    }
     
     /// <summary>
     /// function for if the cooldown has elapsed

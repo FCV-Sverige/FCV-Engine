@@ -106,7 +106,7 @@ public class MeleeWeapon : Weapon
         
         if (other.TryGetComponent(out Health health))
         {
-            health.RemoveHealth(damage);
+            DealDamage(health, other.transform.position - transform.position);
         }
     }
 }

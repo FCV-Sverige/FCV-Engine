@@ -24,7 +24,7 @@ public class RangedWeapon : Weapon
         Quaternion spawnRotation = GetRotationToMouse();
         Projectile spawnedProjectile = Instantiate(projectile, spawnPosition, spawnRotation);
         
-        spawnedProjectile.hitAction.AddListener(ProjectileHit);
+        spawnedProjectile.hitAction.AddListener(DealDamage);
     }
     /// <summary>
     /// Controls the visual and aim function for the ranged weapon
@@ -55,15 +55,7 @@ public class RangedWeapon : Weapon
 
         return Quaternion.Euler(new Vector3(0,0, angle));
     }
-    
-    /// <summary>
-    /// If projectile hits this function removes health from the Health component provided
-    /// </summary>
-    /// <param name="health"></param>
-    private void ProjectileHit(Health health)
-    {
-        health.RemoveHealth(damage);
-    }
+
 
     private void OnDrawGizmos()
     {
