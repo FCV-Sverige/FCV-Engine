@@ -20,7 +20,9 @@ public class Damager : MonoBehaviour
     private Vector2 StartDirection => new(Mathf.Cos(CorrectedStartAngle * Mathf.Deg2Rad), Mathf.Sin(CorrectedStartAngle * Mathf.Deg2Rad));
     private float CorrectedStartAngle => xSignedDirection >= 0 ? startAngle : startAngle + 180;
 
-    private bool canAttack = true;
+    private float currentCooldown = 0;
+
+    private bool CanAttack => currentCooldown <= 0;
 
     private Vector2 lastPosition;
 
@@ -43,7 +45,11 @@ public class Damager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!canAttack) return;
+        if (!CanAttack)
+        {
+            currentCooldown -= Time.fixedDeltaTime;
+            return;
+        }
         // does collider hit check in layermask and if hit tries to deal damage to the colliding object
         Collider2D hitCollider = Physics2D.OverlapCircle(transform.position, collisionDistance, layerMask);
         
@@ -62,18 +68,17 @@ public class Damager : MonoBehaviour
             print("Health component is null");
             return;
         }
+        
         health.RemoveHealth(damage);
         
-        canAttack = false;
-        
-        Invoke(nameof(EnableAttack), attackCooldown);
+        SetAttackCooldown(attackCooldown);
     }
-    /// <summary>
-    /// Enable attacks of damager, used for cooldowns
-    /// </summary>
-    private void EnableAttack()
+
+    public void SetAttackCooldown(float time)
     {
-        canAttack = true;
+        if (time < currentCooldown) return;
+        
+        currentCooldown = time;
     }
     
     private void CollisionChecks(Collider2D other)
