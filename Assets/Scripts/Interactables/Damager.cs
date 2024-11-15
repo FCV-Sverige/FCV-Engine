@@ -73,7 +73,11 @@ public class Damager : MonoBehaviour
         
         SetAttackCooldown(attackCooldown);
     }
-
+    
+    /// <summary>
+    /// Sets the current cooldown to provided one if time is greater than current cooldown
+    /// </summary>
+    /// <param name="time">cooldown time</param>
     public void SetAttackCooldown(float time)
     {
         if (time < currentCooldown) return;
@@ -81,6 +85,10 @@ public class Damager : MonoBehaviour
         currentCooldown = time;
     }
     
+    /// <summary>
+    /// Checks if all requirments are met when collider is hit with overlap check and deals damage if success
+    /// </summary>
+    /// <param name="other">collider2D to check against</param>
     private void CollisionChecks(Collider2D other)
     {
         if (!FOVUtility.IsWithinFOV(transform.position, other.transform.position, StartDirection,  fovAngle))
