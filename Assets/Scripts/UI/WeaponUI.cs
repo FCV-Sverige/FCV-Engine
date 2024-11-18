@@ -14,10 +14,12 @@ public class WeaponUI : MonoBehaviour
     [SerializeField] private bool setupEventsAutomatically = false;
 
     private List<WeaponSlotUI> weaponSlotUis;
-
+    
+    /// <summary>
+    /// Setup events from weapon controller automatically 
+    /// </summary>
     private void SetupEventsAutomatically()
     {
-        if (!setupEventsAutomatically) return;
         
         WeaponController weaponController = FindObjectOfType<WeaponController>();
 
@@ -34,7 +36,8 @@ public class WeaponUI : MonoBehaviour
     private void Start()
     {
         weaponSlotUis = new List<WeaponSlotUI>();
-        SetupEventsAutomatically();
+        if (setupEventsAutomatically)
+            SetupEventsAutomatically();
     }
     
     /// <summary>
@@ -43,14 +46,13 @@ public class WeaponUI : MonoBehaviour
     /// <param name="event">Unity Event to check against</param>
     /// <param name="methodName">Name of method to be checked</param>
     /// <returns></returns>
-    private bool MethodSubscribed([NotNull] UnityEventBase @event, [NotNull] string methodName)
+    private bool MethodSubscribed([NotNull] UnityEventBase @event, string methodName)
     {
         if (@event == null) throw new ArgumentNullException(nameof(@event));
-        if (methodName == null) throw new ArgumentNullException(nameof(methodName));
         
         for (int i = 0; i < @event.GetPersistentEventCount(); i++)
         {
-            if (@event.GetPersistentMethodName(i) == nameof(methodName)) return true;
+            if (@event.GetPersistentMethodName(i) == methodName) return true;
         }
 
         return false;
