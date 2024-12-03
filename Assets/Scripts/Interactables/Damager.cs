@@ -3,6 +3,9 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
+/// <summary>
+/// A component that uses OverlapCircle method in Physics2D to deal damage against objects with Health component and in assigned LayerMask
+/// </summary>
 public class Damager : MonoBehaviour
 {
     [SerializeField] private int damage = 10;
@@ -42,7 +45,10 @@ public class Damager : MonoBehaviour
         xSignedDirection = flippedBySpeed ? (int) Mathf.Sign(((Vector2)transform.position - lastPosition).x) : 1;
         lastPosition = transform.position;
     }
-
+    
+    /// <summary>
+    /// Controls cooldown functionality and does the OverlapCircle check and then sends the Collider2D to CollisionChecks()
+    /// </summary>
     private void FixedUpdate()
     {
         if (!CanAttack)
