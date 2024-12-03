@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Component to add force to attached objects rigidbody2D for easier access
+/// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 public class Knockback : MonoBehaviour
 {
