@@ -2,12 +2,20 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 /// <summary>
-/// Class that resets place if it falls below this gameobjects y position
+/// Controls what happens to a player if they fall below this object y position
 /// </summary>
 public class FallDetectorScript : MonoBehaviour
 {
-    [SerializeField] private Transform playerTransform;
+    private Transform playerTransform;
 
+    private void Start()
+    {
+        playerTransform = Movement.PlayerTransform;
+    }
+
+    /// <summary>
+    /// Checks if the player transform falls below this objects y position and if so places the player at the latest check point. 
+    /// </summary>
     void Update()
     {
         if (!playerTransform) return;
