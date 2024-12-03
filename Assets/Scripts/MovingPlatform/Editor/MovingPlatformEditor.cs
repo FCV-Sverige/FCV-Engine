@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-
+/// <summary>
+/// A custom editor for the Moving Platform class to give access to the player in-editor to customize points and visualize how moving platform will look along points
+/// </summary>
 [CustomEditor(typeof(MovingPlatform)), CanEditMultipleObjects]
 public sealed class MovingPlatformEditor : Editor
 {
