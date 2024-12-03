@@ -2,6 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+/// <summary>
+/// Custom animation component to base an animation on a percentile
+/// </summary>
 [RequireComponent(typeof(SpriteRenderer))]
 public class CustomAnimator : MonoBehaviour
 {
