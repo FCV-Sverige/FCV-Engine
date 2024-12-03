@@ -3,8 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Component that holds all picked up items for player
+/// </summary>
 public class Inventory : MonoBehaviour
 {
+    /// <summary>
+    /// Dictionary that holds all items with their names as key
+    /// </summary>
     private Dictionary<string, Item> InventoryItems { get; set; } = new();
 
     private void Awake()
