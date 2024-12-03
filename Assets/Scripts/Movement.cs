@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
+/// <summary>
+/// Component that controls the movement of an object with a RigidBody2D
+/// </summary>
 public class Movement : MonoBehaviour
 {
     public static Transform PlayerTransform { get; private set; } 
