@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Controls common game logic
+/// </summary>
 public class GameManager : MonoBehaviour
 {
     /// <summary>
