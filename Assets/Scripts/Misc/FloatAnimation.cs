@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// A component that can be added to any object to give it a floating animation in game
+/// </summary>
 public class FloatAnimation : MonoBehaviour
 {
     [SerializeField] private Vector2 floatEndPoint = new (0, -.5f);
@@ -17,7 +20,10 @@ public class FloatAnimation : MonoBehaviour
     {
         startPoint = transform.position;
     }
-
+    
+    /// <summary>
+    /// Starts coroutine for the float animation logic
+    /// </summary>
     private void Start()
     {
         StartCoroutine(FloatAnimationLogic());
