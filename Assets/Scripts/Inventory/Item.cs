@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+/// <summary>
+/// Item component to make it accessible with the Inventory system
+/// </summary>
 [RequireComponent(typeof(SpriteRenderer))]
 public class Item : MonoBehaviour
 {
@@ -15,7 +17,7 @@ public class Item : MonoBehaviour
     private ItemDatabase itemDatabase;
     
     /// <summary>
-    /// Applies specified sprite automaticly from sprite variable
+    /// Applies specified sprite automatically from sprite variable
     /// </summary>
     private void OnValidate()
     {
@@ -23,6 +25,10 @@ public class Item : MonoBehaviour
             spriteRenderer.sprite = sprite;
     }
     
+    /// <summary>
+    /// if something collides with it checks if object has inventory; tries to add item to it and disables itself if future reuse is needed 
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Adds item to inventory and deactivates the gameobject
