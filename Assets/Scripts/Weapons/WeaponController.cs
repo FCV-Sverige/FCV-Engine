@@ -5,7 +5,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
-
+/// <summary>
+/// Controls what weapons are picked up, which ones are to be active and sends event accordingly
+/// </summary>
 [RequireComponent(typeof(Collider2D))]
 public class WeaponController : MonoBehaviour
 {
@@ -39,7 +41,11 @@ public class WeaponController : MonoBehaviour
     {
         weapons = FindObjectsOfType<Weapon>().ToList();
     }
-
+    
+    /// <summary>
+    /// Checks for distance to weapons and adds them to list if they are close enough to be picked up.
+    /// Checks for inputs to control which is the active weapon
+    /// </summary>
     private void Update()
     {
         // checks for distance to weapons and add them if they are close enough

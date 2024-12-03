@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
-using Random = UnityEngine.Random;
 
+/// <summary>
+/// Weapon base class to hold all information and basic functions for a weapon mechanic
+/// </summary>
 [RequireComponent(typeof(FloatAnimation))]
 public class Weapon : MonoBehaviour
 {

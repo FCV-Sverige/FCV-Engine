@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
-
+/// <summary>
+/// Component to build custom ranged weapon with all damage functionality in this class sent from Projectile class
+/// </summary>
 public class RangedWeapon : Weapon
 {
     [SerializeField] private Projectile projectile;

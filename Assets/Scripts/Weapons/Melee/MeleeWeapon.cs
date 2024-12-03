@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Component to build custom melee weapons with different swing options
+/// </summary>
 public class MeleeWeapon : Weapon
 {
     [SerializeField] private SwingAnimation swingAnimation = new();
@@ -40,7 +43,9 @@ public class MeleeWeapon : Weapon
         startPosition = transform.localPosition;
         startRotation = transform.localRotation;
     }
-    
+    /// <summary>
+    /// Does un-equip functionality of Weapon base class and enables the spriteRenderer
+    /// </summary>
     public override void UnEquip()
     {
         base.UnEquip();
@@ -111,7 +116,7 @@ public class MeleeWeapon : Weapon
     }
 }
 /// <summary>
-/// Struct for all animation data
+/// Struct for all animation data for melee weapon
 /// </summary>
 [Serializable]
 public struct SwingAnimation
