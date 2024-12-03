@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
-
+/// <summary>
+/// Door logic to move an object to a certain position with built-in Animator support from Unity using keyFrameEvents 
+/// </summary>
 public class Door : MonoBehaviour
 {
     [SerializeField] private Vector2 doorOpenOffset;
