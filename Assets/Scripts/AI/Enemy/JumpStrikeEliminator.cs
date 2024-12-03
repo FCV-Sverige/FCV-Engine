@@ -10,6 +10,11 @@ public class JumpStrikeEliminator : MonoBehaviour
 {
     [SerializeField] private LayerMask collisionLayerMask;
     [SerializeField, Range(0, 180)] private float angle;
+    
+    /// <summary>
+    /// Checks if collided object is inside a specified FOV and layer mask; destroys the GameObject it is attached to if succeeds with checks
+    /// </summary>
+    /// <param name="other"></param>
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (!LayerMaskUtility.IsInLayerMask(other.gameObject, collisionLayerMask)) return;
