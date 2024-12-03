@@ -2,9 +2,14 @@
 using UnityEditor;
 using UnityEngine;
 
-
+/// <summary>
+/// PropertyAttribute for items to make selecting a string for inventoryItem name only be one from the database
+/// </summary>
 public class ItemName : PropertyAttribute
 {
+    /// <summary>
+    /// Class to use as attribute name; ItemName
+    /// </summary>
     public ItemName()
     {
     }
