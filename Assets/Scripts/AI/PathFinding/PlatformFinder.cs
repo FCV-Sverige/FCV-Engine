@@ -7,8 +7,13 @@ using UnityEngine.Serialization;
 using UnityEngine.Tilemaps;
 using Random = UnityEngine.Random;
 
+/// <summary>
+/// Gets a walkable platform from referenced Tilemap.
+/// Is a singleton
+/// </summary>
 public class PlatformFinder : MonoBehaviour
 {
+    
     public static PlatformFinder Instance { get; private set; }
 
     [SerializeField] private Tilemap tileMap;
@@ -16,10 +21,13 @@ public class PlatformFinder : MonoBehaviour
 
     private List<Vector3Int> walkablePositions;
 
-    public Vector3 CellHalfSize => tileMap ? tileMap.cellSize / 2f : Vector3.zero;
+    private Vector3 CellHalfSize => tileMap ? tileMap.cellSize / 2f : Vector3.zero;
     public Tilemap TileMap => tileMap;
-    private Vector3Int MaxV3Int => new Vector3Int(int.MaxValue, int.MaxValue, int.MaxValue);
+    private static Vector3Int MaxV3Int => new(int.MaxValue, int.MaxValue, int.MaxValue);
     
+    /// <summary>
+    /// Does a singleton check and if one already exists deletes itself
+    /// </summary>
     private void Awake()
     {
         SingletonCheck();
@@ -94,7 +102,9 @@ public class PlatformFinder : MonoBehaviour
 
         return platforms;
     }
-
+    /// <summary>
+    /// Will display gizmos for all walkable positions if list is valid and has elements
+    /// </summary>
     private void OnDrawGizmos()
     {
         if (walkablePositions == null || walkablePositions.Count <= 0) return;
