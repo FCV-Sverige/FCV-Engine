@@ -2,81 +2,76 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace Inventory.Editor
+public class ItemDatabaseEditor : EditorWindow
 {
-    public class ItemDatabaseEditor : EditorWindow
+    private ItemDatabase itemDatabase;
+    private int index;
+    private string itemName;
+
+    [MenuItem("Tools/Item Database Editor")]
+    public static void ShowWindow()
     {
-        private ItemDatabase itemDatabase;
-        private int index;
-        private string itemName;
+        GetWindow<ItemDatabaseEditor>("Item Data Editor");
+    }
 
-        [MenuItem("Tools/Item Database Editor")]
-        public static void ShowWindow()
-        {
-            GetWindow<ItemDatabaseEditor>("Item Data Editor");
-        }
+    private void CreateGUI()
+    {
+        GUILayout.Label("Item Database Editor", EditorStyles.boldLabel);
+    }
 
-        private void CreateGUI()
-        {
-            GUILayout.Label("Item Database Editor", EditorStyles.boldLabel);
-        }
-    
-        /// <summary>
-        /// Holds functionality for all buttons in the itemDatabaseEditor (Create, Update, ClearAllItems)
-        /// </summary>
-        private void OnGUI()
-        {
-            itemDatabase = AssetDatabase.LoadAssetAtPath<ItemDatabase>("Assets/EditorResources/ItemNameDatabase.asset");
+    /// <summary>
+    /// Holds functionality for all buttons in the itemDatabaseEditor (Create, Update, ClearAllItems)
+    /// </summary>
+    private void OnGUI()
+    {
+        itemDatabase = AssetDatabase.LoadAssetAtPath<ItemDatabase>("Assets/EditorResources/ItemNameDatabase.asset");
 
-            if (itemDatabase != null)
+        if (itemDatabase != null)
+        {
+            itemName = EditorGUILayout.TextField("Name", itemName);
+            index = EditorGUILayout.IntField("index", index);
+            if (index < 1) index = 1;
+
+            if (GUILayout.Button("Add Item"))
             {
-                itemName = EditorGUILayout.TextField("Name", itemName);
-                index = EditorGUILayout.IntField("index", index);
-                if (index < 1) index = 1;
-
-                if (GUILayout.Button("Add Item"))
+                if (!string.IsNullOrEmpty(itemName))
                 {
-                    if (!string.IsNullOrEmpty(itemName))
-                    {
-                        itemDatabase.AddItem(itemName);
-
-                        EditorUtility.SetDirty(itemDatabase);
-                        AssetDatabase.SaveAssets();
-                    }
-                }
-                
-                if (GUILayout.Button("Update Item"))
-                {
-                    if (!string.IsNullOrEmpty(itemName))
-                    {
-                        itemDatabase.UpdateName(index-1,itemName);
-
-                        EditorUtility.SetDirty(itemDatabase);
-                        AssetDatabase.SaveAssets();
-                    }
-                }
-
-
-                if (GUILayout.Button("Clear All Items"))
-                {
-                    itemDatabase.ClearItems();
+                    itemDatabase.AddItem(itemName);
                     EditorUtility.SetDirty(itemDatabase);
                     AssetDatabase.SaveAssets();
                 }
+            }
 
-                GUILayout.Space(10);
-                GUILayout.Label("Current Items:", EditorStyles.boldLabel);
-                int localIndex = 1;
-                foreach (var item in itemDatabase.GetAllItemNames())
+            if (GUILayout.Button("Update Item"))
+            {
+                if (!string.IsNullOrEmpty(itemName))
                 {
-                    GUILayout.Label($"{localIndex} Name: {item}");
-                    localIndex++;
+                    itemDatabase.UpdateName(index - 1, itemName);
+                    EditorUtility.SetDirty(itemDatabase);
+                    AssetDatabase.SaveAssets();
                 }
             }
-            else
+
+            if (GUILayout.Button("Clear All Items"))
             {
-                GUILayout.Label("Please assign an Item Data ScriptableObject.");
+                itemDatabase.ClearItems();
+                EditorUtility.SetDirty(itemDatabase);
+                AssetDatabase.SaveAssets();
             }
+
+            GUILayout.Space(10);
+            GUILayout.Label("Current Items:", EditorStyles.boldLabel);
+            int localIndex = 1;
+
+            foreach (var item in itemDatabase.GetAllItemNames())
+            {
+                GUILayout.Label($"{localIndex} Name: {item}");
+                localIndex++;
+            }
+        }
+        else
+        {
+            GUILayout.Label("Please assign an Item Data ScriptableObject.");
         }
     }
 }
