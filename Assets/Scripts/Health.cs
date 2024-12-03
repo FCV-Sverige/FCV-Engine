@@ -5,6 +5,9 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
+/// <summary>
+/// Component that can be added to any object if it is supposed to be killed or destroyed
+/// </summary>
 public class Health : MonoBehaviour
 {
     public UnityEvent<int, int> onHealthChanged;
