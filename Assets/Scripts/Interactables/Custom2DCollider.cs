@@ -8,6 +8,9 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
+/// <summary>
+/// Custom collider component to make events from collider to be shown in inspector by using UnityEvents
+/// </summary>
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
 class Custom2DCollider : MonoBehaviour
@@ -110,6 +113,11 @@ class Custom2DCollider : MonoBehaviour
     }
 }
 #if UNITY_EDITOR
+/// <summary>
+/// Custom editor for Custom2DCollider class.
+/// Changes what unity event is shown based on if the objects collider has IsTrigger to true or not.
+/// Adds field to assign what items to check for if checkItems bool is true.
+/// </summary>
 [CustomEditor(typeof(Custom2DCollider))]
 public class Custom2DColliderEditor : Editor
 {
