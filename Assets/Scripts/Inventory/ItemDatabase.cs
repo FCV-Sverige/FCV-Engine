@@ -1,16 +1,28 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Scriptable object to hold all items assigned in editor to make ItemName property field to work properly
+/// Designed to make the string comparison easier
+/// </summary>
 [CreateAssetMenu(menuName = "Tools/ItemDatabase", fileName = "ItemNameDatabase"), ]
 public class ItemDatabase : ScriptableObject
 {
-    [SerializeField] private List<string> itemNames;
+    [SerializeField] private List<string> itemNames; 
 
+    /// <summary>
+    /// Gets all item names in list
+    /// </summary>
+    /// <returns>list of strings with all names</returns>
     public List<string> GetAllItemNames()
     {
         return itemNames;
     }
     
+    /// <summary>
+    /// Gets the name of a certain index in list
+    /// </summary>
+    /// <param name="index">index of item</param>
+    /// <returns>the name of the item</returns>
     public string GetName(int index)
     {
         return itemNames[index];
