@@ -6,6 +6,9 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
+/// <summary>
+/// A component to make an object move between determined positions with different options for movement types and speeds
+/// </summary>
 [SelectionBase]
 public class MovingPlatform : MonoBehaviour
 {
@@ -83,7 +86,10 @@ public class MovingPlatform : MonoBehaviour
             SetNextTarget();
         }
     }
-
+    
+    /// <summary>
+    /// Sets the next point for the moving platform to move towards and sets the length of the journey it is suppose to travel
+    /// </summary>
     private void SetNextTarget()
     {
         currentPointIndex = GetNextIndex(currentPointIndex, worldPoints.Length, loopType); // Loop through the points
