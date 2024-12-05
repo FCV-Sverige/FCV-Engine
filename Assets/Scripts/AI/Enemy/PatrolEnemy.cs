@@ -6,6 +6,12 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
+/// <summary>
+/// Handles enemy patrol behavior and player detection.
+/// The enemy patrols between designated points and reverses direction when reaching the end of its patrol route.
+/// Detects the player using a field of view (FOV) system and switches to chasing behavior when the player is within range.
+/// Includes seamless integration with platform-finding and tile-based patrol points.
+/// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 public class PatrolEnemy : MonoBehaviour
 {
@@ -44,7 +50,11 @@ public class PatrolEnemy : MonoBehaviour
         UpdatePatrolPoints();
         InvokeRepeating(nameof(UpdatePatrolPoints), 1f, 1f);
     }
-
+    
+    /// <summary>
+    /// Updates the patrol points based on the closest platform to the enemy.
+    /// Patrol points are determined using the PlatformFinder system, ensuring the enemy patrols on valid platforms.
+    /// </summary>
     private void UpdatePatrolPoints()
     {
         patrolPoints = platformFinder.GetClosestPlatform(transform.position).Select(x => platformFinder.TileMap.GetCellCenterWorld(x)).ToList();
@@ -75,7 +85,11 @@ public class PatrolEnemy : MonoBehaviour
         spriteRenderer.flipX = movingForward; // TODO: Change to not moving forward when Isaac delivers new animations
     }
     
-    // controls the movement of the enemy by its patrol points, reversing when end is reached
+    /// <summary>
+    /// Manages enemy movement between patrol points.
+    /// Moves towards the current target point, reverses direction when reaching the end of the patrol route,
+    /// and stops when within a specified distance from the target.
+    /// </summary>
     private void PatrolMovement()
     {
         if (patrolPoints.Count == 0)
