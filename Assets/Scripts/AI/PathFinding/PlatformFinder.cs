@@ -8,12 +8,11 @@ using UnityEngine.Tilemaps;
 using Random = UnityEngine.Random;
 
 /// <summary>
-/// Gets a walkable platform from referenced Tilemap.
-/// Is a singleton
+/// Provides functionality to identify and manage walkable platform tiles in a tilemap.
+/// Implements a singleton pattern to ensure only one instance exists and offers methods for detecting platforms below a specific position, identifying the closest connected platform, and visualizing walkable areas.
 /// </summary>
 public class PlatformFinder : MonoBehaviour
 {
-    
     public static PlatformFinder Instance { get; private set; }
 
     [SerializeField] private Tilemap tileMap;
@@ -34,10 +33,11 @@ public class PlatformFinder : MonoBehaviour
     }
     
     /// <summary>
-    /// Gets the tile that's closest below a position
+    /// Finds the tile directly below a specified position within the tilemap.
+    /// Returns a maximum vector value if no tile is found within a certain threshold.
     /// </summary>
-    /// <param name="position">position to check from</param>
-    /// <returns></returns>
+    /// <param name="position">The position to search from.</param>
+    /// <returns>The tile position directly below, or a max vector if none exists.</returns>
     public Vector3Int GetPlatformBelow(Vector3 position)
     {
         int i = 0;
@@ -58,10 +58,11 @@ public class PlatformFinder : MonoBehaviour
     }
     
     /// <summary>
-    /// Get the closest platform (tiles next to each other without a gap) below a certain position
+    /// Retrieves all tiles forming the closest connected platform beneath a given position.
+    /// Includes tiles to the left and right, as long as they are walkable and uninterrupted.
     /// </summary>
-    /// <param name="position">position to check from</param>
-    /// <returns></returns>
+    /// <param name="position">The position to search from.</param>
+    /// <returns>A list of tile positions representing the closest connected platform.</returns>
     public List<Vector3Int> GetClosestPlatform(Vector3 position)
     {
         List<Vector3Int> platformPositions = new();
@@ -78,11 +79,12 @@ public class PlatformFinder : MonoBehaviour
     }
     
     /// <summary>
-    /// Gets all tiles in a certain direction that has no tiles above it
+    /// Checks for all valid platform tiles in a specified direction, ensuring there are no overlapping obstacles above them.
+    /// Continues searching until an invalid tile or obstacle is encountered.
     /// </summary>
-    /// <param name="start">start tile position</param>
-    /// <param name="direction">direction to check for other platforms</param>
-    /// <returns></returns>
+    /// <param name="start">The starting tile position.</param>
+    /// <param name="direction">The direction to search in (e.g., left or right).</param>
+    /// <returns>A list of tile positions in the specified direction.</returns>
     private List<Vector3Int> CheckPlatformInDirection(Vector3Int start, Vector2Int direction)
     {
         List<Vector3Int> platforms = new();
