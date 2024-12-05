@@ -5,6 +5,9 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
 
+/// <summary>
+/// Handles the individual weapon slot UI, including displaying weapon sprites, slot indices, and managing the border state.
+/// </summary>
 public class WeaponSlotUI : MonoBehaviour
 {
     [SerializeField] private TMP_Text slotPosition;
@@ -12,27 +15,29 @@ public class WeaponSlotUI : MonoBehaviour
     [SerializeField] private Image borderImage;
 
     /// <summary>
-    /// Sets the image of the weapon slot
+    /// Sets the image for the weapon slot.
     /// </summary>
-    /// <param name="weaponSprite">Sprite to be shown</param>
+    /// <param name="weaponSprite">The sprite representing the weapon to display in the slot.</param>
     public void SetImage(Sprite weaponSprite)
     {
         weaponImage.sprite = weaponSprite;
     }
     
     /// <summary>
-    /// Sets the text to visualize what key needs to be pressed for equip
+    /// Sets the text for the weapon slot, indicating the key to press for equipping the weapon.
     /// </summary>
-    /// <param name="key">index++ from weapon controller of weapon</param>
+    /// <param name="key">The key index (typically incremented from the weapon controller) associated with the weapon.</param>
     public void SetSlotIndex(int key)
     {
         slotPosition.text = $"{key}";
     }
 
+    /// <summary>
+    /// Sets the active state of the slot border.
+    /// </summary>
+    /// <param name="active">True to activate the border, false to deactivate it.</param>
     public void SetBorderActiveState(bool active)
     {
         borderImage.enabled = active;
     }
-    
-    
 }

@@ -6,6 +6,9 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
+/// <summary>
+/// Manages the UI representation of weapon slots, including adding new slots, setting images, and handling weapon changes.
+/// </summary>
 public class WeaponUI : MonoBehaviour
 {
     [SerializeField] private WeaponSlotUI slotPrefab;
@@ -16,7 +19,7 @@ public class WeaponUI : MonoBehaviour
     private List<WeaponSlotUI> weaponSlotUis;
     
     /// <summary>
-    /// Setup events from weapon controller automatically 
+    /// Sets up events for weapon actions from the WeaponController.
     /// </summary>
     private void SetupEventsAutomatically()
     {
@@ -41,11 +44,11 @@ public class WeaponUI : MonoBehaviour
     }
     
     /// <summary>
-    /// Checks if a Unity Event has a certain method subscribed
+    /// Checks if a Unity Event has a specific method subscribed.
     /// </summary>
-    /// <param name="event">Unity Event to check against</param>
-    /// <param name="methodName">Name of method to be checked</param>
-    /// <returns></returns>
+    /// <param name="event">The Unity event to check for a subscribed method.</param>
+    /// <param name="methodName">The name of the method to look for in the event's subscribers.</param>
+    /// <returns>True if the method is subscribed to the event, false otherwise.</returns>
     private bool MethodSubscribed([NotNull] UnityEventBase @event, string methodName)
     {
         if (@event == null) throw new ArgumentNullException(nameof(@event));
@@ -59,10 +62,10 @@ public class WeaponUI : MonoBehaviour
     }
     
     /// <summary>
-    /// Add and setups a weapon slot UI for weapon provided 
+    /// Adds and sets up a weapon slot UI for the provided weapon.
     /// </summary>
-    /// <param name="weapon">Weapon to be added to UI</param>
-    /// <param name="key">The key used to equip weapon when changing weapon</param>
+    /// <param name="weapon">Weapon to be added to UI.</param>
+    /// <param name="key">The key used to equip the weapon when changing weapons.</param>
     public void AddWeaponSlot(Weapon weapon, int key)
     {
         WeaponSlotUI weaponSlotUI = Instantiate(slotPrefab, weaponUIHolder);
@@ -84,9 +87,9 @@ public class WeaponUI : MonoBehaviour
     }
     
     /// <summary>
-    /// Activates border of the index provided and deactivates all other
+    /// Activates the border of the weapon slot at the given index and deactivates all other borders.
     /// </summary>
-    /// <param name="index">index of weapon</param>
+    /// <param name="index">Index of the weapon slot to activate.</param>
     public void WeaponChanged(int index)
     {
         for (int i = 0; i < weaponSlotUis.Count; i++)
