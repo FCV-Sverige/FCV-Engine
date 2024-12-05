@@ -5,6 +5,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Utility;
 
+/// <summary>
+/// Handles the main menu operations, such as starting the game and quitting the application.
+/// It also manages adding scenes to the build settings for the editor.
+/// </summary>
 public class MainMenuHandler : MonoBehaviour
 {
 #if UNITY_EDITOR
@@ -35,8 +39,8 @@ public class MainMenuHandler : MonoBehaviour
 #if UNITY_EDITOR
     
     /// <summary>
-    /// Assigns scene path from a SceneAsset variable since SceneAsset is not compilable in builds.
-    /// Adds the scene to build settings if it is not added to build settings
+    /// Assigns the scene path from a SceneAsset variable, which is not compilable in builds.
+    /// Also adds the scene to the build settings if it is not already present.
     /// </summary>
     private void OnValidate()
     {

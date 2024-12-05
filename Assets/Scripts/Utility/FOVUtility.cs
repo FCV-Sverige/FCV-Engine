@@ -3,18 +3,22 @@ using UnityEditor;
 #endif
 using UnityEngine;
 
+/// <summary>
+/// A utility class for handling Field of View (FOV) calculations and visualizations in Unity.
+/// Includes functions to check if a target is within the FOV and range, and to draw the FOV in the scene view.
+/// </summary>
 public static class FOVUtility
 {
 #if UNITY_EDITOR
     
-    // Helper function to draw the FOV as a frustum
     /// <summary>
-    /// This functions draws an arc based on specified values. SHOULD ONLY BE USED IN OnDrawGizmos/OnDrawGizmosSelected
+    /// This function draws an arc based on specified values. SHOULD ONLY BE USED IN OnDrawGizmos/OnDrawGizmosSelected
     /// </summary>
-    /// <param name="origin">start point</param>
-    /// <param name="direction">start direction of arc</param>
-    /// <param name="maxDistance">distance of arc</param>
-    /// <param name="fovAngle">max angle of arc</param>
+    /// <param name="origin">Start point of the FOV.</param>
+    /// <param name="direction">Start direction of the arc.</param>
+    /// <param name="maxDistance">Distance of the arc.</param>
+    /// <param name="fovAngle">Maximum angle of the arc in degrees.</param>
+    /// <returns>void</returns>
     public static void DrawFOV(Vector3 origin, Vector3 direction, float maxDistance, float fovAngle)
     {
         // Calculate the frustum vertices
@@ -30,7 +34,15 @@ public static class FOVUtility
     }
 #endif
     
-    // Function to check if the target is within FOV and range of the source
+    /// <summary>
+    /// Checks if the target is within the Field of View and range of the source.
+    /// </summary>
+    /// <param name="source">The position of the source.</param>
+    /// <param name="target">The position of the target.</param>
+    /// <param name="direction">The direction from the source to check the FOV angle from.</param>
+    /// <param name="maxDistance">The maximum distance for the FOV check.</param>
+    /// <param name="fovAngle">The angle of the FOV in degrees.</param>
+    /// <returns>True if the target is within both the FOV and range, otherwise false.</returns>
     public static bool IsWithinFOVAndRange(Vector3 source, Vector3 target, Vector3 direction, float maxDistance, float fovAngle)
     {
         // Calculate the vector from source to target
@@ -49,13 +61,13 @@ public static class FOVUtility
     }
     
     /// <summary>
-    /// Checks wether a positions is within a Field of View angle from another position
+    /// Checks whether a position is within a Field of View angle from another position.
     /// </summary>
-    /// <param name="source">Source position</param>
-    /// <param name="target">Target position</param>
-    /// <param name="direction">which direction the angle is suppose to be checked from</param>
-    /// <param name="fovAngle">the angle in degrees</param>
-    /// <returns></returns>
+    /// <param name="source">The source position.</param>
+    /// <param name="target">The target position.</param>
+    /// <param name="direction">The direction from the source to check the angle from.</param>
+    /// <param name="fovAngle">The angle in degrees.</param>
+    /// <returns>True if the target is within the FOV, otherwise false.</returns>
     public static bool IsWithinFOV(Vector3 source, Vector3 target, Vector3 direction, float fovAngle)
     {
         // Calculate the vector from source to target
