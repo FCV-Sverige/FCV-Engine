@@ -6,6 +6,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
+/// <summary>
+/// Handles scene transitions in Unity. Provides functionality for switching scenes with optional persistence of a game object across scenes. Automatically validates and adds the target scene to build settings in the editor.
+/// </summary>
 public class SceneSwitcher : MonoBehaviour
 {
 #if UNITY_EDITOR
@@ -15,9 +18,9 @@ public class SceneSwitcher : MonoBehaviour
     private string scenePath;
 
     /// <summary>
-    /// Starts the switching of scenes and makes an object not be destroyed on load if that is required
+    /// Starts a scene transition to the specified scene. Ensures the provided game object, if any, persists across scene loads.
     /// </summary>
-    /// <param name="transitioningGameObject">gameobject not to be destroyed</param>
+    /// <param name="transitioningGameObject">The game object to persist across scenes, or null if no persistence is required.</param>
     public void StartTransition(GameObject transitioningGameObject = null)
     {
         if (transitioningGameObject)
@@ -28,7 +31,7 @@ public class SceneSwitcher : MonoBehaviour
 #if UNITY_EDITOR
     
     /// <summary>
-    /// If scene asset path is not in build settings: add it
+    /// Validates the target scene asset in the editor. Ensures the scene's path is in the build settings and updates the internal path reference.
     /// </summary>
     private void OnValidate()
     {
