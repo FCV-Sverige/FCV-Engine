@@ -5,7 +5,9 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
-
+/// <summary>
+/// Represents a pressure-sensitive button that activates when an object stands on it for a specified duration. Supports optional bounce-back functionality when the object leaves before full activation. Fires events when fully activated and during intermediate states for animations.
+/// </summary>
 public class PressureButton : MonoBehaviour
 {
     [SerializeField] private float standTime = 1;
@@ -30,6 +32,9 @@ public class PressureButton : MonoBehaviour
         percentilePushed.AddListener(AnimateOffset);
     }
     
+    /// <summary>
+    /// Handles bounce-back behavior, gradually resetting the button's state when not fully activated and no object is standing on it. Only applicable if bounceBack is enabled.
+    /// </summary>
     private void Update()
     {
         if (standingOnButton || isButtonFired) return;
@@ -42,6 +47,10 @@ public class PressureButton : MonoBehaviour
         percentilePushed.Invoke(Mathf.Clamp01(time/standTime));
     }
 
+    /// <summary>
+    /// Detects when an object leaves the button's trigger area. Updates the standing state and stops activation if conditions are met.
+    /// </summary>
+    /// <param name="other">The collider that exited the trigger.</param>
     private void OnTriggerExit2D(Collider2D other)
     {
         if (!LayerMaskUtility.IsInLayerMask(other.gameObject, layerMask) || isButtonFired) return;
@@ -49,13 +58,21 @@ public class PressureButton : MonoBehaviour
         standingOnButton = false;
     }
 
+    /// <summary>
+    /// Detects when an object enters the button's trigger area. Sets the standing state and prepares for activation.
+    /// </summary>
+    /// <param name="other">The collider that entered the trigger.</param>
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!LayerMaskUtility.IsInLayerMask(other.gameObject, layerMask) || isButtonFired) return;
 
         standingOnButton = true;
     }
-    // If play is inside trigger it starts pushing the button down
+    
+    /// <summary>
+    /// Handles the activation process while an object stays on the button. Gradually increases the activation state and fires the buttonFired event when fully activated.
+    /// </summary>
+    /// <param name="other">The collider that stays within the trigger.</param>
     private void OnTriggerStay2D(Collider2D other)
     { 
         if (!LayerMaskUtility.IsInLayerMask(other.gameObject, layerMask) || isButtonFired) return;
@@ -71,9 +88,8 @@ public class PressureButton : MonoBehaviour
     }
     
     /// <summary>
-    /// Moves the position to the WorldYOffset from the startPosition.y using a percentile(0-1)
+    /// Handles bounce-back behavior, gradually resetting the button's state when not fully activated and no object is standing on it. Only applicable if bounceBack is enabled.
     /// </summary>
-    /// <param name="percentile"></param>
     private void AnimateOffset(float percentile)
     {
         float startY = startPosition.y;
