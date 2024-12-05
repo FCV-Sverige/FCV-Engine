@@ -7,6 +7,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Utility;
 
+/// <summary>
+/// Provides an editor window for creating new Unity scenes by duplicating a base scene. Allows users to specify the new scene name and base scene, checks for unsaved changes in the current scene, and adds the new scene to the build settings.
+/// </summary>
 public class SceneCreatorEditor : EditorWindow
 {
     protected string NewSceneName;
@@ -14,7 +17,10 @@ public class SceneCreatorEditor : EditorWindow
     protected SceneAsset CopySceneAsset;
 
     protected readonly GUIContent NameContent = new GUIContent("New Scene Name");
-
+    
+    /// <summary>
+    /// Initializes the editor window and sets the default new scene name.
+    /// </summary>
     [MenuItem("Tools/Create New Scene...", priority = 100)]
     private static void Init()
     {
@@ -44,7 +50,7 @@ public class SceneCreatorEditor : EditorWindow
     }
     
     /// <summary>
-    /// Checks wether the current scene is not saved and prompts user to save or not before new scene is created and opened
+    /// Checks whether the current scene has unsaved changes and prompts the user to save them before creating a new scene. Prevents scene creation in play mode or without a specified scene name.
     /// </summary>
     protected void CheckAndCreateScene()
     {
@@ -83,7 +89,7 @@ public class SceneCreatorEditor : EditorWindow
     }
     
     /// <summary>
-    /// Creates a new scene using the base fields in the class by copying a specified scene
+    /// Creates a new scene by duplicating the specified base scene. Opens the new scene and adds it to the build settings.
     /// </summary>
     protected void CreateScene()
     {
@@ -104,11 +110,11 @@ public class SceneCreatorEditor : EditorWindow
     }
 
     /// <summary>
-    /// Creates a new scene at the newScenePath using the path from the old scene
+    /// Copies a scene from the given path and saves it at the specified new scene path. Refreshes the AssetDatabase after the operation.
     /// </summary>
-    /// <param name="path">Path to scene that is to be copied</param>
-    /// <param name="newScenePath">Path for the new scene</param>
-    protected void CopyAndMakeNewScene(string path, string newScenePath)
+    /// <param name="path">Path to the scene to copy.</param>
+    /// <param name="newScenePath">Destination path for the new scene.</param>
+     protected void CopyAndMakeNewScene(string path, string newScenePath)
     {
         AssetDatabase.CopyAsset(AssetDatabase.GUIDToAssetPath(path), newScenePath);
         AssetDatabase.Refresh();
