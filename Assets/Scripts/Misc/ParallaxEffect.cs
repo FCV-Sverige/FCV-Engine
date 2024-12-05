@@ -3,6 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Implements a parallax scrolling effect for backgrounds.
+/// Tracks the main camera's movement to shift the background layers
+/// at varying speeds, creating a depth illusion. Supports seamless
+/// scrolling by repositioning the background when it extends beyond its bounds.
+/// </summary>
 public class ParallaxEffect : MonoBehaviour
 {
     [SerializeField] private float parallaxEffect;
