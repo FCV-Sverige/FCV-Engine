@@ -22,7 +22,6 @@ public sealed class MovingPlatformEditor : Editor
 
     private void OnEnable()
     {
-        
         movingPlatform = target as MovingPlatform;
         if (movingPlatform != null) worldPoints = movingPlatform.WorldPoints;
 
@@ -40,7 +39,11 @@ public sealed class MovingPlatformEditor : Editor
     {
         DestroyPreviewObject();
     }
-
+    
+    /// <summary>
+    /// Destroys and un-subscribes from events if state is ExitingEditMode
+    /// </summary>
+    /// <param name="state">PlayModeStateChange Enum from EditorApplication.playModeStateChanged</param>
     private void PlayModeStateChanged(PlayModeStateChange state)
     {
         if (state == PlayModeStateChange.ExitingEditMode)
@@ -50,7 +53,10 @@ public sealed class MovingPlatformEditor : Editor
             EditorApplication.playModeStateChanged -= PlayModeStateChanged;
         }
     }
-
+    
+    /// <summary>
+    /// Destroys the object used to preview path
+    /// </summary>
     private void DestroyPreviewObject()
     {
         if (!previewObject) return;
@@ -63,6 +69,9 @@ public sealed class MovingPlatformEditor : Editor
         DestroyImmediate(previewObject);
     }
 
+    /// <summary>
+    /// If the target MovingPlatform is not this it will try to destroy preview object
+    /// </summary>
     private void SelectionChanged()
     {
         if (movingPlatform == null) return;
@@ -74,7 +83,10 @@ public sealed class MovingPlatformEditor : Editor
     {
         MakePositionAndLineHandles();
     }
-
+    
+    /// <summary>
+    /// Makes position handles to control the points where the moving platform travels through and makes lines between them
+    /// </summary>
     private void MakePositionAndLineHandles()
     {
         worldPoints = movingPlatform.WorldPoints;
@@ -111,7 +123,9 @@ public sealed class MovingPlatformEditor : Editor
         }
     }
     
-    // Creates object used to visualize the platform in the game
+    /// <summary>
+    /// Creates a copy of the moving platform object but sets all sprite alpha value to 0.2
+    /// </summary>
     private void CreatePreviewObject()
     {
         previewObject = Instantiate(movingPlatform.gameObject);
