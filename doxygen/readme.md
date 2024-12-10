@@ -1,5 +1,5 @@
 # Doxygen Documentation
-this document will walk you through how to generate documentation using doxyengine and our pre-setup doxyfile. We make use of [doxygen-awseome-css](https://github.com/jothepro/doxygen-awesome-css) repository from [jothepro](https://github.com/jothepro) to give it a pleasant and readable style.
+This document will walk you through how to generate documentation using doxyengine and our pre-setup doxyfile. We make use of [doxygen-awseome-css](https://github.com/jothepro/doxygen-awesome-css) repository from [jothepro](https://github.com/jothepro) to give it a pleasant and readable style.
 
 ## Install Doxygen
 Firstly we need to install doxygen and use their doxywizard to start generating the code.
