@@ -12,7 +12,7 @@ Firstly we need to install doxygen and use their doxywizard to start generating 
 ## Generate Documentation
 Now that we have it installed we can start generating the documentation.
 
-1. Navigate to the (FCVEngine.doxyfile)[FCVEngine.Doxyfile] and run it with **doxywizard**
+1. Find the (FCVEngine.doxyfile)[FCVEngine.Doxyfile] inside (FCV-Engine/doxygen/)[..] and run it with **doxywizard**
 2. It should already have all the setup you need so now you navigate to the **Run**-tab
 3. Find the **Run doxygen** button and click it
 
