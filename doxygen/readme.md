@@ -13,7 +13,7 @@ Firstly we need to install doxygen and use their doxywizard to start generating 
 Now that we have it installed we can start generating the documentation.
 
 1. Find the [FCVEngine.Doxyfile](FCVEngine.doxyfile)(inside the same repo as this readme) and run it with **doxywizard**
-2. Now in the windows that popped up, it should already have all the setup you need so now you navigate to the **Run**-tab in the doxywizard window
+2. Now in the window that popped up, it should already have all the setup you need so now you navigate to the **Run**-tab in the doxywizard software
 3. Find the **Run doxygen** button and click it
 
 Now the html documentation should be generated and it can be pushed to git so it becomes published to github-pages
