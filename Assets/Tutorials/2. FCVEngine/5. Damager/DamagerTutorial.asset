@@ -53,15 +53,63 @@ MonoBehaviour:
       m_Calls: []
   PageInitiated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 7745a2f4e18d4ca4187db0b590d6c848, type: 2}
+        m_TargetAssemblyTypeName: RefreshMasking, Assembly-CSharp
+        m_MethodName: StartConstantRefreshing
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
   GoingBack:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 7745a2f4e18d4ca4187db0b590d6c848, type: 2}
+        m_TargetAssemblyTypeName: RefreshMasking, Assembly-CSharp
+        m_MethodName: StopConstantRefreshing
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
   Completed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 7745a2f4e18d4ca4187db0b590d6c848, type: 2}
+        m_TargetAssemblyTypeName: RefreshMasking, Assembly-CSharp
+        m_MethodName: StopConstantRefreshing
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
   Quit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 7745a2f4e18d4ca4187db0b590d6c848, type: 2}
+        m_TargetAssemblyTypeName: RefreshMasking, Assembly-CSharp
+        m_MethodName: StopConstantRefreshing
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
   m_Scene: {fileID: 0}
   m_TutorialTitle: 

@@ -6,19 +6,24 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "RefreshMasking", menuName = "Tutorials/Create RefreshMasking")]
 public class RefreshMasking : ScriptableObject
 {
+    private bool subscribed = false;
+    public void StartConstantRefreshing(Tutorial tutorial, TutorialPage page, int id) => StartConstantRefreshing();
+    public void StopConstantRefreshing(Tutorial tutorial, TutorialPage page) => StopConstantRefreshing();
+    public void StopConstantRefreshing(Tutorial tutorial) => StopConstantRefreshing();
+    
+    
     
     public void StartConstantRefreshing()
     {
+        if (subscribed) return;
+        
+        subscribed = true;
         EditorSelection.OnEditorInteracted += UpdateMasking;
     }
 
     public void StopConstantRefreshing()
     {
-        EditorSelection.OnEditorInteracted -= UpdateMasking;
-    }
-
-    private void OnDisable()
-    {
+        subscribed = false;
         EditorSelection.OnEditorInteracted -= UpdateMasking;
     }
 
@@ -29,7 +34,7 @@ public class RefreshMasking : ScriptableObject
         {
             return;
         }
-        
+        Debug.Log("RefreshMasking");
         TutorialWindow.Instance.CurrentTutorial.CurrentPage.RaiseMaskingSettingsChanged();
     }
 }
