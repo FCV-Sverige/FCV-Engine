@@ -116,7 +116,7 @@ public class SceneCreatorEditor : EditorWindow
     /// <param name="newScenePath">Destination path for the new scene.</param>
      protected void CopyAndMakeNewScene(string path, string newScenePath)
     {
-        AssetDatabase.CopyAsset(AssetDatabase.GUIDToAssetPath(path), newScenePath);
+        AssetDatabase.CopyAsset(path, newScenePath);
         AssetDatabase.Refresh();
     }
 }
