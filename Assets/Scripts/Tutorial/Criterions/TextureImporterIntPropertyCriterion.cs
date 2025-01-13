@@ -51,7 +51,6 @@ namespace Unity.Tutorials.Core.Editor
             if (property.isArray)
                 return property.arraySize > intTargetValue;
             
-            Debug.Log(property.propertyType);
 
             int value = property.numericType == SerializedPropertyNumericType.Float ? Mathf.RoundToInt(property.floatValue) : property.intValue;
 
