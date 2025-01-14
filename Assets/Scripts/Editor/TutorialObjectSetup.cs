@@ -5,7 +5,9 @@ using Unity.Tutorials.Core.Editor;
 using UnityEditor;
 using UnityEngine;
 using Utility;
-
+/// <summary>
+/// GUI for setting up Tutorials to work with the RefreshMasking class
+/// </summary>
 public class TutorialObjectSetup : EditorWindow
 {
     private RefreshMasking refreshMasking;
@@ -32,14 +34,14 @@ public class TutorialObjectSetup : EditorWindow
     {
         List<Tutorial> tutorials = ScriptableObjectFinder.FindAssetsOfType<Tutorial>();
 
-        EventListenerAdder.RemoveListenerFromScriptableObjects(tutorials.ToArray(), refreshMasking);
+        EventListenerAdder.RemoveListenerFromScriptableObjects(tutorials.ToArray());
     }
 
     private void SetupTutorials()
     {
         List<Tutorial> tutorials = ScriptableObjectFinder.FindAssetsOfType<Tutorial>();
 
-        EventListenerAdder.AddListenerToScriptableObjects(tutorials.ToArray(), refreshMasking);
+        EventListenerAdder.AddListenerToTutorialObjects(tutorials.ToArray(), refreshMasking);
     }
     
     

@@ -4,8 +4,16 @@ using UnityEngine;
 
 namespace Utility
 {
+    /// <summary>
+    /// Static utility class for finding Scriptable Objects in assets
+    /// </summary>
     public static class ScriptableObjectFinder
     {
+        /// <summary>
+        /// Get a list with all scriptable objects of certain type in project
+        /// </summary>
+        /// <typeparam name="T">ScriptableObject type</typeparam>
+        /// <returns>List of all scriptable objects found</returns>
         public static List<T> FindAssetsOfType<T>() where T : ScriptableObject
         {
             List<T> results = new List<T>();
@@ -19,7 +27,6 @@ namespace Utility
                 if (asset != null)
                 {
                     results.Add(asset);
-                    Debug.Log($"Found {typeof(T).Name}: {asset.name} at {path}");
                 }
             }
 
