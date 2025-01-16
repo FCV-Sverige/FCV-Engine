@@ -154,7 +154,7 @@ public class Movement : MonoBehaviour
     /// </summary>
     private void GravityScaling()
     {
-        if (rb.velocity.y < 0)
+        if (rb.velocity.y < -.3f)
         {
             rb.gravityScale = fastFallingGravityMult * gravityScale;
         }
