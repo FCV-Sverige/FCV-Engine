@@ -12,6 +12,8 @@ public static class CheckPointManager
     /// <param name="playerTransform">transform to place at latest checkpoint</param>
     public static void PlaceAtCheckPoint(Transform playerTransform)
     {
+        if (playerTransform.TryGetComponent(out Rigidbody rigidbody))
+            rigidbody.velocity = Vector3.zero;
         playerTransform.position = lastCheckPoint;
     }
     
