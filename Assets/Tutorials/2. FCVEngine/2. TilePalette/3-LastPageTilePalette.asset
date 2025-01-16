@@ -82,8 +82,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Enemies Tutorial
-      m_Tutorial: {fileID: 11400000, guid: a41b46b696f8c50459027888eda940f2, type: 2}
+        m_Untranslated: Moving Platform Tutorial
+      m_Tutorial: {fileID: 11400000, guid: cf4805bff4f4ae544a42a4d9fb4227da, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0

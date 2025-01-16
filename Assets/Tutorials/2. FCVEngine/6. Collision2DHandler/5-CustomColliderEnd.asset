@@ -79,8 +79,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: 
-      m_Tutorial: {fileID: 0}
+        m_Untranslated: Inventory Tutorial
+      m_Tutorial: {fileID: 11400000, guid: 703847b2116861c48a47caf423c222d9, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0

@@ -79,8 +79,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Check Point System
-      m_Tutorial: {fileID: 11400000, guid: cb14b93efda36cf4bbf0c1559acec8f8, type: 2}
+        m_Untranslated: Collision 2D Handler
+      m_Tutorial: {fileID: 11400000, guid: 7a3ae8137e5805947a81c9351dc550b5, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0

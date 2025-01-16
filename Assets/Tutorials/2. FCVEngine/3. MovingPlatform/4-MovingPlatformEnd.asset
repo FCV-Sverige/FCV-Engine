@@ -28,7 +28,7 @@ MonoBehaviour:
       m_Criteria:
         m_Items: []
       m_MaskingSettings:
-        m_MaskingEnabled: 0
+        m_MaskingEnabled: 1
         m_UnmaskedViews: []
       m_Summary: 
       m_Description: 
@@ -84,8 +84,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Damager Tutorial
-      m_Tutorial: {fileID: 11400000, guid: afa1b2534f3ed3249baa21044d3eb768, type: 2}
+        m_Untranslated: Enemies Tutorial
+      m_Tutorial: {fileID: 11400000, guid: a41b46b696f8c50459027888eda940f2, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0

@@ -78,8 +78,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Moving Platform Tutorial
-      m_Tutorial: {fileID: 11400000, guid: cf4805bff4f4ae544a42a4d9fb4227da, type: 2}
+        m_Untranslated: Checkpoint Tutorial
+      m_Tutorial: {fileID: 11400000, guid: cb14b93efda36cf4bbf0c1559acec8f8, type: 2}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
