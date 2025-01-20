@@ -11,6 +11,9 @@ public class PlaytestCriterion : Criterion
     public override void StartTesting()
     {
         base.StartTesting();
+        
+        enteredPlaymode = false;
+        exitedPlaymode = false;
 
         EditorApplication.playModeStateChanged += PlaymodeChanged;
         EditorApplication.update += UpdateCompletion;
