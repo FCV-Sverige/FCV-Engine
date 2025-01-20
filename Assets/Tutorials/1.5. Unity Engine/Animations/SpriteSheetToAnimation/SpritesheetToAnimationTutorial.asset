@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorialTitle:
     m_Untranslated: 
-  m_ProgressTrackingEnabled: 0
-  m_LessonId: 
+  m_ProgressTrackingEnabled: 1
+  m_LessonId: d4daa4d3-7fc2-4541-a758-46d92812810a
   m_Version: 0
   m_SceneManagementBehavior: 0
   m_Scenes:

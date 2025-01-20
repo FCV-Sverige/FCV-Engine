@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorialTitle:
     m_Untranslated: Audio Source Tutorial
-  m_ProgressTrackingEnabled: 0
-  m_LessonId: 
+  m_ProgressTrackingEnabled: 1
+  m_LessonId: 2732a4db-6f6c-48fd-ae05-7a8837f0183e
   m_Version: 0
   m_SceneManagementBehavior: 0
   m_Scenes:

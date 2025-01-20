@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorialTitle:
     m_Untranslated: Collider Tutorial
-  m_ProgressTrackingEnabled: 0
-  m_LessonId: 
+  m_ProgressTrackingEnabled: 1
+  m_LessonId: 4b4fa09f-0242-45cb-b9a2-90ee40e5bad3
   m_Version: 0
   m_SceneManagementBehavior: 0
   m_Scenes:

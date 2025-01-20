@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorialTitle:
     m_Untranslated: Audio Mixer Tutorial
-  m_ProgressTrackingEnabled: 0
-  m_LessonId: 
+  m_ProgressTrackingEnabled: 1
+  m_LessonId: 4a0267fd-de12-486b-aca4-fd5cd475b93c
   m_Version: 0
   m_SceneManagementBehavior: 0
   m_Scenes:

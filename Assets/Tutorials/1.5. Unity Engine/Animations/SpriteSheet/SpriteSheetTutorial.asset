@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorialTitle:
     m_Untranslated: Sprite Sheet Splitting
-  m_ProgressTrackingEnabled: 0
-  m_LessonId: 
+  m_ProgressTrackingEnabled: 1
+  m_LessonId: d67d4256-e6cb-4ee5-ad27-3e2451cf8fa5
   m_Version: 0
   m_SceneManagementBehavior: 1
   m_Scenes: []

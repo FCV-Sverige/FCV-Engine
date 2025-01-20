@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorialTitle:
     m_Untranslated: Rigidbody Tutorial
-  m_ProgressTrackingEnabled: 0
-  m_LessonId: 
+  m_ProgressTrackingEnabled: 1
+  m_LessonId: 5c6ca3db-99a5-4090-a293-c603d7fad5ab
   m_Version: 0
   m_SceneManagementBehavior: 0
   m_Scenes:
