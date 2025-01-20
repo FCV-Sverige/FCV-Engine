@@ -288,7 +288,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   isTesting: 0
-  minValue: 45
-  maxValue: 100
+  minValue: 44
+  maxValue: 91
   futureObjectReference: {fileID: -8732678973833660026, guid: 13bae1aa76b07fd499204086c1ac30be, type: 2}
   propertyPath: fovAngle
