@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorialTitle:
     m_Untranslated: Painting a Level
-  m_ProgressTrackingEnabled: 0
-  m_LessonId: 
+  m_ProgressTrackingEnabled: 1
+  m_LessonId: e06d9a2b-62b1-4819-874d-37734639ed2f
   m_Version: 1
   m_SceneManagementBehavior: 0
   m_Scenes:

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorialTitle:
     m_Untranslated: Check Points
-  m_ProgressTrackingEnabled: 0
-  m_LessonId: 
+  m_ProgressTrackingEnabled: 1
+  m_LessonId: f0a51e6c-fcc7-4ce4-842b-672dbea95da7
   m_Version: 0
   m_SceneManagementBehavior: 0
   m_Scenes:

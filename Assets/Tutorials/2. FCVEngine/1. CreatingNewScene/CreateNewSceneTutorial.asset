@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorialTitle:
     m_Untranslated: Create New Scene
-  m_ProgressTrackingEnabled: 0
-  m_LessonId: 
+  m_ProgressTrackingEnabled: 1
+  m_LessonId: 3ff33810-bc4b-4246-a146-62a48f4edbe3
   m_Version: 0
   m_SceneManagementBehavior: 1
   m_Scenes: []

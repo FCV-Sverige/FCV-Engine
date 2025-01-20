@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorialTitle:
     m_Untranslated: Enemies
-  m_ProgressTrackingEnabled: 0
-  m_LessonId: 
+  m_ProgressTrackingEnabled: 1
+  m_LessonId: 9752a021-2a16-4ddb-8145-c2d2b6deb069
   m_Version: 0
   m_SceneManagementBehavior: 1
   m_Scenes:

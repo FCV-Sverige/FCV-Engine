@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TutorialTitle:
     m_Untranslated: Inventory System
-  m_ProgressTrackingEnabled: 0
-  m_LessonId: 
+  m_ProgressTrackingEnabled: 1
+  m_LessonId: 0f55840b-d6a4-44f9-9402-d5a9f73c9afb
   m_Version: 0
   m_SceneManagementBehavior: 0
   m_Scenes:
