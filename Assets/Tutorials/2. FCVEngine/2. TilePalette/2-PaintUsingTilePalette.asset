@@ -23,7 +23,7 @@ MonoBehaviour:
         m_Untranslated: 
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
-      m_Video: {fileID: 32900000, guid: 5335af0c995a2e843be475ba50b68fd9, type: 3}
+      m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
       m_Criteria:
         m_Items: []
@@ -72,10 +72,13 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: We have created a Tile Palette that lets you draw out levels
-          using the Scriptable Rule Tile system. This system ensures that, as you
-          draw, the art automatically adapts and selects the correct sprite to create
-          a cohesive look.
+        m_Untranslated: 'We have created a Tile Palette that lets you draw out levels
+          using the Scriptable <b>Rule Tile</b> system.
+
+
+          This <b>Rule
+          Tile</b> system ensures that, as you draw, the art automatically adapts
+          and selects the correct tile from the palette to create a cohesive look.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -94,13 +97,15 @@ MonoBehaviour:
       Title:
         m_Untranslated: How to paint!
       Text:
-        m_Untranslated: "1. In the \u2018Tile Palette\u2019 window, select the tile
-          you want to use by clicking on it.\n2. Go to the Scene View.\n3. Press
-          \u2018left-click\u2019 to add one tile at a time, or hold \u2018left-click\u2019
-          and drag to draw your level.\n\nTip: If you make a mistake, you can hold
-          \u2018Shift + left-click\u2019 to erase tiles.\n____\nNote:\nIf the top-left
-          of the Tile Palette window shows \u2018TutorialPalette\u2019, click on
-          it and switch to \u2018Rule Tile Palette\u2019."
+        m_Untranslated: "1. If the top-left of the Tile Palette window shows \u2018TutorialPalette\u2019,
+          click on it and switch to \u2018Rule Tile Palette\u2019.\n2. In the \u2018Tile
+          Palette\u2019 window, select the tile by clicking on it.\n2. Go to the
+          Scene View.\n3. Press \u2018left-click\u2019 to add one tile at a time,
+          or hold \u2018left-click\u2019 and drag to draw your level.\n\n<b>Tip:</b>
+          If you make a mistake, you can hold \u2018Shift + left-click\u2019 to erase
+          tiles instead of painting them.\n____\n<b>Note:</b>\nIf you want/need to
+          paint tiles manually, follow the instructions in step 1. but choose the
+          \"TutorialPalette\" instead of the \"Rule Tile Palette\". "
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -191,4 +196,4 @@ MonoBehaviour:
   Invalidated:
     m_PersistentCalls:
       m_Calls: []
-  isTesting: 0
+  isTesting: 1

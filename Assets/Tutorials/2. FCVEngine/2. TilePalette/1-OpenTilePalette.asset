@@ -22,7 +22,7 @@ MonoBehaviour:
       Text:
         m_Untranslated: 
       m_Tutorial: {fileID: 0}
-      m_Image: {fileID: 2800000, guid: d208d3ec59fd2e9419d648eadf376448, type: 3}
+      m_Image: {fileID: 2800000, guid: ec1776b1cc920d1448e161e7a5299f0c, type: 3}
       m_Video: {fileID: 0}
       m_CriteriaCompletion: 0
       m_Criteria:
@@ -109,10 +109,10 @@ MonoBehaviour:
   m_CameraSettings:
     m_CameraMode: 0
     m_FocusMode: 0
-    m_Orthographic: 0
-    m_Size: 0
-    m_Pivot: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_Orthographic: 1
+    m_Size: 6.5270567
+    m_Pivot: {x: 0.5850039, y: -0.40592232, z: 0.00568852}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 1}
     m_FrameObject:
       m_SceneGuid: 
       m_GameObjectGuid: 
@@ -121,7 +121,7 @@ MonoBehaviour:
       m_ComponentIndex: 0
       m_AssetObject: {fileID: 0}
       m_Prefab: {fileID: 0}
-    m_Enabled: 0
+    m_Enabled: 1
   NextButton:
     m_Untranslated: Next
   DoneButton:
