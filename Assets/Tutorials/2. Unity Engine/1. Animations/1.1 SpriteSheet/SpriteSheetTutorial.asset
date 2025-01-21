@@ -18,7 +18,8 @@ MonoBehaviour:
   m_LessonId: d67d4256-e6cb-4ee5-ad27-3e2451cf8fa5
   m_Version: 0
   m_SceneManagementBehavior: 1
-  m_Scenes: []
+  m_Scenes:
+  - {fileID: 102900000, guid: 5f676aaa16c05714ba5506a305c709c4, type: 3}
   m_DefaultSceneCameraSettings:
     m_CameraMode: 0
     m_FocusMode: 0
