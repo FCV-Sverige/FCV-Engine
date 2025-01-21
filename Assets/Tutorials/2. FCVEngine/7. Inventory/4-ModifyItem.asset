@@ -76,6 +76,17 @@ MonoBehaviour:
           m_MaskType: 0
           m_MaskSizeModifier: 0
           m_UnmaskedControls: []
+        - m_SelectorType: 1
+          m_ViewType:
+            m_TypeName: 
+          m_EditorWindowType:
+            m_TypeName: UnityEditor.ObjectSelector, UnityEditor.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          m_AlternateEditorWindowTypes:
+            m_Items: []
+          m_MaskType: 0
+          m_MaskSizeModifier: 0
+          m_UnmaskedControls: []
       m_Summary: 
       m_Description: 
       m_InstructionBoxTitle: 
@@ -85,9 +96,10 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: 'Now we can change the name of the item so that it is unique.
-          If an item with the same name is already picked up by the player, the picked
-          up item will not be added to the inventory but it will still be disabled. '
+        m_Untranslated: 'Now we can change the name of the item so that it is unique,
+          and give it and appearance so we can see it in the game. If an item with
+          the same name is already picked up by the player, the picked up item will
+          not be added to the inventory but it will still be disabled. '
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -109,7 +121,15 @@ MonoBehaviour:
         m_Untranslated: '1. Click the ''Item'' object in the scene hierarchy window
 
           2.
-          Find ''Item Name'' variable and change it to the newly added item name'
+          Find ''Item Name'' variable and change it to the newly added item name
+
+          3.
+          Find the ''Sprite'' variable in the ''Item'' script (not in the sprite
+          renderer that one changes automatically)
+
+          4. Click the small
+          circle on the right side of the ''Sprite'' variable and select a sprite
+          that fits your item.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -120,6 +140,10 @@ MonoBehaviour:
             m_TypeName: Unity.Tutorials.Core.Editor.PropertyModificationCriterion,
               Unity.Tutorials.Core.Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
           Criterion: {fileID: 1072189318946128706}
+        - Type:
+            m_TypeName: Unity.Tutorials.Core.Editor.NotNullPropertyInScene, Assembly-CSharp,
+              Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          Criterion: {fileID: 2644025532168659357}
       m_MaskingSettings:
         m_MaskingEnabled: 0
         m_UnmaskedViews: []
@@ -215,3 +239,33 @@ MonoBehaviour:
       m_AssetObject: {fileID: 0}
       m_Prefab: {fileID: 0}
     m_FutureObjectReference: {fileID: -5339998932125195593, guid: 068dd4c30450d5d48b1e15e5a9fea08f, type: 2}
+--- !u!114 &2644025532168659357
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b68e0bb8480cb40aa9e0ddeae53949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Completed:
+    m_PersistentCalls:
+      m_Calls: []
+  Invalidated:
+    m_PersistentCalls:
+      m_Calls: []
+  isTesting: 0
+  m_Target:
+    m_SceneObjectReference:
+      m_SceneGuid: 
+      m_GameObjectGuid: 
+      m_SerializedComponentType:
+        m_TypeName: 
+      m_ComponentIndex: 0
+      m_AssetObject: {fileID: 0}
+      m_Prefab: {fileID: 0}
+    m_FutureObjectReference: {fileID: -3178603993374921415, guid: 068dd4c30450d5d48b1e15e5a9fea08f, type: 2}
+  propertyPath: m_Sprite
