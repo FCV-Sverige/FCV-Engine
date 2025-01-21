@@ -16,7 +16,7 @@ using UnityEngine;
 public class PatrolEnemy : MonoBehaviour
 {
     [Header("Patrol Options"), Space(5)]
-    [SerializeField] private float patrolSpeed;
+    [SerializeField, Range(0, 10)] private float patrolSpeed;
     [SerializeField] private float stopDistance = 0.1f; // Distance to stop at the point
 
     [Space(15)] [Header("Detection Options"), Space(5)] 
