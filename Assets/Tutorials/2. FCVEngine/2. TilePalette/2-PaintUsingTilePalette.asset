@@ -23,7 +23,7 @@ MonoBehaviour:
         m_Untranslated: 
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
-      m_Video: {fileID: 0}
+      m_Video: {fileID: 32900000, guid: 59e97add12712ee40af01bf75440aa7f, type: 3}
       m_CriteriaCompletion: 0
       m_Criteria:
         m_Items: []
@@ -196,4 +196,4 @@ MonoBehaviour:
   Invalidated:
     m_PersistentCalls:
       m_Calls: []
-  isTesting: 1
+  isTesting: 0
