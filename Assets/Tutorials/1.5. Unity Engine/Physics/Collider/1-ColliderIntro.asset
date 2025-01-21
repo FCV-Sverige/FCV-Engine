@@ -43,7 +43,7 @@ MonoBehaviour:
           boxes and different stops for players and mechanics physically. They are
           good for making things happen once they are touched. This tutorial will
           show you how to setup and use them with physics. \n\nThere is another tutorial
-          called \"Custom Collider\" where it shows you how to easily make events
+          called \"Collision 2D Handler\" where it shows you how to easily make events
           using colliders"
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
