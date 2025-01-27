@@ -59,10 +59,10 @@ MonoBehaviour:
   m_CameraSettings:
     m_CameraMode: 0
     m_FocusMode: 0
-    m_Orthographic: 0
-    m_Size: 0
-    m_Pivot: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0, w: 0}
+    m_Orthographic: 1
+    m_Size: 4
+    m_Pivot: {x: -2, y: -1, z: 0}
+    m_Rotation: {x: 0, y: 0, z: 0, w: 1}
     m_FrameObject:
       m_SceneGuid: 
       m_GameObjectGuid: 
@@ -71,7 +71,7 @@ MonoBehaviour:
       m_ComponentIndex: 0
       m_AssetObject: {fileID: 0}
       m_Prefab: {fileID: 0}
-    m_Enabled: 0
+    m_Enabled: 1
   NextButton:
     m_Untranslated: Next
   DoneButton:
