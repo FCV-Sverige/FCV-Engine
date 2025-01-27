@@ -39,9 +39,9 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: In this project a inventory system has been implement to
-          streamline and make the inventory system easy to use with names and a centralised
-          place to store all items.
+        m_Untranslated: In this engine an inventory system has been implemented to
+          streamline the handling of items for you by using names. It also gives
+          you a centralized place to create new items and store them.
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
