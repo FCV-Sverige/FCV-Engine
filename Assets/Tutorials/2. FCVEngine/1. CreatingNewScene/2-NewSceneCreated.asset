@@ -39,7 +39,7 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: 'A new scene has now been created in the base folder ''Assets''
+        m_Untranslated: 'A new scene has now been created in the base folder ''Assets/Scenes''
           in the project.
 
 
