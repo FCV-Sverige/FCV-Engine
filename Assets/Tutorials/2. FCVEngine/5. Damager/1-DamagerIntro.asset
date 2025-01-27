@@ -39,15 +39,15 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: 'This tutorial will walk you through how to make anything
-          deal damage to anything that has a health component. This can be used to
-          make falling objects deal damage or maybe something static like spikes,
-          which we will be doing through this tutorial.
+        m_Untranslated: 'This tutorial will walk you through how to use the ''Damager''
+          component to make any object deal damage to anything that has a health
+          component. This can be used to make falling objects deal damage or maybe
+          something static like spikes, which we will be doing through this tutorial.
 
 
 
-          The enemy uses
-          this script to deal damage to the player.'
+          The
+          enemy uses this script to deal damage to the player.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
