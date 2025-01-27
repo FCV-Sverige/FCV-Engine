@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f107dc6d4c984c45bdafd3bb15f98f0, type: 3}
-  m_Name: AudioSourceTutorial
+  m_Name: AudioMixerTutorial
   m_EditorClassIdentifier: 
   TutorialTitle:
-    m_Untranslated: Audio Source Tutorial
+    m_Untranslated: Audio Mixer Tutorial
   m_ProgressTrackingEnabled: 1
-  m_LessonId: 2732a4db-6f6c-48fd-ae05-7a8837f0183e
+  m_LessonId: 4a0267fd-de12-486b-aca4-fd5cd475b93c
   m_Version: 0
   m_SceneManagementBehavior: 0
   m_Scenes:
-  - {fileID: 102900000, guid: 5c0053529770e10488bc1ef0fe7aed25, type: 3}
+  - {fileID: 102900000, guid: 61d79f049f2172c468f145503feef9e1, type: 3}
   m_DefaultSceneCameraSettings:
     m_CameraMode: 0
     m_FocusMode: 0
@@ -39,11 +39,10 @@ MonoBehaviour:
   m_WindowLayout: {fileID: 102900000, guid: 951254c389b351642917f33ec9df1585, type: 3}
   m_Pages:
     m_Items:
-    - {fileID: 11400000, guid: 01a46e3df587f9b4ca806c8487c50a21, type: 2}
-    - {fileID: 11400000, guid: 6f91150a73395ce489e64d5f9b927f05, type: 2}
-    - {fileID: 11400000, guid: ad2b1f6292802b246a6fa98458173f73, type: 2}
-    - {fileID: 11400000, guid: 579e767c23d79e741bb6a6a43d0cb272, type: 2}
-    - {fileID: 11400000, guid: 85b605f895098194b933bc439daf3409, type: 2}
+    - {fileID: 11400000, guid: ef46ad43b654f414c9ca9d4f39c8661a, type: 2}
+    - {fileID: 11400000, guid: e1d7fa722d267be46a534adeb3ddeb13, type: 2}
+    - {fileID: 11400000, guid: 51d41473bb7b0814eb7f294cb999812a, type: 2}
+    - {fileID: 11400000, guid: 2b92d39c7d7c6ea40a04a436e9fe552b, type: 2}
   CompletionDialog: {fileID: 0}
   Modified:
     m_PersistentCalls:
