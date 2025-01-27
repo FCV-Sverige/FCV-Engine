@@ -110,8 +110,8 @@ MonoBehaviour:
     m_CameraMode: 0
     m_FocusMode: 0
     m_Orthographic: 1
-    m_Size: 6.5270567
-    m_Pivot: {x: 0.5850039, y: -0.40592232, z: 0.00568852}
+    m_Size: 5
+    m_Pivot: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0, w: 1}
     m_FrameObject:
       m_SceneGuid: 

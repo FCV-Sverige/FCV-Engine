@@ -19,7 +19,7 @@ MonoBehaviour:
   m_Version: 1
   m_SceneManagementBehavior: 1
   m_Scenes:
-  - {fileID: 102900000, guid: e47d999d62376364a9985b3a74eddb69, type: 3}
+  - {fileID: 102900000, guid: 5c0053529770e10488bc1ef0fe7aed25, type: 3}
   m_DefaultSceneCameraSettings:
     m_CameraMode: 0
     m_FocusMode: 0
