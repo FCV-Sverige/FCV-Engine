@@ -150,18 +150,20 @@ MonoBehaviour:
 
           2. In the Inspector, locate the MovingPlatform
           script and add more World Points by pressing the + button or adjusting
-          the total number of elements.
+          the total number of elements (this menu might be minimized, simply press
+          the World Points text and it should open up).
 
-          3. Set the Loop Type to LOOP.
+          3. Set the Loop
+          Type to LOOP.
 
-          4.
-          Experiment with the World Points and adjust their locations as you like.
+          4. Experiment with the World Points and adjust
+          their locations as you like.
 
 
           _____
 
-          Tip:
-          You can drag the World Points using the handles in the Scene View.'
+          Tip: You can
+          drag the World Points using the handles in the Scene View.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
