@@ -100,7 +100,7 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: To make use the of the Check Points we need to add it to
+        m_Untranslated: To make use the of the Check Points we need to add them to
           our scene
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}

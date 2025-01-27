@@ -39,8 +39,10 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Now you know how you can implement the Check Points into
-          your game to make the game less hard for players
+        m_Untranslated: Now you know how to implement the check points into your
+          game. Checkpoints are mostly used to make players lose less progress if
+          they fail, but they can also be used for different things. Experiment and
+          use them as you se fit in your game!
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
