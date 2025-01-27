@@ -97,7 +97,7 @@ MonoBehaviour:
         m_Untranslated: Page title
       Text:
         m_Untranslated: Now that we have a door in the scene we need to set up the
-          custom collider so that we can connect
+          custom collider so that we can connect it to the door.
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -118,7 +118,8 @@ MonoBehaviour:
       Text:
         m_Untranslated: "1. Click the 'TriggerBox' object in the scene hierarchy\n2.
           In the inspector we now need to add a couple components for this to work\n\t2.1.
-          Add 'Circle Collider'\n\t2.2 Add 'Custom2DCollider'"
+          Add 'Circle Collider 2D'\n\t2.2 Add 'Custom2DCollider' (Make sure it is
+          the correct script and not the component called 'CustomCollider2D')"
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

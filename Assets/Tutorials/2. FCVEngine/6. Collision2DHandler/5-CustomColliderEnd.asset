@@ -40,8 +40,9 @@ MonoBehaviour:
         m_Untranslated: Page title
       Text:
         m_Untranslated: Now you know how to implement and use the Custom2DCollider
-          component and how easy it is to make interesting buttons and events happen
-          when a player reaches an area
+          component. This combined with the button we learned about in an earlier
+          tutorial gives you a lot of options to easily make interesting events happen
+          in your level.
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

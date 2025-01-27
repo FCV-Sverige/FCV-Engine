@@ -198,8 +198,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: Now that we have a door in the scene we need to set up the
-          custom collider so that we can connect
+        m_Untranslated: Now that we have the components we need in the scene, we
+          can connect them and set up the events.
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
