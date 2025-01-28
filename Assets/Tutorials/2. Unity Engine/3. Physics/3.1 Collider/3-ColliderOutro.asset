@@ -39,9 +39,12 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: Now you know how to make use of the collider in a physical
-          context. To make use of them as triggers I recommend checking out the FCV
-          Engine tutorial called "Collision 2D Handler"
+        m_Untranslated: 'Now you''ve learned the basics of adding a <b>Collider</b>
+          component to a game object in Unity.
+
+
+          Next up, more on the <b>Rigidbody</b>
+          component:'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

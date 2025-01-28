@@ -39,12 +39,33 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: "Colliders are the easiest way to make walkable ground, walls,
-          boxes and different stops for players and mechanics physically. They are
-          good for making things happen once they are touched. This tutorial will
-          show you how to setup and use them with physics. \n\nThere is another tutorial
-          called \"Collision 2D Handler\" where it shows you how to easily make events
-          using colliders"
+        m_Untranslated: '<b>Colliders</b> are useful components to give objects and
+          the environment in your game physics.
+
+
+          They can be used to give
+          the Player  ground to walk on, adding walls, boxes and different other
+          physical blockers for players and mechanics. Perhaps you want to create
+          a game object for the Player to use, letting them reach higher up in the
+          level? Adding a <b>Collider</b> is the easiest way of achieving this.
+
+
+          They
+          can also be used as triggers for an Event in Unity.
+
+          More on
+          this in an upcoming tutorial called <b>Collision 2D Handler.
+
+
+          Learning
+          how to use <b>Colliders</b> is a good way of expanding your tool-set and
+          understanding of game development.
+
+
+
+          The following tutorial
+          will guide you through setting up a <b>Collider</b> on objects in your
+          game. '
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

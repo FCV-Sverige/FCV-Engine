@@ -111,16 +111,16 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: 'For an object to have collision we need to add a collider
-          to the object. To make an object have physics we need a rigidbody on them,
-          luckily the player makes use of them so that will be used to test our collider.
-
-
-          _______
-
-          Note:
-          Unity has split the physics between 2D and 3D so make sure to use 2D components
-          for it to work with the assets in FCV Engine'
+        m_Untranslated: "For an object to have collision we need to add a <b>Collider</b>
+          to it. \nTo make an object react to physics it needs something called a
+          <b>Rigidbody.</b> \n\nLuckily, the Player-object in this section already
+          has a <b>Rigidbody</b> component added to it, so that is what we will use
+          in the coming steps to test our added <b>Collider</b> component.\n\n(More
+          on the <b>Rigidbody</b> component in the next Tutorial)\n_______\n<b>Note:</b>
+          Unity has separated the physics-components between 2D and 3D, so make certain
+          you add the <b>Box Collider 2D</b> component in this section of the tutorial
+          to ensure everything works properly with the assets provided with <b>FCV
+          Engine.</b>"
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -139,16 +139,20 @@ MonoBehaviour:
       Title:
         m_Untranslated: let's add a collider
       Text:
-        m_Untranslated: '1. Select ''Obstacle'' object in the hierarchy window
+        m_Untranslated: '1. Select the <b>Obstacles</b> object in the hierarchy window
+
 
           2.
-          Navigate to the inspector
+          Navigate to the <b>Inspector.</b>
 
-          3. Scroll down until you find the
-          ''Add Component'' button and click it.
 
-          4. Search for ''Box Collider
-          2D'' and add it.'
+          3. Click the<b>"Add Component"</b>
+          button located at the bottom of the <b>Inspector.</b>
+
+
+          4. Enter:
+          <b>Box Collider 2D</b> in the search field and double-click, or hit the
+          Enter key to add it to the <b>Obstacles</b> object.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
