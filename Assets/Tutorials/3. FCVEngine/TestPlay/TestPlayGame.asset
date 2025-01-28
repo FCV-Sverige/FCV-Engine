@@ -86,7 +86,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Now we should test to see if it works
+        m_Untranslated: Now we should enter <b>Play Mode</b> to test if our added
+          feature works!
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -105,12 +106,15 @@ MonoBehaviour:
       Title:
         m_Untranslated: Test the game
       Text:
-        m_Untranslated: '1. Click ''Play'' button in the top bar.
+        m_Untranslated: '1. Click the <b>Play</b> button in the top bar.
 
-          2. Test
-          the feature we just added.
 
-          3. Exit playmode'
+          2.
+          Test the feature we just added.
+
+
+          3. If everything seems to work,
+          exit <b>Play Mode.</b>'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
