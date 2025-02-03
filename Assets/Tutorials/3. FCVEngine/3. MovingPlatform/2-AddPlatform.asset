@@ -72,14 +72,14 @@ MonoBehaviour:
     m_Untranslated: Add a Platform
   m_Paragraphs:
     m_Items:
-    - m_Type: 6
+    - m_Type: 7
       Title:
         m_Untranslated: 
       Text:
         m_Untranslated: 
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
-      m_Video: {fileID: 0}
+      m_Video: {fileID: 32900000, guid: 6eb08efff7a610d45a64683bcf43bb71, type: 3}
       m_CriteriaCompletion: 0
       m_Criteria:
         m_Items: []
