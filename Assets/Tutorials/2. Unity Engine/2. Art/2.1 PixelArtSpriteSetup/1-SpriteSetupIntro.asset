@@ -39,9 +39,10 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: When working with pixel art there is some setup we need to
-          do so that it looks good in our game. These are some settings that work
-          with the color of the sprite and wrapping of it.
+        m_Untranslated: "When working with Pixel Art there is some setup needed to
+          make it look professional for your games. \n\nThe following tutorial will
+          walk you  through some settings that work with the color and wrapping of
+          the sprite to give it a clear and crisp look."
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

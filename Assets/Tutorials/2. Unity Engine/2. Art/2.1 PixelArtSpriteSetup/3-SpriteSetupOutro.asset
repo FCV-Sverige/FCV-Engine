@@ -29,7 +29,18 @@ MonoBehaviour:
         m_Items: []
       m_MaskingSettings:
         m_MaskingEnabled: 1
-        m_UnmaskedViews: []
+        m_UnmaskedViews:
+        - m_SelectorType: 1
+          m_ViewType:
+            m_TypeName: 
+          m_EditorWindowType:
+            m_TypeName: UnityEditor.SceneView, UnityEditor.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          m_AlternateEditorWindowTypes:
+            m_Items: []
+          m_MaskType: 0
+          m_MaskSizeModifier: 0
+          m_UnmaskedControls: []
       m_Summary: 
       m_Description: 
       m_InstructionBoxTitle: 
@@ -39,9 +50,9 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Now you know how to setup a pixel art sprite so that it will
-          look good in your game. This will help the pixel art feel really sharp
-          and give you a good consistent look
+        m_Untranslated: Now you know how to set-up Pixel Art sprites that will look
+          great in your games. This will help the Pixel Art feel sharp and professional,
+          giving them a good consistent look in your games.
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

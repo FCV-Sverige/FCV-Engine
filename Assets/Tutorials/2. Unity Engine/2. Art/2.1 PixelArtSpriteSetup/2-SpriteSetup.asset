@@ -98,6 +98,17 @@ MonoBehaviour:
           m_MaskType: 0
           m_MaskSizeModifier: 0
           m_UnmaskedControls: []
+        - m_SelectorType: 1
+          m_ViewType:
+            m_TypeName: 
+          m_EditorWindowType:
+            m_TypeName: UnityEditor.SceneView, UnityEditor.CoreModule, Version=0.0.0.0,
+              Culture=neutral, PublicKeyToken=null
+          m_AlternateEditorWindowTypes:
+            m_Items: []
+          m_MaskType: 0
+          m_MaskSizeModifier: 0
+          m_UnmaskedControls: []
       m_Summary: 
       m_Description: 
       m_InstructionBoxTitle: 
@@ -107,8 +118,8 @@ MonoBehaviour:
       Title:
         m_Untranslated: 
       Text:
-        m_Untranslated: Let's get into what settings you need to have for a pixel
-          art sprite to look good in your game.
+        m_Untranslated: Let's have a closer look at what settings you want to have
+          on your pixel art assets to look better in your games.
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
@@ -125,26 +136,30 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 1
       Title:
-        m_Untranslated: Start by
+        m_Untranslated: Finding the Asset.
       Text:
-        m_Untranslated: '1. Navigate to ''Assets/Art/Tutorial'' in the project browser
+        m_Untranslated: '1. Navigate to <b>Assets > Art > Tutorial</b> in the <b>Project
+          browser.</b>
 
 
-          2.
-          find and select the ''armor'' sprite.
+          2. Find and select the <b>armor</b> sprite and
+          navigate to the <b>Inspector.</b>
 
 
-          3. Navigate to the inspector
+          3. Find and adjust the setting
+          <b>Pixels Per Unit</b> to <b>16</b> so that it matches the 16 x 16 resolution
+          of the .PNG file of the sprite. (Zoomed in here for a better look at the
+          changes as you apply them)
 
 
-          4.
-          Set ''Pixels Per Unit'' to 16 so that it matches the size of the png (this
-          gives it the right scale in the scene)
+          4. Find and set <b>Filter Mode</b>
+          to <b>Point (no filter)</b> so that the colors will match properly on the
+          sprite and give it a clear Pixel Art look.
 
 
-          5. Set ''Filter Mode''
-          to ''Point (no filter)'' so that the colors will match the pixel colors
-          and give it a clear pixel art look.'
+          6. Click <b>Apply</b>
+          at the bottom of the <b>Inspector</b> to save your changes and see the
+          difference.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

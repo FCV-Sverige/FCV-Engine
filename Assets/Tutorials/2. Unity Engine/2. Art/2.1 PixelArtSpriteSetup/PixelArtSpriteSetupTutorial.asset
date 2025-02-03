@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PixelArtSpriteSetupTutorial
   m_EditorClassIdentifier: 
   TutorialTitle:
-    m_Untranslated: PixelArtSpriteSetupTutorial
+    m_Untranslated: Pixel Art Sprite Setup Tutorial
   m_ProgressTrackingEnabled: 1
   m_LessonId: fc9475e9-915c-497b-a7a2-48a3fa926170
   m_Version: 0
