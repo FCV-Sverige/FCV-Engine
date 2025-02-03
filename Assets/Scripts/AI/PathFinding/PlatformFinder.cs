@@ -96,7 +96,7 @@ public class PlatformFinder : MonoBehaviour
             if (nextTile != start) platforms.Add(nextTile);
             
             
-            if (Physics2D.OverlapBox((Vector2Int)nextTile + Vector2Int.up * 2, Vector2.one * .9f, 0, layerCantWalkThrough))
+            if (Physics2D.OverlapBox((Vector2Int)nextTile + new Vector2(0.5f ,1.5f), Vector2.one * .9f, 0, layerCantWalkThrough))
                 return platforms;
             
             nextTile += (Vector3Int)direction;
